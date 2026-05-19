@@ -1,0 +1,1091 @@
+{
+    "state": {
+        "navBrand": {
+            "logoIcon": "shield-check",
+            "brandName": "Mastor NCE"
+        },
+        "navMenu": [
+            {
+                "label": "首页",
+                "isActive": true
+            },
+            {
+                "label": "监控",
+                "isActive": false
+            },
+            {
+                "label": "业务",
+                "isActive": false
+            },
+            {
+                "label": "配置",
+                "isActive": false
+            },
+            {
+                "label": "设置",
+                "isActive": false
+            }
+        ],
+        "navUserProfile": {
+            "userName": "admin",
+            "dropdownIcon": "chevron-down",
+            "avatarImage": "https://randomuser.me/api/portraits/men/32.jpg",
+            "menu": [
+                {
+                    "label": "个人中心",
+                    "key": "profile",
+                    "icon": "user"
+                },
+                {
+                    "label": "安全设置",
+                    "key": "security",
+                    "icon": "lock"
+                },
+                {
+                    "label": "退出登录",
+                    "key": "logout",
+                    "icon": "log-out"
+                }
+            ]
+        },
+        "navActionIcons": [
+            {
+                "iconName": "bell",
+                "tooltip": "系统通知"
+            },
+            {
+                "iconName": "help-circle",
+                "tooltip": "使用帮助"
+            }
+        ],
+        "kpiLinkRatioData": [
+            {
+                "time": "08:00",
+                "骨干链路": 45,
+                "边缘链路": 30
+            },
+            {
+                "time": "09:00",
+                "骨干链路": 52,
+                "边缘链路": 35
+            },
+            {
+                "time": "10:00",
+                "骨干链路": 48,
+                "边缘链路": 32
+            },
+            {
+                "time": "11:00",
+                "骨干链路": 61,
+                "边缘链路": 40
+            },
+            {
+                "time": "12:00",
+                "骨干链路": 55,
+                "边缘链路": 38
+            },
+            {
+                "time": "13:00",
+                "骨干链路": 67,
+                "边缘链路": 45
+            },
+            {
+                "time": "14:00",
+                "骨干链路": 70,
+                "边缘链路": 42
+            },
+            {
+                "time": "15:00",
+                "骨干链路": 65,
+                "边缘链路": 48
+            },
+            {
+                "time": "16:00",
+                "骨干链路": 72,
+                "边缘链路": 50
+            },
+            {
+                "time": "17:00",
+                "骨干链路": 75,
+                "边缘链路": 55
+            }
+        ],
+        "kpiLatencyTopData": [
+            {
+                "link": "L-SH-01",
+                "当前时延(ms)": 120,
+                "基准阈值(ms)": 80
+            },
+            {
+                "link": "L-BJ-05",
+                "当前时延(ms)": 115,
+                "基准阈值(ms)": 80
+            },
+            {
+                "link": "L-GZ-02",
+                "当前时延(ms)": 108,
+                "基准阈值(ms)": 80
+            },
+            {
+                "link": "L-SZ-09",
+                "当前时延(ms)": 95,
+                "基准阈值(ms)": 80
+            },
+            {
+                "link": "L-HZ-04",
+                "当前时延(ms)": 88,
+                "基准阈值(ms)": 80
+            }
+        ],
+        "kpiUnprotectedPathData": [
+            {
+                "day": "Mon",
+                "占比(%)": 12.5
+            },
+            {
+                "day": "Tue",
+                "占比(%)": 11.8
+            },
+            {
+                "day": "Wed",
+                "占比(%)": 13.2
+            },
+            {
+                "day": "Thu",
+                "占比(%)": 10.5
+            },
+            {
+                "day": "Fri",
+                "占比(%)": 9.8
+            },
+            {
+                "day": "Sat",
+                "占比(%)": 11.0
+            },
+            {
+                "day": "Sun",
+                "占比(%)": 10.2
+            },
+            {
+                "day": "Mon2",
+                "占比(%)": 8.5
+            },
+            {
+                "day": "Tue2",
+                "占比(%)": 7.9
+            },
+            {
+                "day": "Wed2",
+                "占比(%)": 7.2
+            }
+        ],
+        "kpiFaultLinkData": [
+            {
+                "link": "Link_Alpha_01",
+                "故障频次": 24
+            },
+            {
+                "link": "Link_Beta_05",
+                "故障频次": 18
+            },
+            {
+                "link": "Link_Gamma_02",
+                "故障频次": 15
+            },
+            {
+                "link": "Link_Delta_09",
+                "故障频次": 12
+            },
+            {
+                "link": "Link_Epsilon_04",
+                "故障频次": 9
+            }
+        ],
+        "sliceSearchText": "",
+        "sliceTableData": [
+            {
+                "sliceName": "5G_eMBB_Video",
+                "sliceId": "SL-2024001",
+                "sliceType": "eMBB",
+                "subSlice": "Sub_V_01",
+                "mtnFg": "FG_800G_01",
+                "status": "激活",
+                "statusType": "success",
+                "deployment": "已部署",
+                "createTime": "2024-01-10 08:30",
+                "updateTime": "2024-05-12 14:20"
+            },
+            {
+                "sliceName": "Smart_Grid_Control",
+                "sliceId": "SL-2024002",
+                "sliceType": "uRLLC",
+                "subSlice": "Sub_G_05",
+                "mtnFg": "FG_400G_02",
+                "status": "失败",
+                "statusType": "error",
+                "deployment": "未部署",
+                "createTime": "2024-01-12 09:15",
+                "updateTime": "2024-05-10 11:05"
+            },
+            {
+                "sliceName": "IoT_Sensor_Net",
+                "sliceId": "SL-2024003",
+                "sliceType": "mMTC",
+                "subSlice": "Sub_I_09",
+                "mtnFg": "FG_100G_05",
+                "status": "未激活",
+                "statusType": "warning",
+                "deployment": "待同步",
+                "createTime": "2024-02-05 10:00",
+                "updateTime": "2024-04-28 16:45"
+            },
+            {
+                "sliceName": "V2X_Autonomous",
+                "sliceId": "SL-2024004",
+                "sliceType": "uRLLC",
+                "subSlice": "Sub_A_02",
+                "mtnFg": "FG_800G_03",
+                "status": "激活",
+                "statusType": "success",
+                "deployment": "已部署",
+                "createTime": "2024-02-15 14:20",
+                "updateTime": "2024-05-11 09:30"
+            },
+            {
+                "sliceName": "Public_Safety_Net",
+                "sliceId": "SL-2024005",
+                "sliceType": "eMBB",
+                "subSlice": "Sub_P_04",
+                "mtnFg": "FG_400G_01",
+                "status": "激活",
+                "statusType": "success",
+                "deployment": "已部署",
+                "createTime": "2024-03-01 11:10",
+                "updateTime": "2024-05-09 17:15"
+            },
+            {
+                "sliceName": "Remote_Medical_01",
+                "sliceId": "SL-2024006",
+                "sliceType": "uRLLC",
+                "subSlice": "Sub_M_07",
+                "mtnFg": "FG_200G_02",
+                "status": "失败",
+                "statusType": "error",
+                "deployment": "异常中断",
+                "createTime": "2024-03-10 15:45",
+                "updateTime": "2024-05-12 10:20"
+            },
+            {
+                "sliceName": "Enterprise_VPN_A",
+                "sliceId": "SL-2024007",
+                "sliceType": "eMBB",
+                "subSlice": "Sub_E_11",
+                "mtnFg": "FG_400G_08",
+                "status": "激活",
+                "statusType": "success",
+                "deployment": "已部署",
+                "createTime": "2024-03-22 09:00",
+                "updateTime": "2024-05-08 13:40"
+            },
+            {
+                "sliceName": "Campus_WiFi_Backhaul",
+                "sliceId": "SL-2024008",
+                "sliceType": "mMTC",
+                "subSlice": "Sub_C_03",
+                "mtnFg": "FG_100G_01",
+                "status": "未激活",
+                "statusType": "warning",
+                "deployment": "待同步",
+                "createTime": "2024-04-05 16:30",
+                "updateTime": "2024-04-05 16:30"
+            },
+            {
+                "sliceName": "AR_Gaming_Slice",
+                "sliceId": "SL-2024009",
+                "sliceType": "eMBB",
+                "subSlice": "Sub_G_22",
+                "mtnFg": "FG_800G_05",
+                "status": "激活",
+                "statusType": "success",
+                "deployment": "已部署",
+                "createTime": "2024-04-12 11:20",
+                "updateTime": "2024-05-10 15:50"
+            },
+            {
+                "sliceName": "Finance_Trade_Link",
+                "sliceId": "SL-2024010",
+                "sliceType": "uRLLC",
+                "subSlice": "Sub_F_01",
+                "mtnFg": "FG_400G_03",
+                "status": "激活",
+                "statusType": "success",
+                "deployment": "已部署",
+                "createTime": "2024-04-20 08:45",
+                "updateTime": "2024-05-12 09:10"
+            }
+        ]
+    },
+    "rootId": "rootContainer",
+    "elements": [
+        {
+            "id": "rootContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col min-h-screen bg-surface-container-lowest"
+            },
+            "children": [
+                "shellNavbarContainer",
+                "shellMainContent"
+            ]
+        },
+        {
+            "id": "shellNavbarContainer",
+            "component": "header",
+            "props": {
+                "className": "h-16 bg-surface-container-highest shadow-sm z-50 flex items-center px-inset justify-between"
+            },
+            "children": [
+                "navLeftSection",
+                "navCenterSection",
+                "navRightSection"
+            ]
+        },
+        {
+            "id": "shellMainContent",
+            "component": "main",
+            "props": {
+                "className": "flex-1 flex flex-col gap-gutter p-gutter overflow-y-auto"
+            },
+            "children": [
+                "shellMetricsGrid",
+                "shellTableContainer"
+            ]
+        },
+        {
+            "id": "shellMetricsGrid",
+            "component": "section",
+            "props": {
+                "className": "grid grid-cols-4 gap-gutter shrink-0"
+            },
+            "children": [
+                "kpiCardLinkRatio",
+                "kpiCardLatency",
+                "kpiCardUnprotected",
+                "kpiCardFault"
+            ]
+        },
+        {
+            "id": "shellTableContainer",
+            "component": "section",
+            "props": {
+                "className": "flex-1 bg-surface-container-highest rounded-container shadow-card overflow-hidden"
+            },
+            "children": [
+                "sliceModuleHeader",
+                "sliceModuleToolbar",
+                "sliceModuleTable"
+            ]
+        },
+        {
+            "id": "navLeftSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "navLogoIcon",
+                "navBrandName"
+            ]
+        },
+        {
+            "id": "navLogoIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/navBrand/logoIcon"
+                },
+                "color": "primary",
+                "shape": "fill",
+                "className": "w-8 h-8"
+            }
+        },
+        {
+            "id": "navBrandName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/navBrand/brandName"
+                },
+                "className": "text-xl font-bold text-on-surface tracking-tight"
+            }
+        },
+        {
+            "id": "navCenterSection",
+            "component": "nav",
+            "props": {
+                "className": "flex items-center h-full ml-12"
+            },
+            "children": {
+                "path": "/navMenu",
+                "componentId": "navMenuItem"
+            }
+        },
+        {
+            "id": "navMenuItem",
+            "component": "div",
+            "props": {
+                "className": "px-4 h-full flex items-center cursor-pointer transition-colors hover:bg-surface-variant relative"
+            },
+            "children": [
+                "navMenuItemLabel"
+            ]
+        },
+        {
+            "id": "navMenuItemLabel",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "label"
+                },
+                "className": "text-md font-medium text-on-surface"
+            }
+        },
+        {
+            "id": "navRightSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-6"
+            },
+            "children": [
+                "navActionIconsGroup",
+                "navUserDropdown"
+            ]
+        },
+        {
+            "id": "navActionIconsGroup",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-4"
+            },
+            "children": {
+                "path": "/navActionIcons",
+                "componentId": "navActionButton"
+            }
+        },
+        {
+            "id": "navActionButton",
+            "component": "Button",
+            "props": {
+                "icon": {
+                    "path": "iconName"
+                },
+                "className": "text-on-surface-variant hover:text-primary",
+                "shape": "circle"
+            }
+        },
+        {
+            "id": "navUserDropdown",
+            "component": "Dropdown",
+            "props": {
+                "menu": {
+                    "path": "/navUserProfile/menu"
+                },
+                "placement": "bottomRight",
+                "trigger": [
+                    "hover"
+                ]
+            },
+            "children": [
+                "navUserTrigger"
+            ]
+        },
+        {
+            "id": "navUserTrigger",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2 cursor-pointer p-1 rounded-full hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "navUserAvatar",
+                "navUserName",
+                "navUserChevron"
+            ]
+        },
+        {
+            "id": "navUserAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "/navUserProfile/avatarImage"
+                },
+                "className": "w-8 h-8 rounded-full border border-divider object-cover",
+                "alt": "User Avatar"
+            }
+        },
+        {
+            "id": "navUserName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/navUserProfile/userName"
+                },
+                "className": "text-sm font-semibold text-on-surface"
+            }
+        },
+        {
+            "id": "navUserChevron",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/navUserProfile/dropdownIcon"
+                },
+                "className": "w-4 h-4 text-on-surface-variant"
+            }
+        },
+        {
+            "id": "kpiCardLinkRatio",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container p-inset shadow-card flex flex-col gap-stack"
+            },
+            "children": [
+                "kpiHeaderLinkRatio",
+                "kpiChartLinkRatio"
+            ]
+        },
+        {
+            "id": "kpiHeaderLinkRatio",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "kpiIconLinkRatio",
+                "kpiTitleLinkRatio"
+            ]
+        },
+        {
+            "id": "kpiIconLinkRatio",
+            "component": "Icon",
+            "props": {
+                "name": "activity",
+                "color": "primary",
+                "shape": "fill",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "kpiTitleLinkRatio",
+            "component": "span",
+            "props": {
+                "value": "链路占比趋势",
+                "className": "text-md font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "kpiChartLinkRatio",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/kpiLinkRatioData"
+                    },
+                    "xAxis": {
+                        "data": "time"
+                    },
+                    "yAxisTitle": "占比 (%)",
+                    "smooth": true,
+                    "color": [
+                        "#0067D1",
+                        "#09AA71"
+                    ]
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "kpiCardLatency",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container p-inset shadow-card flex flex-col gap-stack"
+            },
+            "children": [
+                "kpiHeaderLatency",
+                "kpiChartLatency"
+            ]
+        },
+        {
+            "id": "kpiHeaderLatency",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "kpiIconLatency",
+                "kpiTitleLatency"
+            ]
+        },
+        {
+            "id": "kpiIconLatency",
+            "component": "Icon",
+            "props": {
+                "name": "timer",
+                "color": "warning",
+                "shape": "fill",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "kpiTitleLatency",
+            "component": "span",
+            "props": {
+                "value": "Top5 时延越限链路",
+                "className": "text-md font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "kpiChartLatency",
+            "component": "BarChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/kpiLatencyTopData"
+                    },
+                    "xAxis": {
+                        "data": "link"
+                    },
+                    "yAxisTitle": "时延 (ms)",
+                    "markLine": {
+                        "top": 80
+                    },
+                    "color": [
+                        "#F4840C",
+                        "#C9C9C9"
+                    ]
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "kpiCardUnprotected",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container p-inset shadow-card flex flex-col gap-stack"
+            },
+            "children": [
+                "kpiHeaderUnprotected",
+                "kpiChartUnprotected"
+            ]
+        },
+        {
+            "id": "kpiHeaderUnprotected",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "kpiIconUnprotected",
+                "kpiTitleUnprotected"
+            ]
+        },
+        {
+            "id": "kpiIconUnprotected",
+            "component": "Icon",
+            "props": {
+                "name": "shield-off",
+                "color": "info",
+                "shape": "fill",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "kpiTitleUnprotected",
+            "component": "span",
+            "props": {
+                "value": "无保护路径隧道占比趋势",
+                "className": "text-md font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "kpiChartUnprotected",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/kpiUnprotectedPathData"
+                    },
+                    "xAxis": {
+                        "data": "day"
+                    },
+                    "yAxisTitle": "占比 (%)",
+                    "area": true,
+                    "color": [
+                        "#715AFB"
+                    ]
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "kpiCardFault",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container p-inset shadow-card flex flex-col gap-stack"
+            },
+            "children": [
+                "kpiHeaderFault",
+                "kpiChartFault"
+            ]
+        },
+        {
+            "id": "kpiHeaderFault",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "kpiIconFault",
+                "kpiTitleFault"
+            ]
+        },
+        {
+            "id": "kpiIconFault",
+            "component": "Icon",
+            "props": {
+                "name": "alert-triangle",
+                "color": "error",
+                "shape": "fill",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "kpiTitleFault",
+            "component": "span",
+            "props": {
+                "value": "Top5 故障链路",
+                "className": "text-md font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "kpiChartFault",
+            "component": "BarChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/kpiFaultLinkData"
+                    },
+                    "direction": "horizontal",
+                    "xAxis": {
+                        "data": "link"
+                    },
+                    "yAxisTitle": "故障频次",
+                    "color": [
+                        "#E02128"
+                    ]
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "sliceModuleHeader",
+            "component": "div",
+            "props": {
+                "className": "px-inset py-stack border-b border-divider flex items-center justify-between"
+            },
+            "children": [
+                "sliceModuleTitle"
+            ]
+        },
+        {
+            "id": "sliceModuleTitle",
+            "component": "span",
+            "props": {
+                "value": "网络切片管理",
+                "className": "text-lg font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "sliceModuleToolbar",
+            "component": "div",
+            "props": {
+                "className": "p-gutter flex items-center justify-between bg-surface-variant/30"
+            },
+            "children": [
+                "sliceToolbarSearch",
+                "sliceToolbarActions"
+            ]
+        },
+        {
+            "id": "sliceToolbarSearch",
+            "component": "Input",
+            "props": {
+                "value": {
+                    "path": "/sliceSearchText"
+                },
+                "placeholder": "搜索切片名称或ID...",
+                "prefix": "search",
+                "className": "w-72"
+            }
+        },
+        {
+            "id": "sliceToolbarActions",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "sliceActionRefresh",
+                "sliceActionExport",
+                "sliceActionAdd"
+            ]
+        },
+        {
+            "id": "sliceActionRefresh",
+            "component": "Button",
+            "props": {
+                "value": "刷新",
+                "icon": "refresh-cw",
+                "color": "default"
+            }
+        },
+        {
+            "id": "sliceActionExport",
+            "component": "Button",
+            "props": {
+                "value": "导出",
+                "icon": "download",
+                "color": "default"
+            }
+        },
+        {
+            "id": "sliceActionAdd",
+            "component": "Button",
+            "props": {
+                "value": "添加链路",
+                "icon": "plus",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "sliceModuleTable",
+            "component": "Table",
+            "props": {
+                "rowKey": "sliceId",
+                "dataSource": {
+                    "path": "/sliceTableData"
+                },
+                "className": "px-gutter pb-gutter",
+                "columns": [
+                    {
+                        "title": "切片名称",
+                        "dataIndex": "sliceName",
+                        "minWidth": 160
+                    },
+                    {
+                        "title": "切片ID",
+                        "dataIndex": "sliceId"
+                    },
+                    {
+                        "title": "切片类型",
+                        "dataIndex": "sliceType"
+                    },
+                    {
+                        "title": "承载子切片",
+                        "dataIndex": "subSlice"
+                    },
+                    {
+                        "title": "承载MTN FG",
+                        "dataIndex": "mtnFg"
+                    },
+                    {
+                        "title": "激活状态",
+                        "dataIndex": "status",
+                        "width": 100
+                    },
+                    {
+                        "title": "链路部署",
+                        "dataIndex": "deployment"
+                    },
+                    {
+                        "title": "创建时间",
+                        "dataIndex": "createTime",
+                        "width": 160
+                    },
+                    {
+                        "title": "修改时间",
+                        "dataIndex": "updateTime",
+                        "width": 160
+                    },
+                    {
+                        "title": "操作",
+                        "dataIndex": "actions",
+                        "fixed": "end",
+                        "width": 140
+                    }
+                ]
+            },
+            "children": {
+                "path": "/sliceTableData",
+                "componentId": "sliceTableRow"
+            }
+        },
+        {
+            "id": "sliceTableRow",
+            "component": "TableRow",
+            "children": [
+                "sliceCellName",
+                "sliceCellId",
+                "sliceCellType",
+                "sliceCellSub",
+                "sliceCellMtn",
+                "sliceCellStatus",
+                "sliceCellDeploy",
+                "sliceCellCreate",
+                "sliceCellUpdate",
+                "sliceCellActions"
+            ]
+        },
+        {
+            "id": "sliceCellName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "sliceName"
+                },
+                "className": "font-medium text-primary"
+            }
+        },
+        {
+            "id": "sliceCellId",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "sliceId"
+                },
+                "className": "text-on-surface-variant"
+            }
+        },
+        {
+            "id": "sliceCellType",
+            "component": "Tag",
+            "props": {
+                "value": {
+                    "path": "sliceType"
+                },
+                "variant": "outlined"
+            }
+        },
+        {
+            "id": "sliceCellSub",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "subSlice"
+                }
+            }
+        },
+        {
+            "id": "sliceCellMtn",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "mtnFg"
+                }
+            }
+        },
+        {
+            "id": "sliceCellStatus",
+            "component": "Tag",
+            "props": {
+                "value": {
+                    "path": "status"
+                },
+                "color": {
+                    "path": "statusType"
+                }
+            }
+        },
+        {
+            "id": "sliceCellDeploy",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "deployment"
+                }
+            }
+        },
+        {
+            "id": "sliceCellCreate",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "createTime"
+                },
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "sliceCellUpdate",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "updateTime"
+                },
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "sliceCellActions",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2"
+            },
+            "children": [
+                "sliceBtnEdit",
+                "sliceBtnDetail",
+                "sliceBtnDownload",
+                "sliceBtnDelete"
+            ]
+        },
+        {
+            "id": "sliceBtnEdit",
+            "component": "Button",
+            "props": {
+                "icon": "edit",
+                "size": "small",
+                "color": "default",
+                "shape": "circle"
+            }
+        },
+        {
+            "id": "sliceBtnDetail",
+            "component": "Button",
+            "props": {
+                "icon": "file-text",
+                "size": "small",
+                "color": "default",
+                "shape": "circle"
+            }
+        },
+        {
+            "id": "sliceBtnDownload",
+            "component": "Button",
+            "props": {
+                "icon": "download",
+                "size": "small",
+                "color": "default",
+                "shape": "circle"
+            }
+        },
+        {
+            "id": "sliceBtnDelete",
+            "component": "Button",
+            "props": {
+                "icon": "trash-2",
+                "size": "small",
+                "color": "danger",
+                "shape": "circle"
+            }
+        }
+    ]
+}
