@@ -1,0 +1,1206 @@
+{
+    "state": {
+        "pageTitle": "Lead Pool",
+        "searchValue": "",
+        "searchPlaceholder": "Global search...",
+        "avatarSrc": "https://randomuser.me/api/portraits/men/75.jpg",
+        "metricCards": [
+            {
+                "cardTitle": "Total Unassigned Leads",
+                "value": "1,284",
+                "trendIcon": "trending-up",
+                "comparison": "12% from last week"
+            },
+            {
+                "cardTitle": "New Today",
+                "value": "42",
+                "trendIcon": "minus",
+                "comparison": "Normal ingestion rate"
+            },
+            {
+                "cardTitle": "Average Time in Pool",
+                "value": "4h 22m",
+                "trendIcon": "trending-down",
+                "comparison": "-15% response improvement"
+            }
+        ],
+        "leadRows": [
+            {
+                "id": "JD",
+                "initials": "JD",
+                "firstName": "Johnathan",
+                "lastName": "Doe",
+                "company": "TechNexus Solutions Inc.",
+                "sourceIcon": "globe",
+                "sourceLabel": "Website",
+                "status": "UNASSIGNED",
+                "timeInPool": "2h 15m",
+                "leadScore": 85
+            },
+            {
+                "id": "SL",
+                "initials": "SL",
+                "firstName": "Sarah",
+                "lastName": "Lee",
+                "company": "BrightPath Analytics",
+                "sourceIcon": "share-2",
+                "sourceLabel": "Referral",
+                "status": "UNASSIGNED",
+                "timeInPool": "5h 30m",
+                "leadScore": 72
+            },
+            {
+                "id": "MR",
+                "initials": "MR",
+                "firstName": "Michael",
+                "lastName": "Ross",
+                "company": "Greenfield Technologies",
+                "sourceIcon": "mail",
+                "sourceLabel": "Campaign",
+                "status": "UNASSIGNED",
+                "timeInPool": "1d 3h",
+                "leadScore": 63
+            },
+            {
+                "id": "EC",
+                "initials": "EC",
+                "firstName": "Emily",
+                "lastName": "Chen",
+                "company": "Apex Security Inc.",
+                "sourceIcon": "globe",
+                "sourceLabel": "Website",
+                "status": "UNASSIGNED",
+                "timeInPool": "45m",
+                "leadScore": 91
+            },
+            {
+                "id": "DJ",
+                "initials": "DJ",
+                "firstName": "David",
+                "lastName": "Johnson",
+                "company": "Sigma Corp.",
+                "sourceIcon": "briefcase",
+                "sourceLabel": "Partner",
+                "status": "UNASSIGNED",
+                "timeInPool": "7h 10m",
+                "leadScore": 58
+            },
+            {
+                "id": "KR",
+                "initials": "KR",
+                "firstName": "Kelly",
+                "lastName": "Reynolds",
+                "company": "Nova Data Labs",
+                "sourceIcon": "message-circle",
+                "sourceLabel": "Social Media",
+                "status": "UNASSIGNED",
+                "timeInPool": "3h 40m",
+                "leadScore": 78
+            },
+            {
+                "id": "AT",
+                "initials": "AT",
+                "firstName": "Alex",
+                "lastName": "Turner",
+                "company": "Quantum Systems",
+                "sourceIcon": "globe",
+                "sourceLabel": "Website",
+                "status": "UNASSIGNED",
+                "timeInPool": "1h 5m",
+                "leadScore": 88
+            },
+            {
+                "id": "LW",
+                "initials": "LW",
+                "firstName": "Linda",
+                "lastName": "Wang",
+                "company": "Fortress IT",
+                "sourceIcon": "share-2",
+                "sourceLabel": "Referral",
+                "status": "UNASSIGNED",
+                "timeInPool": "6h 20m",
+                "leadScore": 69
+            },
+            {
+                "id": "PP",
+                "initials": "PP",
+                "firstName": "Peter",
+                "lastName": "Parker",
+                "company": "Daily Bugle Media",
+                "sourceIcon": "mail",
+                "sourceLabel": "Campaign",
+                "status": "UNASSIGNED",
+                "timeInPool": "2d 1h",
+                "leadScore": 45
+            },
+            {
+                "id": "AG",
+                "initials": "AG",
+                "firstName": "Anna",
+                "lastName": "Garcia",
+                "company": "Meridian Health",
+                "sourceIcon": "briefcase",
+                "sourceLabel": "Partner",
+                "status": "UNASSIGNED",
+                "timeInPool": "4h 50m",
+                "leadScore": 74
+            },
+            {
+                "id": "RB",
+                "initials": "RB",
+                "firstName": "Robert",
+                "lastName": "Brown",
+                "company": "Innovatech Ltd.",
+                "sourceIcon": "message-circle",
+                "sourceLabel": "Social Media",
+                "status": "UNASSIGNED",
+                "timeInPool": "8h 00m",
+                "leadScore": 60
+            },
+            {
+                "id": "CM",
+                "initials": "CM",
+                "firstName": "Carol",
+                "lastName": "Miller",
+                "company": "DataShield Corp.",
+                "sourceIcon": "globe",
+                "sourceLabel": "Website",
+                "status": "UNASSIGNED",
+                "timeInPool": "2h 30m",
+                "leadScore": 82
+            }
+        ],
+        "sourceFilter": "All Sources",
+        "statusFilter": "All Status",
+        "paginationInfo": "Showing 1-10 of 1,284 leads",
+        "title": "Enable AI-Driven Lead Scoring",
+        "description": "Automatically prioritize high-intent leads using our latest security behavioral analysis models. Increase conversion by up to 34%.",
+        "buttonLabel": "Upgrade Plan",
+        "buttonIcon": "arrow-right-circle"
+    },
+    "rootId": "pageContainer",
+    "elements": [
+        {
+            "id": "pageContainer",
+            "component": "div",
+            "props": {
+                "className": "flex h-screen bg-surface-container-lowest"
+            },
+            "children": [
+                "leftSidebar",
+                "mainWrapper"
+            ]
+        },
+        {
+            "id": "leftSidebar",
+            "component": "div",
+            "props": {
+                "className": "w-64 flex-shrink-0 bg-surface-container-highest flex flex-col h-full"
+            },
+            "children": [
+                "sidebarBrandArea",
+                "sidebarMenuContainer",
+                "sidebarBottomArea"
+            ]
+        },
+        {
+            "id": "mainWrapper",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col overflow-hidden"
+            },
+            "children": [
+                "topBar",
+                "mainContent"
+            ]
+        },
+        {
+            "id": "topBar",
+            "component": "div",
+            "props": {
+                "className": "h-16 flex-shrink-0 bg-surface-container-highest shadow-sm flex items-center px-gutter"
+            },
+            "children": [
+                "topbarLeftArea",
+                "topbarRightArea"
+            ]
+        },
+        {
+            "id": "mainContent",
+            "component": "div",
+            "props": {
+                "className": "flex-1 overflow-auto p-inset space-y-stack"
+            },
+            "children": [
+                "mainHeader",
+                "metricCards",
+                "leadTable",
+                "promoBanner"
+            ]
+        },
+        {
+            "id": "mainHeader",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col md:flex-row justify-between items-start md:items-center gap-stack"
+            },
+            "children": [
+                "mainHeaderLeftGroup",
+                "mainHeaderRightGroup"
+            ]
+        },
+        {
+            "id": "metricCards",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-1 md:grid-cols-3 gap-gutter"
+            },
+            "children": {
+                "path": "/metricCards",
+                "componentId": "metricCardsCard"
+            }
+        },
+        {
+            "id": "leadTable",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container shadow-sm overflow-hidden"
+            },
+            "children": [
+                "leadTableToolbar",
+                "leadTableContent",
+                "leadTablePaginationInfo"
+            ]
+        },
+        {
+            "id": "promoBanner",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container shadow-sm p-6 flex flex-col md:flex-row items-center justify-between gap-stack"
+            },
+            "children": [
+                "promoBannerContent",
+                "promoBannerAction"
+            ]
+        },
+        {
+            "id": "sidebarBrandArea",
+            "component": "div",
+            "props": {
+                "className": "px-4 pt-6 pb-4 border-b border-divider"
+            },
+            "children": [
+                "sidebarBrandLogo",
+                "sidebarEnterpriseLabel"
+            ]
+        },
+        {
+            "id": "sidebarBrandLogo",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 mb-2"
+            },
+            "children": [
+                "sidebarBrandIcon",
+                "sidebarBrandName"
+            ]
+        },
+        {
+            "id": "sidebarBrandIcon",
+            "component": "Icon",
+            "props": {
+                "name": "shield",
+                "shape": "square",
+                "color": "primary",
+                "className": "w-8 h-8"
+            }
+        },
+        {
+            "id": "sidebarBrandName",
+            "component": "span",
+            "props": {
+                "value": "Security Gate",
+                "className": "text-lg font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "sidebarEnterpriseLabel",
+            "component": "span",
+            "props": {
+                "value": "ENTERPRISE ADMIN",
+                "className": "text-xs font-medium text-on-surface-variant tracking-widest ml-11"
+            }
+        },
+        {
+            "id": "sidebarMenuContainer",
+            "component": "div",
+            "props": {
+                "className": "flex-1 px-3 py-3 flex flex-col gap-0.5 overflow-y-auto"
+            },
+            "children": [
+                "sidebarMenuItemDashboard",
+                "sidebarMenuItemUserDirectory",
+                "sidebarMenuItemOrgChart",
+                "sidebarMenuItemTenantSettings",
+                "sidebarMenuItemBilling",
+                "sidebarMenuItemAuditLogs",
+                "sidebarMenuItemLeadPool"
+            ]
+        },
+        {
+            "id": "sidebarMenuItemDashboard",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-on-surface-variant hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "sidebarMenuIconDashboard",
+                "sidebarMenuLabelDashboard"
+            ]
+        },
+        {
+            "id": "sidebarMenuIconDashboard",
+            "component": "Icon",
+            "props": {
+                "name": "layout-dashboard",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sidebarMenuLabelDashboard",
+            "component": "span",
+            "props": {
+                "value": "Dashboard",
+                "className": "text-sm font-medium"
+            }
+        },
+        {
+            "id": "sidebarMenuItemUserDirectory",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-on-surface-variant hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "sidebarMenuIconUserDirectory",
+                "sidebarMenuLabelUserDirectory"
+            ]
+        },
+        {
+            "id": "sidebarMenuIconUserDirectory",
+            "component": "Icon",
+            "props": {
+                "name": "users",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sidebarMenuLabelUserDirectory",
+            "component": "span",
+            "props": {
+                "value": "User Directory",
+                "className": "text-sm font-medium"
+            }
+        },
+        {
+            "id": "sidebarMenuItemOrgChart",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-on-surface-variant hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "sidebarMenuIconOrgChart",
+                "sidebarMenuLabelOrgChart"
+            ]
+        },
+        {
+            "id": "sidebarMenuIconOrgChart",
+            "component": "Icon",
+            "props": {
+                "name": "organization",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sidebarMenuLabelOrgChart",
+            "component": "span",
+            "props": {
+                "value": "Org Chart",
+                "className": "text-sm font-medium"
+            }
+        },
+        {
+            "id": "sidebarMenuItemTenantSettings",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-on-surface-variant hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "sidebarMenuIconTenantSettings",
+                "sidebarMenuLabelTenantSettings"
+            ]
+        },
+        {
+            "id": "sidebarMenuIconTenantSettings",
+            "component": "Icon",
+            "props": {
+                "name": "settings",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sidebarMenuLabelTenantSettings",
+            "component": "span",
+            "props": {
+                "value": "Tenant Settings",
+                "className": "text-sm font-medium"
+            }
+        },
+        {
+            "id": "sidebarMenuItemBilling",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-on-surface-variant hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "sidebarMenuIconBilling",
+                "sidebarMenuLabelBilling"
+            ]
+        },
+        {
+            "id": "sidebarMenuIconBilling",
+            "component": "Icon",
+            "props": {
+                "name": "credit-card",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sidebarMenuLabelBilling",
+            "component": "span",
+            "props": {
+                "value": "Billing",
+                "className": "text-sm font-medium"
+            }
+        },
+        {
+            "id": "sidebarMenuItemAuditLogs",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-on-surface-variant hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "sidebarMenuIconAuditLogs",
+                "sidebarMenuLabelAuditLogs"
+            ]
+        },
+        {
+            "id": "sidebarMenuIconAuditLogs",
+            "component": "Icon",
+            "props": {
+                "name": "file-text",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sidebarMenuLabelAuditLogs",
+            "component": "span",
+            "props": {
+                "value": "Audit Logs",
+                "className": "text-sm font-medium"
+            }
+        },
+        {
+            "id": "sidebarMenuItemLeadPool",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer bg-primary-container text-on-primary-container transition-colors"
+            },
+            "children": [
+                "sidebarMenuIconLeadPool",
+                "sidebarMenuLabelLeadPool"
+            ]
+        },
+        {
+            "id": "sidebarMenuIconLeadPool",
+            "component": "Icon",
+            "props": {
+                "name": "circle",
+                "shape": "fill",
+                "color": "primary",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sidebarMenuLabelLeadPool",
+            "component": "span",
+            "props": {
+                "value": "Lead Pool",
+                "className": "text-sm font-semibold"
+            }
+        },
+        {
+            "id": "sidebarBottomArea",
+            "component": "div",
+            "props": {
+                "className": "px-3 pb-6 pt-3 border-t border-divider flex flex-col gap-2"
+            },
+            "children": [
+                "sidebarSupportBtn",
+                "sidebarLogOutLink"
+            ]
+        },
+        {
+            "id": "sidebarSupportBtn",
+            "component": "Button",
+            "props": {
+                "value": "Support Ticket",
+                "icon": "life-buoy",
+                "iconPlacement": "start",
+                "color": "default",
+                "className": "w-full justify-start"
+            }
+        },
+        {
+            "id": "sidebarLogOutLink",
+            "component": "Button",
+            "props": {
+                "value": "Log Out",
+                "icon": "log-out",
+                "iconPlacement": "start",
+                "types": "link",
+                "className": "text-on-surface-variant hover:text-on-surface"
+            }
+        },
+        {
+            "id": "topbarLeftArea",
+            "component": "div",
+            "props": {
+                "className": "flex items-center"
+            },
+            "children": [
+                "topbarTitle"
+            ]
+        },
+        {
+            "id": "topbarTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-semibold text-on-surface",
+                "value": {
+                    "path": "/pageTitle"
+                }
+            }
+        },
+        {
+            "id": "topbarRightArea",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 ml-auto"
+            },
+            "children": [
+                "topbarSearchInput",
+                "topbarBellIcon",
+                "topbarMessageIcon",
+                "topbarHelpIcon",
+                "topbarUserAvatar"
+            ]
+        },
+        {
+            "id": "topbarSearchInput",
+            "component": "Input",
+            "props": {
+                "value": {
+                    "path": "/searchValue"
+                },
+                "placeholder": {
+                    "path": "/searchPlaceholder"
+                },
+                "prefix": "search",
+                "className": "w-56"
+            }
+        },
+        {
+            "id": "topbarBellIcon",
+            "component": "Icon",
+            "props": {
+                "name": "bell",
+                "shape": "outline",
+                "className": "w-5 h-5 text-on-surface-variant cursor-pointer"
+            }
+        },
+        {
+            "id": "topbarMessageIcon",
+            "component": "Icon",
+            "props": {
+                "name": "message-square",
+                "shape": "outline",
+                "className": "w-5 h-5 text-on-surface-variant cursor-pointer"
+            }
+        },
+        {
+            "id": "topbarHelpIcon",
+            "component": "Icon",
+            "props": {
+                "name": "help-circle",
+                "shape": "outline",
+                "className": "w-5 h-5 text-on-surface-variant cursor-pointer"
+            }
+        },
+        {
+            "id": "topbarUserAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "/avatarSrc"
+                },
+                "className": "w-8 h-8 rounded-full object-cover cursor-pointer",
+                "alt": "User avatar"
+            }
+        },
+        {
+            "id": "mainHeaderLeftGroup",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-1"
+            },
+            "children": [
+                "mainHeaderTitle",
+                "mainHeaderDescription"
+            ]
+        },
+        {
+            "id": "mainHeaderTitle",
+            "component": "span",
+            "props": {
+                "className": "text-2xl font-bold text-on-surface",
+                "value": "Lead Pool"
+            }
+        },
+        {
+            "id": "mainHeaderDescription",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant max-w-xl",
+                "value": "Manage and distribute unassigned potential customer leads within the high-security enterprise framework."
+            }
+        },
+        {
+            "id": "mainHeaderRightGroup",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2 shrink-0"
+            },
+            "children": [
+                "mainHeaderImportBtn",
+                "mainHeaderRoutingBtn"
+            ]
+        },
+        {
+            "id": "mainHeaderImportBtn",
+            "component": "Button",
+            "props": {
+                "value": "Import Leads",
+                "icon": "upload",
+                "iconPlacement": "start",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "mainHeaderRoutingBtn",
+            "component": "Button",
+            "props": {
+                "value": "Routing Rules",
+                "icon": "route",
+                "iconPlacement": "start"
+            }
+        },
+        {
+            "id": "metricCardsCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-card rounded-xl p-inset flex flex-col gap-stack"
+            },
+            "children": [
+                "metricCardsCardTitle",
+                "metricCardsCardValue",
+                "metricCardsCardTrendRow"
+            ]
+        },
+        {
+            "id": "metricCardsCardTitle",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant font-medium",
+                "value": {
+                    "path": "cardTitle"
+                }
+            }
+        },
+        {
+            "id": "metricCardsCardValue",
+            "component": "span",
+            "props": {
+                "className": "text-3xl font-bold text-on-surface",
+                "value": {
+                    "path": "value"
+                }
+            }
+        },
+        {
+            "id": "metricCardsCardTrendRow",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "metricCardsCardTrendIcon",
+                "metricCardsCardComparison"
+            ]
+        },
+        {
+            "id": "metricCardsCardTrendIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "trendIcon"
+                },
+                "className": "w-5 h-5",
+                "color": "default"
+            }
+        },
+        {
+            "id": "metricCardsCardComparison",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "comparison"
+                }
+            }
+        },
+        {
+            "id": "leadTableToolbar",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-gutter px-inset py-stack border-b border-divider"
+            },
+            "children": [
+                "leadTableSearchInput",
+                "leadTableSourceSelect",
+                "leadTableStatusSelect",
+                "leadTableFilterBtn"
+            ]
+        },
+        {
+            "id": "leadTableSearchInput",
+            "component": "Input",
+            "props": {
+                "value": {
+                    "path": "/searchValue"
+                },
+                "placeholder": "Search lead or company...",
+                "prefix": "search",
+                "className": "w-72"
+            }
+        },
+        {
+            "id": "leadTableSourceSelect",
+            "component": "Select",
+            "props": {
+                "value": {
+                    "path": "/sourceFilter"
+                },
+                "options": [
+                    {
+                        "label": "Source: All Sources",
+                        "value": "All Sources"
+                    },
+                    {
+                        "label": "Website",
+                        "value": "Website"
+                    },
+                    {
+                        "label": "Referral",
+                        "value": "Referral"
+                    },
+                    {
+                        "label": "Campaign",
+                        "value": "Campaign"
+                    },
+                    {
+                        "label": "Partner",
+                        "value": "Partner"
+                    },
+                    {
+                        "label": "Social Media",
+                        "value": "Social Media"
+                    }
+                ],
+                "className": "w-48"
+            }
+        },
+        {
+            "id": "leadTableStatusSelect",
+            "component": "Select",
+            "props": {
+                "value": {
+                    "path": "/statusFilter"
+                },
+                "options": [
+                    {
+                        "label": "Status: All Status",
+                        "value": "All Status"
+                    },
+                    {
+                        "label": "Unassigned",
+                        "value": "Unassigned"
+                    },
+                    {
+                        "label": "Assigned",
+                        "value": "Assigned"
+                    },
+                    {
+                        "label": "Qualified",
+                        "value": "Qualified"
+                    },
+                    {
+                        "label": "Disqualified",
+                        "value": "Disqualified"
+                    }
+                ],
+                "className": "w-44"
+            }
+        },
+        {
+            "id": "leadTableFilterBtn",
+            "component": "Button",
+            "props": {
+                "icon": "filter",
+                "shape": "default",
+                "className": "ml-auto"
+            }
+        },
+        {
+            "id": "leadTableContent",
+            "component": "Table",
+            "props": {
+                "rowKey": "id",
+                "dataSource": {
+                    "path": "/leadRows"
+                },
+                "pagination": true,
+                "columns": [
+                    {
+                        "title": "LEAD NAME & COMPANY",
+                        "dataIndex": "initials",
+                        "width": "30%"
+                    },
+                    {
+                        "title": "SOURCE",
+                        "dataIndex": "sourceLabel",
+                        "width": "14%"
+                    },
+                    {
+                        "title": "STATUS",
+                        "dataIndex": "status",
+                        "width": "12%"
+                    },
+                    {
+                        "title": "TIME IN POOL",
+                        "dataIndex": "timeInPool",
+                        "width": "12%"
+                    },
+                    {
+                        "title": "LEAD SCORE",
+                        "dataIndex": "leadScore",
+                        "width": "14%"
+                    },
+                    {
+                        "title": "ACTIONS",
+                        "dataIndex": "actions",
+                        "width": "18%"
+                    }
+                ]
+            },
+            "children": {
+                "path": "/leadRows",
+                "componentId": "leadTableRow"
+            }
+        },
+        {
+            "id": "leadTableRow",
+            "component": "TableRow",
+            "children": [
+                "leadTableNameCell",
+                "leadTableSourceCell",
+                "leadTableStatusCell",
+                "leadTableTimeCell",
+                "leadTableScoreCell",
+                "leadTableActionsCell"
+            ]
+        },
+        {
+            "id": "leadTableNameCell",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3"
+            },
+            "children": [
+                "leadTableNameAvatar",
+                "leadTableNameDetails"
+            ]
+        },
+        {
+            "id": "leadTableNameAvatar",
+            "component": "div",
+            "props": {
+                "className": "w-9 h-9 rounded-full bg-primary-container flex items-center justify-center shrink-0"
+            },
+            "children": [
+                "leadTableNameAvatarText"
+            ]
+        },
+        {
+            "id": "leadTableNameAvatarText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "initials"
+                },
+                "className": "text-xs font-semibold text-primary"
+            }
+        },
+        {
+            "id": "leadTableNameDetails",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col min-w-0"
+            },
+            "children": [
+                "leadTableNameFull",
+                "leadTableNameCompany"
+            ]
+        },
+        {
+            "id": "leadTableNameFull",
+            "component": "span",
+            "props": {
+                "className": "text-sm font-medium text-on-surface truncate"
+            },
+            "children": [
+                "leadTableNameFirst",
+                "leadTableNameLast"
+            ]
+        },
+        {
+            "id": "leadTableNameFirst",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "firstName"
+                }
+            }
+        },
+        {
+            "id": "leadTableNameLast",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "lastName"
+                }
+            }
+        },
+        {
+            "id": "leadTableNameCompany",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "company"
+                },
+                "className": "text-xs text-on-surface-variant truncate"
+            }
+        },
+        {
+            "id": "leadTableSourceCell",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2"
+            },
+            "children": [
+                "leadTableSourceIcon",
+                "leadTableSourceText"
+            ]
+        },
+        {
+            "id": "leadTableSourceIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "sourceIcon"
+                },
+                "className": "w-4 h-4 text-on-surface-variant"
+            }
+        },
+        {
+            "id": "leadTableSourceText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "sourceLabel"
+                },
+                "className": "text-sm text-on-surface"
+            }
+        },
+        {
+            "id": "leadTableStatusCell",
+            "component": "Tag",
+            "props": {
+                "value": {
+                    "path": "status"
+                },
+                "color": "warning",
+                "variant": "filled",
+                "size": "small"
+            }
+        },
+        {
+            "id": "leadTableTimeCell",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "timeInPool"
+                },
+                "className": "text-sm text-on-surface"
+            }
+        },
+        {
+            "id": "leadTableScoreCell",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2"
+            },
+            "children": [
+                "leadTableScoreProgress",
+                "leadTableScoreValue"
+            ]
+        },
+        {
+            "id": "leadTableScoreProgress",
+            "component": "Progress",
+            "props": {
+                "percent": {
+                    "path": "leadScore"
+                },
+                "showInfo": false,
+                "size": "small",
+                "strokeColor": "#0067D1",
+                "className": "flex-1"
+            }
+        },
+        {
+            "id": "leadTableScoreValue",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "leadScore"
+                },
+                "className": "text-sm font-semibold text-on-surface w-8 text-right"
+            }
+        },
+        {
+            "id": "leadTableActionsCell",
+            "component": "Button",
+            "props": {
+                "value": "Claim",
+                "icon": "user-plus",
+                "iconPlacement": "start",
+                "types": "link",
+                "size": "small",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "leadTablePaginationInfo",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between px-inset py-stack border-t border-divider"
+            },
+            "children": [
+                "leadTablePaginationText"
+            ]
+        },
+        {
+            "id": "leadTablePaginationText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/paginationInfo"
+                },
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "promoBannerContent",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col gap-stack"
+            },
+            "children": [
+                "promoBannerTitle",
+                "promoBannerDesc"
+            ]
+        },
+        {
+            "id": "promoBannerTitle",
+            "component": "h3",
+            "props": {
+                "className": "text-lg font-semibold text-on-surface",
+                "value": {
+                    "path": "/title"
+                }
+            }
+        },
+        {
+            "id": "promoBannerDesc",
+            "component": "p",
+            "props": {
+                "className": "text-sm text-on-surface-variant leading-relaxed max-w-2xl",
+                "value": {
+                    "path": "/description"
+                }
+            }
+        },
+        {
+            "id": "promoBannerAction",
+            "component": "div",
+            "props": {
+                "className": "shrink-0"
+            },
+            "children": [
+                "promoBannerUpgradeBtn"
+            ]
+        },
+        {
+            "id": "promoBannerUpgradeBtn",
+            "component": "Button",
+            "props": {
+                "value": {
+                    "path": "/buttonLabel"
+                },
+                "icon": {
+                    "path": "/buttonIcon"
+                },
+                "iconPlacement": "end",
+                "color": "primary",
+                "size": "medium",
+                "className": "whitespace-nowrap"
+            }
+        }
+    ]
+}
