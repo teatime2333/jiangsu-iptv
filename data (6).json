@@ -1,0 +1,1920 @@
+{
+    "state": {
+        "brandLogoIcon": "layers",
+        "brandName": "Nexus CRM",
+        "menuItems": [
+            {
+                "menuId": "dashboard",
+                "menuName": "仪表盘 / Dashboard",
+                "menuIcon": "layout-dashboard",
+                "isActive": false
+            },
+            {
+                "menuId": "customers",
+                "menuName": "客户管理 / Customers",
+                "menuIcon": "users",
+                "isActive": false
+            },
+            {
+                "menuId": "tasks",
+                "menuName": "任务管理 / Tasks",
+                "menuIcon": "check-square",
+                "isActive": true
+            },
+            {
+                "menuId": "deals",
+                "menuName": "商机管理 / Deals",
+                "menuIcon": "dollar-sign",
+                "isActive": false
+            },
+            {
+                "menuId": "analytics",
+                "menuName": "数据分析 / Analytics",
+                "menuIcon": "bar-chart-3",
+                "isActive": false
+            },
+            {
+                "menuId": "settings",
+                "menuName": "系统设置 / Settings",
+                "menuIcon": "settings",
+                "isActive": false
+            }
+        ],
+        "currentUser": {
+            "name": "Alex Mercer",
+            "role": "Project Manager",
+            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
+        },
+        "searchValue": "",
+        "searchPlaceholder": "搜索任务、客户或商机...",
+        "navLinks": [
+            {
+                "linkName": "帮助文档",
+                "linkUrl": "#/help"
+            },
+            {
+                "linkName": "API支持",
+                "linkUrl": "#/api"
+            }
+        ],
+        "notificationCount": 3,
+        "breadcrumbs": [
+            {
+                "label": "任务列表",
+                "linkUrl": "#/tasks"
+            },
+            {
+                "label": "研发任务",
+                "linkUrl": "#/tasks/dev"
+            },
+            {
+                "label": "详情",
+                "linkUrl": ""
+            }
+        ],
+        "taskTitleCn": "客户关系管理系统数据迁移与同步方案",
+        "taskTitleEn": "CRM System Data Migration and Synchronization Plan",
+        "isCompleted": false,
+        "actionButtons": [
+            {
+                "buttonId": "markComplete",
+                "buttonText": "标记完成 / Mark Complete",
+                "buttonIcon": "check",
+                "buttonType": "primary"
+            },
+            {
+                "buttonId": "editTask",
+                "buttonText": "编辑 / Edit",
+                "buttonIcon": "edit-3",
+                "buttonType": "default"
+            }
+        ],
+        "cardTitle": "任务详情与拆解 / Task Details & Subtasks",
+        "taskDescription": "本任务旨在将旧版 CRM 系统中的 50 万条活跃客户数据、历史跟进记录及商机流水安全迁移至全新的 Nexus CRM 平台。迁移过程中需确保数据字段的精准映射，避免数据丢失与重复，并在迁移完成后进行多维度的数据一致性校验。同时，需建立双向数据同步机制，确保过渡期间新旧系统的平稳运行。",
+        "keyPoints": [
+            {
+                "text": "完成新旧 CRM 系统的字段映射表设计，特别是自定义属性的兼容性。"
+            },
+            {
+                "text": "编写高效的数据清洗与导入脚本，单次批处理量控制在 5000 条以内以防超时。"
+            },
+            {
+                "text": "在非工作时间（预计周六凌晨 02:00 - 06:00）执行正式迁移，最大程度减少对业务的影响。"
+            },
+            {
+                "text": "迁移后进行随机抽样校验，抽样比例不低于 5%，确保关联数据的完整性。"
+            }
+        ],
+        "subtasks": [
+            {
+                "subtaskId": "sub-01",
+                "title": "设计新旧系统数据字段映射表 / Design field mapping table",
+                "isCompleted": true,
+                "isCompletedIcon": "check-square",
+                "isCompletedColor": "success",
+                "textClassName": "text-md text-on-surface-variant line-through opacity-60 truncate",
+                "badgeText": "已完成 / Done",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-success-container text-success"
+            },
+            {
+                "subtaskId": "sub-02",
+                "title": "编写并测试数据清洗与转换脚本 / Write and test data cleaning scripts",
+                "isCompleted": true,
+                "isCompletedIcon": "check-square",
+                "isCompletedColor": "success",
+                "textClassName": "text-md text-on-surface-variant line-through opacity-60 truncate",
+                "badgeText": "已完成 / Done",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-success-container text-success"
+            },
+            {
+                "subtaskId": "sub-03",
+                "title": "在测试环境进行全量数据模拟迁移 / Run full migration simulation in staging",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "进行中 / In Progress",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-primary-container text-primary"
+            },
+            {
+                "subtaskId": "sub-04",
+                "title": "验证测试环境数据一致性与关联完整性 / Verify data consistency in staging",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "待开始 / Todo",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-surface-variant text-on-surface-variant"
+            },
+            {
+                "subtaskId": "sub-05",
+                "title": "制定正式迁移停机公告及应急回滚方案 / Draft downtime announcement and rollback plan",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "待开始 / Todo",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-surface-variant text-on-surface-variant"
+            },
+            {
+                "subtaskId": "sub-06",
+                "title": "执行生产环境数据正式迁移 / Execute production data migration",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "待开始 / Todo",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-surface-variant text-on-surface-variant"
+            },
+            {
+                "subtaskId": "sub-07",
+                "title": "生产环境数据抽样人工校验 / Perform manual data validation in production",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "待开始 / Todo",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-surface-variant text-on-surface-variant"
+            },
+            {
+                "subtaskId": "sub-08",
+                "title": "开启新旧系统双向增量同步链路 / Enable bidirectional incremental sync",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "待开始 / Todo",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-surface-variant text-on-surface-variant"
+            },
+            {
+                "subtaskId": "sub-09",
+                "title": "对销售团队进行新系统数据录入规范培训 / Train sales team on new data entry standards",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "待开始 / Todo",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-surface-variant text-on-surface-variant"
+            },
+            {
+                "subtaskId": "sub-10",
+                "title": "正式关闭旧系统写入权限并归档历史数据 / Archive legacy system and disable write access",
+                "isCompleted": false,
+                "isCompletedIcon": "square",
+                "isCompletedColor": "default",
+                "textClassName": "text-md text-on-surface font-medium truncate",
+                "badgeText": "待开始 / Todo",
+                "badgeClassName": "px-2 py-0.5 text-xs font-medium rounded bg-surface-variant text-on-surface-variant"
+            }
+        ],
+        "addSubtaskButton": {
+            "buttonText": "添加子任务 / Add Subtask",
+            "buttonIcon": "Plus"
+        },
+        "memberCard": {
+            "cardTitle": "项目成员 / Members",
+            "assignee": {
+                "roleLabel": "责任人 / Assignee",
+                "name": "张伟 / David Zhang",
+                "avatarImage": "https://randomuser.me/api/portraits/men/44.jpg",
+                "department": "技术架构部"
+            },
+            "collaborators": [
+                {
+                    "name": "李娜 / Lena Li",
+                    "avatarImage": "https://randomuser.me/api/portraits/women/12.jpg"
+                },
+                {
+                    "name": "王强 / Ken Wang",
+                    "avatarImage": "https://randomuser.me/api/portraits/men/85.jpg"
+                },
+                {
+                    "name": "Emma Watson",
+                    "avatarImage": "https://randomuser.me/api/portraits/women/45.jpg"
+                },
+                {
+                    "name": "刘洋 / Sunny Liu",
+                    "avatarImage": "https://randomuser.me/api/portraits/men/22.jpg"
+                }
+            ]
+        },
+        "progressCard": {
+            "cardTitle": "进度与工时 / Progress & Hours",
+            "startDate": "2023-10-25",
+            "endDate": "2023-11-10",
+            "progressPercentage": 68,
+            "estimatedHours": 40,
+            "actualHours": 28,
+            "unitText": "小时 / Hrs"
+        },
+        "discussionCard": {
+            "cardTitle": "内部讨论 / Discussion",
+            "comments": [
+                {
+                    "commentId": "c-01",
+                    "senderName": "张伟 / David Zhang",
+                    "senderAvatarImage": "https://randomuser.me/api/portraits/men/44.jpg",
+                    "sendTime": "2小时前",
+                    "messageContent": "测试环境的模拟迁移已经完成了，目前发现有大约 0.2% 的历史跟进记录因为字符集问题出现乱码，我正在调整清洗脚本。"
+                },
+                {
+                    "commentId": "c-02",
+                    "senderName": "李娜 / Lena Li",
+                    "senderAvatarImage": "https://randomuser.me/api/portraits/women/12.jpg",
+                    "sendTime": "1小时前",
+                    "messageContent": "收到！乱码问题解决后请在群里同步一下，我这边会配合重新跑一次数据校验，确保周六正式迁移万无一失。"
+                }
+            ],
+            "inputPlaceholder": "输入您的留言，按 Enter 发送...",
+            "newComment": ""
+        }
+    },
+    "rootId": "crmRootContainer",
+    "elements": [
+        {
+            "id": "crmRootContainer",
+            "component": "div",
+            "props": {
+                "className": "flex min-h-screen bg-surface text-on-surface"
+            },
+            "children": [
+                "crmSidebarContainer",
+                "crmMainWrapper"
+            ]
+        },
+        {
+            "id": "crmSidebarContainer",
+            "component": "aside",
+            "props": {
+                "className": "w-64 shrink-0 bg-surface-container-highest border-r border-divider flex flex-col h-screen sticky top-0"
+            },
+            "children": [
+                "sbNavHeader",
+                "sbNavMenuSection",
+                "sbNavFooterSection"
+            ]
+        },
+        {
+            "id": "crmMainWrapper",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col min-w-0"
+            },
+            "children": [
+                "crmHeaderContainer",
+                "crmContentScrollArea"
+            ]
+        },
+        {
+            "id": "crmHeaderContainer",
+            "component": "header",
+            "props": {
+                "className": "h-16 shrink-0 bg-surface-container-highest border-b border-divider flex items-center px-inset"
+            },
+            "children": [
+                "gbHdrWrapper"
+            ]
+        },
+        {
+            "id": "crmContentScrollArea",
+            "component": "main",
+            "props": {
+                "className": "flex-1 overflow-y-auto p-inset flex flex-col gap-gutter"
+            },
+            "children": [
+                "crmTaskHeaderContainer",
+                "crmTwoColumnLayout"
+            ]
+        },
+        {
+            "id": "crmTaskHeaderContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-inline"
+            },
+            "children": [
+                "tkHdrMainWrapper"
+            ]
+        },
+        {
+            "id": "crmTwoColumnLayout",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-12 gap-gutter items-start"
+            },
+            "children": [
+                "crmLeftWideColumn",
+                "crmRightNarrowColumn"
+            ]
+        },
+        {
+            "id": "crmLeftWideColumn",
+            "component": "div",
+            "props": {
+                "className": "col-span-12 lg:col-span-8 flex flex-col gap-gutter"
+            },
+            "children": [
+                "tkMainContainer"
+            ]
+        },
+        {
+            "id": "crmRightNarrowColumn",
+            "component": "div",
+            "props": {
+                "className": "col-span-12 lg:col-span-4 flex flex-col gap-gutter"
+            },
+            "children": [
+                "tkMetaMemberCard",
+                "tkMetaProgressCard",
+                "tkMetaDiscussionCard"
+            ]
+        },
+        {
+            "id": "sbNavHeader",
+            "component": "div",
+            "props": {
+                "className": "h-16 flex items-center gap-3 px-6 border-b border-divider"
+            },
+            "children": [
+                "sbNavLogoIcon",
+                "sbNavBrandName"
+            ]
+        },
+        {
+            "id": "sbNavLogoIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/brandLogoIcon"
+                },
+                "color": "primary",
+                "shape": "square",
+                "className": "w-8 h-8"
+            }
+        },
+        {
+            "id": "sbNavBrandName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/brandName"
+                },
+                "className": "text-lg font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "sbNavMenuSection",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col gap-1 px-3 py-4"
+            },
+            "children": [
+                "sbNavMenuItemDashboard",
+                "sbNavMenuItemCustomers",
+                "sbNavMenuItemTasks",
+                "sbNavMenuItemDeals",
+                "sbNavMenuItemAnalytics"
+            ]
+        },
+        {
+            "id": "sbNavMenuItemDashboard",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors cursor-pointer",
+                "isActive": {
+                    "path": "/menuItems/0/isActive"
+                },
+                "menuId": {
+                    "path": "/menuItems/0/menuId"
+                }
+            },
+            "children": [
+                "sbNavMenuIconDashboard",
+                "sbNavMenuLabelDashboard"
+            ]
+        },
+        {
+            "id": "sbNavMenuIconDashboard",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/menuItems/0/menuIcon"
+                },
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sbNavMenuLabelDashboard",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/menuItems/0/menuName"
+                },
+                "className": "text-md font-medium"
+            }
+        },
+        {
+            "id": "sbNavMenuItemCustomers",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors cursor-pointer",
+                "isActive": {
+                    "path": "/menuItems/1/isActive"
+                },
+                "menuId": {
+                    "path": "/menuItems/1/menuId"
+                }
+            },
+            "children": [
+                "sbNavMenuIconCustomers",
+                "sbNavMenuLabelCustomers"
+            ]
+        },
+        {
+            "id": "sbNavMenuIconCustomers",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/menuItems/1/menuIcon"
+                },
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sbNavMenuLabelCustomers",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/menuItems/1/menuName"
+                },
+                "className": "text-md font-medium"
+            }
+        },
+        {
+            "id": "sbNavMenuItemTasks",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary-container text-primary transition-colors cursor-pointer",
+                "isActive": {
+                    "path": "/menuItems/2/isActive"
+                },
+                "menuId": {
+                    "path": "/menuItems/2/menuId"
+                }
+            },
+            "children": [
+                "sbNavMenuIconTasks",
+                "sbNavMenuLabelTasks"
+            ]
+        },
+        {
+            "id": "sbNavMenuIconTasks",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/menuItems/2/menuIcon"
+                },
+                "color": "primary",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sbNavMenuLabelTasks",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/menuItems/2/menuName"
+                },
+                "className": "text-md font-semibold"
+            }
+        },
+        {
+            "id": "sbNavMenuItemDeals",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors cursor-pointer",
+                "isActive": {
+                    "path": "/menuItems/3/isActive"
+                },
+                "menuId": {
+                    "path": "/menuItems/3/menuId"
+                }
+            },
+            "children": [
+                "sbNavMenuIconDeals",
+                "sbNavMenuLabelDeals"
+            ]
+        },
+        {
+            "id": "sbNavMenuIconDeals",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/menuItems/3/menuIcon"
+                },
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sbNavMenuLabelDeals",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/menuItems/3/menuName"
+                },
+                "className": "text-md font-medium"
+            }
+        },
+        {
+            "id": "sbNavMenuItemAnalytics",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors cursor-pointer",
+                "isActive": {
+                    "path": "/menuItems/4/isActive"
+                },
+                "menuId": {
+                    "path": "/menuItems/4/menuId"
+                }
+            },
+            "children": [
+                "sbNavMenuIconAnalytics",
+                "sbNavMenuLabelAnalytics"
+            ]
+        },
+        {
+            "id": "sbNavMenuIconAnalytics",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/menuItems/4/menuIcon"
+                },
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sbNavMenuLabelAnalytics",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/menuItems/4/menuName"
+                },
+                "className": "text-md font-medium"
+            }
+        },
+        {
+            "id": "sbNavFooterSection",
+            "component": "div",
+            "props": {
+                "className": "border-t border-divider p-3 flex flex-col gap-1"
+            },
+            "children": [
+                "sbNavMenuItemSettings",
+                "sbNavProfileCard"
+            ]
+        },
+        {
+            "id": "sbNavMenuItemSettings",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors cursor-pointer",
+                "isActive": {
+                    "path": "/menuItems/5/isActive"
+                },
+                "menuId": {
+                    "path": "/menuItems/5/menuId"
+                }
+            },
+            "children": [
+                "sbNavMenuIconSettings",
+                "sbNavMenuLabelSettings"
+            ]
+        },
+        {
+            "id": "sbNavMenuIconSettings",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/menuItems/5/menuIcon"
+                },
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sbNavMenuLabelSettings",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/menuItems/5/menuName"
+                },
+                "className": "text-md font-medium"
+            }
+        },
+        {
+            "id": "sbNavProfileCard",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 mt-2 p-2 rounded-lg hover:bg-surface-variant transition-colors cursor-pointer"
+            },
+            "children": [
+                "sbNavProfileAvatar",
+                "sbNavProfileInfo"
+            ]
+        },
+        {
+            "id": "sbNavProfileAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "/currentUser/avatar"
+                },
+                "alt": "User Avatar",
+                "className": "w-9 h-9 rounded-full object-cover"
+            }
+        },
+        {
+            "id": "sbNavProfileInfo",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col min-w-0"
+            },
+            "children": [
+                "sbNavProfileName",
+                "sbNavProfileRole"
+            ]
+        },
+        {
+            "id": "sbNavProfileName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/currentUser/name"
+                },
+                "className": "text-sm font-semibold text-on-surface truncate"
+            }
+        },
+        {
+            "id": "sbNavProfileRole",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/currentUser/role"
+                },
+                "className": "text-xs text-on-surface-variant truncate"
+            }
+        },
+        {
+            "id": "gbHdrWrapper",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between w-full"
+            },
+            "children": [
+                "gbHdrLeftSection",
+                "gbHdrRightSection"
+            ]
+        },
+        {
+            "id": "gbHdrLeftSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center flex-1 max-w-md"
+            },
+            "children": [
+                "gbHdrSearchInput"
+            ]
+        },
+        {
+            "id": "gbHdrSearchInput",
+            "component": "Input",
+            "props": {
+                "value": {
+                    "path": "/searchValue"
+                },
+                "placeholder": {
+                    "path": "/searchPlaceholder"
+                },
+                "prefix": "search",
+                "className": "w-full bg-surface-variant border-none rounded-full"
+            }
+        },
+        {
+            "id": "gbHdrRightSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-6"
+            },
+            "children": [
+                "gbHdrNavLinks",
+                "gbHdrNotificationBadge",
+                "gbHdrUserArea"
+            ]
+        },
+        {
+            "id": "gbHdrNavLinks",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-4"
+            },
+            "children": {
+                "path": "/navLinks",
+                "componentId": "gbHdrNavLinkItem"
+            }
+        },
+        {
+            "id": "gbHdrNavLinkItem",
+            "component": "a",
+            "props": {
+                "href": {
+                    "path": "linkUrl"
+                },
+                "className": "text-sm text-on-surface-variant hover:text-primary transition-colors"
+            },
+            "children": [
+                "gbHdrNavLinkText"
+            ]
+        },
+        {
+            "id": "gbHdrNavLinkText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "linkName"
+                }
+            }
+        },
+        {
+            "id": "gbHdrNotificationBadge",
+            "component": "Badge",
+            "props": {
+                "count": {
+                    "path": "/notificationCount"
+                },
+                "status": "error"
+            },
+            "children": [
+                "gbHdrNotificationIcon"
+            ]
+        },
+        {
+            "id": "gbHdrNotificationIcon",
+            "component": "Icon",
+            "props": {
+                "name": "bell",
+                "className": "w-5 h-5 text-on-surface-variant cursor-pointer hover:text-primary transition-colors"
+            }
+        },
+        {
+            "id": "gbHdrUserArea",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 pl-4 border-l border-divider"
+            },
+            "children": [
+                "gbHdrUserAvatar",
+                "gbHdrUserName"
+            ]
+        },
+        {
+            "id": "gbHdrUserAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "/currentUser/avatarImage"
+                },
+                "alt": "User Avatar",
+                "className": "w-8 h-8 rounded-full object-cover border border-divider"
+            }
+        },
+        {
+            "id": "gbHdrUserName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/currentUser/nickName"
+                },
+                "className": "text-sm font-medium text-on-surface"
+            }
+        },
+        {
+            "id": "tkHdrMainWrapper",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col md:flex-row md:items-center justify-between gap-gutter p-inset bg-surface-container-highest rounded-xl shadow-sm"
+            },
+            "children": [
+                "tkHdrLeftSection",
+                "tkHdrRightSection"
+            ]
+        },
+        {
+            "id": "tkHdrLeftSection",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack"
+            },
+            "children": [
+                "tkHdrBreadcrumb",
+                "tkHdrTitleContainer"
+            ]
+        },
+        {
+            "id": "tkHdrBreadcrumb",
+            "component": "Breadcrumb",
+            "props": {
+                "items": [
+                    {
+                        "title": {
+                            "path": "/breadcrumbs/0/label"
+                        }
+                    },
+                    {
+                        "title": {
+                            "path": "/breadcrumbs/1/label"
+                        }
+                    },
+                    {
+                        "title": {
+                            "path": "/breadcrumbs/2/label"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "tkHdrTitleContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-1"
+            },
+            "children": [
+                "tkHdrTitleRow",
+                "tkHdrTitleEn"
+            ]
+        },
+        {
+            "id": "tkHdrTitleRow",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "tkHdrTitleCn",
+                "tkHdrStatusBadge",
+                "tkHdrCompletedState"
+            ]
+        },
+        {
+            "id": "tkHdrTitleCn",
+            "component": "span",
+            "props": {
+                "className": "text-xl font-bold text-on-surface",
+                "value": {
+                    "path": "/taskTitleCn"
+                }
+            }
+        },
+        {
+            "id": "tkHdrStatusBadge",
+            "component": "span",
+            "props": {
+                "className": "px-2 py-0.5 text-xs font-medium rounded bg-critical-container text-on-critical-container",
+                "value": "进行中 / In Progress"
+            }
+        },
+        {
+            "id": "tkHdrCompletedState",
+            "component": "span",
+            "props": {
+                "className": "hidden",
+                "value": {
+                    "path": "/isCompleted"
+                }
+            }
+        },
+        {
+            "id": "tkHdrTitleEn",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "/taskTitleEn"
+                }
+            }
+        },
+        {
+            "id": "tkHdrRightSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline shrink-0"
+            },
+            "children": [
+                "tkHdrBtnMarkComplete",
+                "tkHdrBtnEditTask"
+            ]
+        },
+        {
+            "id": "tkHdrBtnMarkComplete",
+            "component": "Button",
+            "props": {
+                "value": {
+                    "path": "/actionButtons/0/buttonText"
+                },
+                "icon": {
+                    "path": "/actionButtons/0/buttonIcon"
+                },
+                "color": {
+                    "path": "/actionButtons/0/buttonType"
+                },
+                "iconPlacement": "start"
+            }
+        },
+        {
+            "id": "tkHdrBtnEditTask",
+            "component": "Button",
+            "props": {
+                "value": {
+                    "path": "/actionButtons/1/buttonText"
+                },
+                "icon": {
+                    "path": "/actionButtons/1/buttonIcon"
+                },
+                "color": {
+                    "path": "/actionButtons/1/buttonType"
+                },
+                "iconPlacement": "start"
+            }
+        },
+        {
+            "id": "tkMainContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-gutter"
+            },
+            "children": [
+                "tkMainDescCard",
+                "tkMainSubtaskCard"
+            ]
+        },
+        {
+            "id": "tkMainDescCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest p-inset rounded-xl shadow-sm flex flex-col gap-stack"
+            },
+            "children": [
+                "tkMainDescHeader",
+                "tkMainDescText",
+                "tkMainKeyPointsContainer"
+            ]
+        },
+        {
+            "id": "tkMainDescHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline border-b border-divider pb-stack"
+            },
+            "children": [
+                "tkMainDescHeaderIcon",
+                "tkMainDescHeaderTitle"
+            ]
+        },
+        {
+            "id": "tkMainDescHeaderIcon",
+            "component": "Icon",
+            "props": {
+                "name": "file-text",
+                "className": "w-5 h-5",
+                "shape": "outline",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "tkMainDescHeaderTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": {
+                    "path": "/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "tkMainDescText",
+            "component": "p",
+            "props": {
+                "className": "text-md text-on-surface-variant leading-relaxed",
+                "value": {
+                    "path": "/taskDescription"
+                }
+            }
+        },
+        {
+            "id": "tkMainKeyPointsContainer",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-variant p-gutter rounded-lg flex flex-col gap-stack"
+            },
+            "children": [
+                "tkMainKeyPointsHeader",
+                "tkMainKeyPointsList"
+            ]
+        },
+        {
+            "id": "tkMainKeyPointsHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline text-sm font-semibold text-on-surface-variant"
+            },
+            "children": [
+                "tkMainKeyPointsHeaderIcon",
+                "tkMainKeyPointsHeaderTitle"
+            ]
+        },
+        {
+            "id": "tkMainKeyPointsHeaderIcon",
+            "component": "Icon",
+            "props": {
+                "name": "list-todo",
+                "className": "w-4 h-4",
+                "shape": "outline"
+            }
+        },
+        {
+            "id": "tkMainKeyPointsHeaderTitle",
+            "component": "span",
+            "props": {
+                "value": "核心执行要点 / Key Execution Points"
+            }
+        },
+        {
+            "id": "tkMainKeyPointsList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-2"
+            },
+            "children": {
+                "path": "/keyPoints",
+                "componentId": "tkMainKeyPointItem"
+            }
+        },
+        {
+            "id": "tkMainKeyPointItem",
+            "component": "div",
+            "props": {
+                "className": "flex items-start gap-2 text-md text-on-surface-variant"
+            },
+            "children": [
+                "tkMainKeyPointBullet",
+                "tkMainKeyPointText"
+            ]
+        },
+        {
+            "id": "tkMainKeyPointBullet",
+            "component": "Icon",
+            "props": {
+                "name": "dot",
+                "className": "w-4 h-4 text-primary shrink-0 mt-1"
+            }
+        },
+        {
+            "id": "tkMainKeyPointText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "text"
+                }
+            }
+        },
+        {
+            "id": "tkMainSubtaskCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest p-inset rounded-xl shadow-sm flex flex-col gap-stack"
+            },
+            "children": [
+                "tkMainSubtaskHeader",
+                "tkMainSubtaskList",
+                "tkMainSubtaskFooter"
+            ]
+        },
+        {
+            "id": "tkMainSubtaskHeader",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center border-b border-divider pb-stack"
+            },
+            "children": [
+                "tkMainSubtaskHeaderLeft",
+                "tkMainSubtaskHeaderRight"
+            ]
+        },
+        {
+            "id": "tkMainSubtaskHeaderLeft",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "tkMainSubtaskHeaderIcon",
+                "tkMainSubtaskHeaderTitle"
+            ]
+        },
+        {
+            "id": "tkMainSubtaskHeaderIcon",
+            "component": "Icon",
+            "props": {
+                "name": "check-square",
+                "className": "w-5 h-5",
+                "shape": "outline",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "tkMainSubtaskHeaderTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "子任务拆解与进度 / Subtasks & Progress"
+            }
+        },
+        {
+            "id": "tkMainSubtaskHeaderRight",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline text-sm text-on-surface-variant"
+            },
+            "children": [
+                "tkMainSubtaskProgressText"
+            ]
+        },
+        {
+            "id": "tkMainSubtaskProgressText",
+            "component": "span",
+            "props": {
+                "value": "已完成 2/10 (20%)"
+            }
+        },
+        {
+            "id": "tkMainSubtaskList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack"
+            },
+            "children": {
+                "path": "/subtasks",
+                "componentId": "tkMainSubtaskItem"
+            }
+        },
+        {
+            "id": "tkMainSubtaskItem",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between p-gutter rounded-lg border border-divider hover:bg-surface-variant transition-colors"
+            },
+            "children": [
+                "tkMainSubtaskLeft",
+                "tkMainSubtaskRight"
+            ]
+        },
+        {
+            "id": "tkMainSubtaskLeft",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-gutter flex-1 min-w-0"
+            },
+            "children": [
+                "tkMainSubtaskCheckIcon",
+                "tkMainSubtaskText"
+            ]
+        },
+        {
+            "id": "tkMainSubtaskCheckIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "isCompletedIcon"
+                },
+                "color": {
+                    "path": "isCompletedColor"
+                },
+                "className": "w-5 h-5 shrink-0 cursor-pointer"
+            }
+        },
+        {
+            "id": "tkMainSubtaskText",
+            "component": "span",
+            "props": {
+                "className": {
+                    "path": "textClassName"
+                },
+                "value": {
+                    "path": "title"
+                }
+            }
+        },
+        {
+            "id": "tkMainSubtaskRight",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline shrink-0"
+            },
+            "children": [
+                "tkMainSubtaskTag"
+            ]
+        },
+        {
+            "id": "tkMainSubtaskTag",
+            "component": "span",
+            "props": {
+                "className": {
+                    "path": "badgeClassName"
+                },
+                "value": {
+                    "path": "badgeText"
+                }
+            }
+        },
+        {
+            "id": "tkMainSubtaskFooter",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center pt-stack border-t border-divider"
+            },
+            "children": [
+                "tkMainAddSubtaskBtn"
+            ]
+        },
+        {
+            "id": "tkMainAddSubtaskBtn",
+            "component": "Button",
+            "props": {
+                "value": {
+                    "path": "/addSubtaskButton/buttonText"
+                },
+                "icon": "plus",
+                "color": "primary",
+                "className": "w-full md:w-auto"
+            }
+        },
+        {
+            "id": "tkMetaMemberCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-xl p-inset shadow-sm flex flex-col gap-stack"
+            },
+            "children": [
+                "tkMetaMemberCardHeader",
+                "tkMetaMemberCardAssignee",
+                "tkMetaMemberCardCollaborators"
+            ]
+        },
+        {
+            "id": "tkMetaMemberCardHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline border-b border-divider pb-inline"
+            },
+            "children": [
+                "tkMetaMemberCardHeaderIcon",
+                "tkMetaMemberCardHeaderTitle"
+            ]
+        },
+        {
+            "id": "tkMetaMemberCardHeaderIcon",
+            "component": "Icon",
+            "props": {
+                "name": "users",
+                "className": "w-5 h-5",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "tkMetaMemberCardHeaderTitle",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/memberCard/cardTitle"
+                },
+                "className": "text-md font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaMemberCardAssignee",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-inline bg-surface-variant p-stack rounded-lg"
+            },
+            "children": [
+                "tkMetaAssigneeLabel",
+                "tkMetaAssigneeInfo"
+            ]
+        },
+        {
+            "id": "tkMetaAssigneeLabel",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/memberCard/assignee/roleLabel"
+                },
+                "className": "text-sm text-on-surface-variant font-medium"
+            }
+        },
+        {
+            "id": "tkMetaAssigneeInfo",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-stack"
+            },
+            "children": [
+                "tkMetaAssigneeAvatar",
+                "tkMetaAssigneeText"
+            ]
+        },
+        {
+            "id": "tkMetaAssigneeAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "/memberCard/assignee/avatarImage"
+                },
+                "className": "w-10 h-10 rounded-full object-cover border border-base"
+            }
+        },
+        {
+            "id": "tkMetaAssigneeText",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col"
+            },
+            "children": [
+                "tkMetaAssigneeName",
+                "tkMetaAssigneeDept"
+            ]
+        },
+        {
+            "id": "tkMetaAssigneeName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/memberCard/assignee/name"
+                },
+                "className": "text-md font-semibold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaAssigneeDept",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/memberCard/assignee/department"
+                },
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "tkMetaMemberCardCollaborators",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-inline"
+            },
+            "children": [
+                "tkMetaCollaboratorsLabel",
+                "tkMetaCollaboratorsList"
+            ]
+        },
+        {
+            "id": "tkMetaCollaboratorsLabel",
+            "component": "span",
+            "props": {
+                "value": "参与者 / Collaborators",
+                "className": "text-sm text-on-surface-variant font-medium"
+            }
+        },
+        {
+            "id": "tkMetaCollaboratorsList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-wrap gap-stack"
+            },
+            "children": {
+                "path": "/memberCard/collaborators",
+                "componentId": "tkMetaCollaboratorItem"
+            }
+        },
+        {
+            "id": "tkMetaCollaboratorItem",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline bg-surface-variant px-stack py-inline rounded-full border border-divider"
+            },
+            "children": [
+                "tkMetaCollaboratorAvatar",
+                "tkMetaCollaboratorName"
+            ]
+        },
+        {
+            "id": "tkMetaCollaboratorAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "avatarImage"
+                },
+                "className": "w-6 h-6 rounded-full object-cover"
+            }
+        },
+        {
+            "id": "tkMetaCollaboratorName",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "name"
+                },
+                "className": "text-sm text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaProgressCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-xl p-inset shadow-sm flex flex-col gap-stack"
+            },
+            "children": [
+                "tkMetaProgressCardHeader",
+                "tkMetaProgressDates",
+                "tkMetaProgressPercentSection",
+                "tkMetaProgressHoursSection"
+            ]
+        },
+        {
+            "id": "tkMetaProgressCardHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline border-b border-divider pb-inline"
+            },
+            "children": [
+                "tkMetaProgressCardHeaderIcon",
+                "tkMetaProgressCardHeaderTitle"
+            ]
+        },
+        {
+            "id": "tkMetaProgressCardHeaderIcon",
+            "component": "Icon",
+            "props": {
+                "name": "calendar-days",
+                "className": "w-5 h-5",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "tkMetaProgressCardHeaderTitle",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/progressCard/cardTitle"
+                },
+                "className": "text-md font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaProgressDates",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-2 gap-stack bg-surface-variant p-stack rounded-lg"
+            },
+            "children": [
+                "tkMetaStartDateBox",
+                "tkMetaEndDateBox"
+            ]
+        },
+        {
+            "id": "tkMetaStartDateBox",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col"
+            },
+            "children": [
+                "tkMetaStartDateLabel",
+                "tkMetaStartDateValue"
+            ]
+        },
+        {
+            "id": "tkMetaStartDateLabel",
+            "component": "span",
+            "props": {
+                "value": "开始时间 / Start",
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "tkMetaStartDateValue",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/progressCard/startDate"
+                },
+                "className": "text-md font-semibold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaEndDateBox",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col"
+            },
+            "children": [
+                "tkMetaEndDateLabel",
+                "tkMetaEndDateValue"
+            ]
+        },
+        {
+            "id": "tkMetaEndDateLabel",
+            "component": "span",
+            "props": {
+                "value": "截止时间 / Due",
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "tkMetaEndDateValue",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/progressCard/endDate"
+                },
+                "className": "text-md font-semibold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaProgressPercentSection",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-inline"
+            },
+            "children": [
+                "tkMetaProgressPercentHeader",
+                "tkMetaProgressBar"
+            ]
+        },
+        {
+            "id": "tkMetaProgressPercentHeader",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "tkMetaProgressPercentLabel",
+                "tkMetaProgressPercentValue"
+            ]
+        },
+        {
+            "id": "tkMetaProgressPercentLabel",
+            "component": "span",
+            "props": {
+                "value": "任务进度 / Progress",
+                "className": "text-sm text-on-surface-variant font-medium"
+            }
+        },
+        {
+            "id": "tkMetaProgressPercentValue",
+            "component": "span",
+            "props": {
+                "value": "68%",
+                "className": "text-md font-bold text-primary"
+            }
+        },
+        {
+            "id": "tkMetaProgressBar",
+            "component": "Progress",
+            "props": {
+                "percent": {
+                    "path": "/progressCard/progressPercentage"
+                },
+                "showInfo": false,
+                "status": "active",
+                "strokeColor": "#0067D1",
+                "className": "w-full"
+            }
+        },
+        {
+            "id": "tkMetaProgressHoursSection",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-2 gap-stack border-t border-divider pt-stack"
+            },
+            "children": [
+                "tkMetaEstHoursBox",
+                "tkMetaActHoursBox"
+            ]
+        },
+        {
+            "id": "tkMetaEstHoursBox",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-stack"
+            },
+            "children": [
+                "tkMetaEstHoursIcon",
+                "tkMetaEstHoursText"
+            ]
+        },
+        {
+            "id": "tkMetaEstHoursIcon",
+            "component": "Icon",
+            "props": {
+                "name": "clock",
+                "className": "w-8 h-8",
+                "shape": "square",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "tkMetaEstHoursText",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col"
+            },
+            "children": [
+                "tkMetaEstHoursLabel",
+                "tkMetaEstHoursValue"
+            ]
+        },
+        {
+            "id": "tkMetaEstHoursLabel",
+            "component": "span",
+            "props": {
+                "value": "预估 / Estimated",
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "tkMetaEstHoursValue",
+            "component": "span",
+            "props": {
+                "value": "40 小时 / Hrs",
+                "className": "text-md font-semibold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaActHoursBox",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-stack"
+            },
+            "children": [
+                "tkMetaActHoursIcon",
+                "tkMetaActHoursText"
+            ]
+        },
+        {
+            "id": "tkMetaActHoursIcon",
+            "component": "Icon",
+            "props": {
+                "name": "hourglass",
+                "className": "w-8 h-8",
+                "shape": "square",
+                "color": "success"
+            }
+        },
+        {
+            "id": "tkMetaActHoursText",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col"
+            },
+            "children": [
+                "tkMetaActHoursLabel",
+                "tkMetaActHoursValue"
+            ]
+        },
+        {
+            "id": "tkMetaActHoursLabel",
+            "component": "span",
+            "props": {
+                "value": "实际 / Actual",
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "tkMetaActHoursValue",
+            "component": "span",
+            "props": {
+                "value": "28 小时 / Hrs",
+                "className": "text-md font-semibold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-xl p-inset shadow-sm flex flex-col gap-stack"
+            },
+            "children": [
+                "tkMetaDiscussionCardHeader",
+                "tkMetaDiscussionList",
+                "tkMetaDiscussionInputSection"
+            ]
+        },
+        {
+            "id": "tkMetaDiscussionCardHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline border-b border-divider pb-inline"
+            },
+            "children": [
+                "tkMetaDiscussionCardHeaderIcon",
+                "tkMetaDiscussionCardHeaderTitle"
+            ]
+        },
+        {
+            "id": "tkMetaDiscussionCardHeaderIcon",
+            "component": "Icon",
+            "props": {
+                "name": "message-square",
+                "className": "w-5 h-5",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionCardHeaderTitle",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/discussionCard/cardTitle"
+                },
+                "className": "text-md font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack max-h-[320px] overflow-y-auto pr-inline"
+            },
+            "children": {
+                "path": "/discussionCard/comments",
+                "componentId": "tkMetaDiscussionItem"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionItem",
+            "component": "div",
+            "props": {
+                "className": "flex gap-stack items-start"
+            },
+            "children": [
+                "tkMetaDiscussionItemAvatar",
+                "tkMetaDiscussionItemContentBox"
+            ]
+        },
+        {
+            "id": "tkMetaDiscussionItemAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "senderAvatarImage"
+                },
+                "className": "w-8 h-8 rounded-full object-cover border border-divider"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionItemContentBox",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col gap-1"
+            },
+            "children": [
+                "tkMetaDiscussionItemMeta",
+                "tkMetaDiscussionItemBubble"
+            ]
+        },
+        {
+            "id": "tkMetaDiscussionItemMeta",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "tkMetaDiscussionItemSender",
+                "tkMetaDiscussionItemTime"
+            ]
+        },
+        {
+            "id": "tkMetaDiscussionItemSender",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "senderName"
+                },
+                "className": "text-sm font-semibold text-on-surface"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionItemTime",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "sendTime"
+                },
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionItemBubble",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-variant p-stack rounded-lg rounded-tl-none text-sm text-on-surface-variant leading-relaxed"
+            },
+            "children": [
+                "tkMetaDiscussionItemText"
+            ]
+        },
+        {
+            "id": "tkMetaDiscussionItemText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "messageContent"
+                }
+            }
+        },
+        {
+            "id": "tkMetaDiscussionInputSection",
+            "component": "div",
+            "props": {
+                "className": "flex gap-stack items-center border-t border-divider pt-stack"
+            },
+            "children": [
+                "tkMetaDiscussionInput",
+                "tkMetaDiscussionSendBtn"
+            ]
+        },
+        {
+            "id": "tkMetaDiscussionInput",
+            "component": "Input",
+            "props": {
+                "value": {
+                    "path": "/discussionCard/newComment"
+                },
+                "placeholder": "输入您的留言，按 Enter 发送...",
+                "prefix": "message-square",
+                "className": "flex-1"
+            }
+        },
+        {
+            "id": "tkMetaDiscussionSendBtn",
+            "component": "Button",
+            "props": {
+                "icon": "send",
+                "color": "primary",
+                "className": "shrink-0"
+            }
+        }
+    ]
+}
