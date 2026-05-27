@@ -1,0 +1,1791 @@
+{
+    "state": {
+        "navBrandTitle": "iMaster NCE",
+        "navSelectedMenuKeys": [
+            "digitalMap"
+        ],
+        "navMenuItems": [
+            {
+                "title": "传送数字地图",
+                "key": "digitalMap"
+            },
+            {
+                "title": "网络韧性洞察",
+                "key": "resilienceInsight"
+            },
+            {
+                "title": "业务监控",
+                "key": "serviceMonitor"
+            },
+            {
+                "title": "资源管理",
+                "key": "resourceManage"
+            }
+        ],
+        "navNotificationCount": 5,
+        "navHelpMenu": [
+            {
+                "label": "帮助中心",
+                "key": "helpCenter",
+                "icon": "help-circle"
+            },
+            {
+                "label": "在线文档",
+                "key": "docs",
+                "icon": "book-open"
+            },
+            {
+                "label": "意见反馈",
+                "key": "feedback",
+                "icon": "message-square"
+            }
+        ],
+        "sideSelectedKeys": [
+            "topology"
+        ],
+        "sidebarMenus": [
+            {
+                "id": "topology",
+                "menuIcon": "Topology",
+                "title": "拓扑视图",
+                "isActive": true,
+                "key": "topology",
+                "icon": "network"
+            },
+            {
+                "id": "alarm",
+                "menuIcon": "AlertTriangle",
+                "title": "告警中心",
+                "isActive": false,
+                "key": "alarm",
+                "icon": "alert-triangle"
+            },
+            {
+                "id": "performance",
+                "menuIcon": "Activity",
+                "title": "性能分析",
+                "isActive": false,
+                "key": "performance",
+                "icon": "activity"
+            },
+            {
+                "id": "settings",
+                "menuIcon": "Settings",
+                "title": "系统设置",
+                "isActive": false,
+                "key": "settings",
+                "icon": "settings"
+            }
+        ],
+        "heroBannerTitle": "可靠，从 ASON 开始！",
+        "heroStatsRows": [
+            {
+                "rowId": "fiberInterruption",
+                "rowIcon": "zap-off",
+                "segments": [
+                    {
+                        "text": "光纤累计中断 ",
+                        "isHighlight": false
+                    },
+                    {
+                        "text": "1234",
+                        "isHighlight": true,
+                        "highlightColor": "red"
+                    },
+                    {
+                        "text": " 次 | 累计中断 ",
+                        "isHighlight": false
+                    },
+                    {
+                        "text": "620",
+                        "isHighlight": true,
+                        "highlightColor": "red"
+                    },
+                    {
+                        "text": " 小时 ｜ 影响业务 ",
+                        "isHighlight": false
+                    },
+                    {
+                        "text": "930",
+                        "isHighlight": true,
+                        "highlightColor": "red"
+                    },
+                    {
+                        "text": " 条",
+                        "isHighlight": false
+                    }
+                ]
+            },
+            {
+                "rowId": "asonRecovery",
+                "rowIcon": "shield-check",
+                "segments": [
+                    {
+                        "text": "ASON 重路由 ",
+                        "isHighlight": false
+                    },
+                    {
+                        "text": "942",
+                        "isHighlight": true,
+                        "highlightColor": "green"
+                    },
+                    {
+                        "text": " 次 ｜ 减少中断 ",
+                        "isHighlight": false
+                    },
+                    {
+                        "text": "1237",
+                        "isHighlight": true,
+                        "highlightColor": "green"
+                    },
+                    {
+                        "text": " 小时",
+                        "isHighlight": false
+                    }
+                ]
+            }
+        ],
+        "heroIllustrationImage": "https://fpoimg.com/400x150?gradient=06B6D4,0067D1&text_color=ffffff&text=Network+Grid+Illustration",
+        "kpiCards": [
+            {
+                "cardId": "unprotected",
+                "cardTitle": "无保护业务",
+                "rightLabel": "439/525 条",
+                "mainValue": "723",
+                "subDescription": "当前未配置任何冗余或恢复路径的业务总数，存在极高单点故障风险"
+            },
+            {
+                "cardId": "staticProtected",
+                "cardTitle": "静态保护业务",
+                "rightLabel": "56.7%",
+                "mainValue": "56.7",
+                "subDescription": "采用1+1或1:1静态预留保护的业务占比，占用双倍带宽资源"
+            },
+            {
+                "cardId": "asonProtected",
+                "cardTitle": "ASON保护业务",
+                "rightLabel": "0.5s 恢复",
+                "mainValue": "0.5",
+                "subDescription": "启用ASON自动重路由的业务平均故障恢复时延，兼顾抗多点断纤与资源利用率"
+            }
+        ],
+        "revCardTitle": "ASON 重路由收益",
+        "revHelpTooltip": "展示ASON在光纤中断时自动触发重路由的次数，以及相比无ASON保护时累计减少的业务中断时间。",
+        "revRevenueChartData": [
+            {
+                "时间周期": "01/10",
+                "ASON重路由次数(次)": 45,
+                "减少中断小时数(小时)": 62.5
+            },
+            {
+                "时间周期": "02/10",
+                "ASON重路由次数(次)": 58,
+                "减少中断小时数(小时)": 80.2
+            },
+            {
+                "时间周期": "03/10",
+                "ASON重路由次数(次)": 72,
+                "减少中断小时数(小时)": 95.8
+            },
+            {
+                "时间周期": "04/10",
+                "ASON重路由次数(次)": 38,
+                "减少中断小时数(小时)": 50.1
+            },
+            {
+                "时间周期": "05/10",
+                "ASON重路由次数(次)": 90,
+                "减少中断小时数(小时)": 120.4
+            },
+            {
+                "时间周期": "06/10",
+                "ASON重路由次数(次)": 110,
+                "减少中断小时数(小时)": 145.0
+            },
+            {
+                "时间周期": "07/10",
+                "ASON重路由次数(次)": 85,
+                "减少中断小时数(小时)": 112.3
+            },
+            {
+                "时间周期": "08/10",
+                "ASON重路由次数(次)": 95,
+                "减少中断小时数(小时)": 130.8
+            },
+            {
+                "时间周期": "09/10",
+                "ASON重路由次数(次)": 120,
+                "减少中断小时数(小时)": 168.2
+            },
+            {
+                "时间周期": "10/10",
+                "ASON重路由次数(次)": 142,
+                "减少中断小时数(小时)": 195.5
+            }
+        ],
+        "srvGroupTitle": "业务历史统计",
+        "srvPieData": [
+            {
+                "name": "OTN 业务",
+                "value": 45
+            },
+            {
+                "name": "SDH 业务",
+                "value": 25
+            },
+            {
+                "name": "以太网业务",
+                "value": 20
+            },
+            {
+                "name": "其他业务",
+                "value": 10
+            }
+        ],
+        "srvBarData": [
+            {
+                "月份": "5月",
+                "平均中断时长": 12.4
+            },
+            {
+                "月份": "6月",
+                "平均中断时长": 15.8
+            },
+            {
+                "月份": "7月",
+                "平均中断时长": 8.2
+            },
+            {
+                "月份": "8月",
+                "平均中断时长": 11.5
+            },
+            {
+                "月份": "9月",
+                "平均中断时长": 6.9
+            },
+            {
+                "月份": "10月",
+                "平均中断时长": 4.2
+            }
+        ],
+        "srvStackedBarData": [
+            {
+                "季度": "Q1",
+                "无保护": 99.12,
+                "静态保护": 99.95,
+                "ASON保护": 99.999
+            },
+            {
+                "季度": "Q2",
+                "无保护": 98.95,
+                "静态保护": 99.94,
+                "ASON保护": 99.998
+            },
+            {
+                "季度": "Q3",
+                "无保护": 99.23,
+                "静态保护": 99.97,
+                "ASON保护": 99.999
+            },
+            {
+                "季度": "Q4",
+                "无保护": 99.45,
+                "静态保护": 99.98,
+                "ASON保护": 99.999
+            }
+        ],
+        "fibGroupTitle": "光纤历史统计",
+        "fibInterruptionData": [
+            {
+                "name": "北京-上海干线#1",
+                "value": 24
+            },
+            {
+                "name": "广州-深圳干线#2",
+                "value": 18
+            },
+            {
+                "name": "武汉-南京干线#3",
+                "value": 15
+            },
+            {
+                "name": "成都-重庆干线#1",
+                "value": 14
+            },
+            {
+                "name": "西安-郑州干线#2",
+                "value": 12
+            },
+            {
+                "name": "北京-沈阳干线#1",
+                "value": 10
+            },
+            {
+                "name": "上海-杭州干线#3",
+                "value": 9
+            },
+            {
+                "name": "长沙-南昌干线#1",
+                "value": 8
+            },
+            {
+                "name": "昆明-贵阳干线#2",
+                "value": 6
+            },
+            {
+                "name": "兰州-西宁干线#1",
+                "value": 5
+            }
+        ],
+        "fibConcurrentData": [
+            {
+                "name": "沪宁复线/沪杭线",
+                "value": 8
+            },
+            {
+                "name": "京广线/京九线",
+                "value": 6
+            },
+            {
+                "name": "成渝环线/宝成线",
+                "value": 5
+            },
+            {
+                "name": "陇海线/兰新线",
+                "value": 4
+            },
+            {
+                "name": "浙赣线/湘黔线",
+                "value": 3
+            },
+            {
+                "name": "京哈线/哈大线",
+                "value": 3
+            },
+            {
+                "name": "太焦线/同蒲线",
+                "value": 2
+            },
+            {
+                "name": "襄渝线/焦柳线",
+                "value": 2
+            },
+            {
+                "name": "贵昆线/湘桂线",
+                "value": 1
+            },
+            {
+                "name": "南昆线/黔桂线",
+                "value": 1
+            }
+        ],
+        "fibAvailabilityData": [
+            {
+                "label": "5月",
+                "value": 98.45
+            },
+            {
+                "label": "6月",
+                "value": 97.9
+            },
+            {
+                "label": "7月",
+                "value": 98.85
+            },
+            {
+                "label": "8月",
+                "value": 99.12
+            },
+            {
+                "label": "9月",
+                "value": 98.6
+            },
+            {
+                "label": "10月",
+                "value": 99.35
+            }
+        ]
+    },
+    "rootId": "mainLayoutContainer",
+    "elements": [
+        {
+            "id": "mainLayoutContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col h-screen bg-surface-container-lowest overflow-hidden"
+            },
+            "children": [
+                "mainHeaderZone",
+                "mainBodyZone"
+            ]
+        },
+        {
+            "id": "mainHeaderZone",
+            "component": "header",
+            "props": {
+                "className": "h-12 bg-surface-container-highest border-b border-divider shrink-0 flex items-center px-6 z-10 shadow-sm"
+            },
+            "children": [
+                "navLeftSection",
+                "navMiddleSection",
+                "navRightSection"
+            ]
+        },
+        {
+            "id": "mainBodyZone",
+            "component": "div",
+            "props": {
+                "className": "flex flex-1 overflow-hidden"
+            },
+            "children": [
+                "mainSidebarZone",
+                "mainContentZone"
+            ]
+        },
+        {
+            "id": "mainSidebarZone",
+            "component": "aside",
+            "props": {
+                "className": "w-16 bg-surface-container-highest border-r border-divider shrink-0 flex flex-col items-center py-4 z-10 shadow-sm"
+            },
+            "children": [
+                "sideMenuContainer"
+            ]
+        },
+        {
+            "id": "mainContentZone",
+            "component": "main",
+            "props": {
+                "className": "flex-1 overflow-y-auto p-page flex flex-col gap-section bg-surface-container-lowest"
+            },
+            "children": [
+                "mainHeroBannerSlot",
+                "mainKpiOverviewSlot",
+                "mainAsonRevenueSlot",
+                "mainServiceStatsSlot",
+                "mainFiberStatsSlot"
+            ]
+        },
+        {
+            "id": "mainHeroBannerSlot",
+            "component": "div",
+            "props": {
+                "className": "w-full shrink-0"
+            },
+            "children": [
+                "heroBannerCard"
+            ]
+        },
+        {
+            "id": "mainKpiOverviewSlot",
+            "component": "div",
+            "props": {
+                "className": "w-full shrink-0"
+            },
+            "children": [
+                "kpiMainContainer"
+            ]
+        },
+        {
+            "id": "mainAsonRevenueSlot",
+            "component": "div",
+            "props": {
+                "className": "w-full shrink-0"
+            },
+            "children": [
+                "revCardContainer"
+            ]
+        },
+        {
+            "id": "mainServiceStatsSlot",
+            "component": "div",
+            "props": {
+                "className": "w-full shrink-0"
+            },
+            "children": [
+                "srvSectionContainer"
+            ]
+        },
+        {
+            "id": "mainFiberStatsSlot",
+            "component": "div",
+            "props": {
+                "className": "w-full shrink-0"
+            },
+            "children": [
+                "fibGroupContainer"
+            ]
+        },
+        {
+            "id": "navLeftSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 shrink-0"
+            },
+            "children": [
+                "navLogoIcon",
+                "navBrandTitleText"
+            ]
+        },
+        {
+            "id": "navLogoIcon",
+            "component": "Icon",
+            "props": {
+                "name": "network",
+                "color": "primary",
+                "className": "w-6 h-6"
+            }
+        },
+        {
+            "id": "navBrandTitleText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/navBrandTitle"
+                },
+                "className": "text-lg font-bold text-on-surface tracking-wide"
+            }
+        },
+        {
+            "id": "navMiddleSection",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex items-center justify-start px-10 h-full"
+            },
+            "children": [
+                "navMenu"
+            ]
+        },
+        {
+            "id": "navMenu",
+            "component": "Menu",
+            "props": {
+                "mode": "horizontal",
+                "selectedKeys": {
+                    "path": "/navSelectedMenuKeys"
+                },
+                "items": {
+                    "path": "/navMenuItems"
+                },
+                "className": "border-none bg-transparent h-full flex items-center text-md"
+            }
+        },
+        {
+            "id": "navRightSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-4 shrink-0"
+            },
+            "children": [
+                "navSearchBtn",
+                "navNotificationBadge",
+                "navHelpDropdown"
+            ]
+        },
+        {
+            "id": "navSearchBtn",
+            "component": "Button",
+            "props": {
+                "icon": "search",
+                "shape": "circle",
+                "className": "border-none bg-transparent text-on-surface-variant hover:bg-surface-variant hover:text-on-surface transition-colors"
+            }
+        },
+        {
+            "id": "navNotificationBadge",
+            "component": "Badge",
+            "props": {
+                "count": {
+                    "path": "/navNotificationCount"
+                },
+                "overflowCount": 99,
+                "offset": [
+                    2,
+                    -2
+                ]
+            },
+            "children": [
+                "navNotificationBtn"
+            ]
+        },
+        {
+            "id": "navNotificationBtn",
+            "component": "Button",
+            "props": {
+                "icon": "bell",
+                "shape": "circle",
+                "className": "border-none bg-transparent text-on-surface-variant hover:bg-surface-variant hover:text-on-surface transition-colors"
+            }
+        },
+        {
+            "id": "navHelpDropdown",
+            "component": "Dropdown",
+            "props": {
+                "menu": {
+                    "path": "/navHelpMenu"
+                },
+                "trigger": [
+                    "click"
+                ],
+                "placement": "bottomRight"
+            },
+            "children": [
+                "navHelpBtn"
+            ]
+        },
+        {
+            "id": "navHelpBtn",
+            "component": "Button",
+            "props": {
+                "icon": "help-circle",
+                "shape": "circle",
+                "className": "border-none bg-transparent text-on-surface-variant hover:bg-surface-variant hover:text-on-surface transition-colors"
+            }
+        },
+        {
+            "id": "sideMenuContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col justify-between h-full w-full items-center"
+            },
+            "children": [
+                "sideMenuTopGroup",
+                "sideMenuBottomGroup"
+            ]
+        },
+        {
+            "id": "sideMenuTopGroup",
+            "component": "div",
+            "props": {
+                "className": "w-full flex flex-col items-center gap-6"
+            },
+            "children": [
+                "sideLogoContainer",
+                "sideMenu"
+            ]
+        },
+        {
+            "id": "sideLogoContainer",
+            "component": "div",
+            "props": {
+                "className": "w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center"
+            },
+            "children": [
+                "sideLogoIcon"
+            ]
+        },
+        {
+            "id": "sideLogoIcon",
+            "component": "Icon",
+            "props": {
+                "name": "cloud",
+                "color": "primary",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "sideMenu",
+            "component": "Menu",
+            "props": {
+                "mode": "vertical",
+                "inlineCollapsed": true,
+                "selectedKeys": {
+                    "path": "/sideSelectedKeys"
+                },
+                "items": {
+                    "path": "/sidebarMenus"
+                },
+                "className": "border-none bg-transparent w-full flex flex-col items-center gap-y-2"
+            }
+        },
+        {
+            "id": "sideMenuBottomGroup",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center gap-4 w-full px-2"
+            },
+            "children": [
+                "sideDivider",
+                "sideAvatar"
+            ]
+        },
+        {
+            "id": "sideDivider",
+            "component": "div",
+            "props": {
+                "className": "w-8 h-[1px] bg-divider"
+            }
+        },
+        {
+            "id": "sideAvatar",
+            "component": "div",
+            "props": {
+                "className": "w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-primary font-semibold text-xs cursor-pointer hover:opacity-90 transition-opacity"
+            },
+            "children": [
+                "sideAvatarText"
+            ]
+        },
+        {
+            "id": "sideAvatarText",
+            "component": "span",
+            "props": {
+                "value": "Admin",
+                "className": "text-[10px] font-bold text-primary"
+            }
+        },
+        {
+            "id": "heroBannerCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-sm rounded-xl p-6 flex justify-between items-center gap-8 overflow-hidden relative"
+            },
+            "children": [
+                "heroBannerLeftSection",
+                "heroBannerRightSection"
+            ]
+        },
+        {
+            "id": "heroBannerLeftSection",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-4 flex-1"
+            },
+            "children": [
+                "heroBannerTitle",
+                "heroBannerStatsContainer"
+            ]
+        },
+        {
+            "id": "heroBannerTitle",
+            "component": "h2",
+            "props": {
+                "className": "text-2xl font-bold text-on-surface tracking-wide",
+                "value": {
+                    "path": "/heroBannerTitle"
+                }
+            }
+        },
+        {
+            "id": "heroBannerStatsContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-3"
+            },
+            "children": [
+                "heroRow_fiberInterruption",
+                "heroRow_asonRecovery"
+            ]
+        },
+        {
+            "id": "heroRow_fiberInterruption",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 bg-error-container/30 p-4 rounded-xl"
+            },
+            "children": [
+                "heroIcon_fiberInterruption",
+                "heroText_fiberInterruption"
+            ]
+        },
+        {
+            "id": "heroIcon_fiberInterruption",
+            "component": "Icon",
+            "props": {
+                "name": "zap-off",
+                "color": "error",
+                "shape": "square",
+                "className": "w-8 h-8"
+            }
+        },
+        {
+            "id": "heroText_fiberInterruption",
+            "component": "div",
+            "props": {
+                "className": "flex items-center flex-wrap text-md text-on-surface-variant"
+            },
+            "children": [
+                "heroText_fiberInterruption_seg0",
+                "heroText_fiberInterruption_seg1",
+                "heroText_fiberInterruption_seg2",
+                "heroText_fiberInterruption_seg3",
+                "heroText_fiberInterruption_seg4",
+                "heroText_fiberInterruption_seg5",
+                "heroText_fiberInterruption_seg6"
+            ]
+        },
+        {
+            "id": "heroText_fiberInterruption_seg0",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/heroStatsRows/0/segments/0/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_fiberInterruption_seg1",
+            "component": "span",
+            "props": {
+                "className": "text-error font-bold text-lg mx-1",
+                "value": {
+                    "path": "/heroStatsRows/0/segments/1/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_fiberInterruption_seg2",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/heroStatsRows/0/segments/2/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_fiberInterruption_seg3",
+            "component": "span",
+            "props": {
+                "className": "text-error font-bold text-lg mx-1",
+                "value": {
+                    "path": "/heroStatsRows/0/segments/3/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_fiberInterruption_seg4",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/heroStatsRows/0/segments/4/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_fiberInterruption_seg5",
+            "component": "span",
+            "props": {
+                "className": "text-error font-bold text-lg mx-1",
+                "value": {
+                    "path": "/heroStatsRows/0/segments/5/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_fiberInterruption_seg6",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/heroStatsRows/0/segments/6/text"
+                }
+            }
+        },
+        {
+            "id": "heroRow_asonRecovery",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-3 bg-success-container/30 p-4 rounded-xl"
+            },
+            "children": [
+                "heroIcon_asonRecovery",
+                "heroText_asonRecovery"
+            ]
+        },
+        {
+            "id": "heroIcon_asonRecovery",
+            "component": "Icon",
+            "props": {
+                "name": "shield-check",
+                "color": "success",
+                "shape": "square",
+                "className": "w-8 h-8"
+            }
+        },
+        {
+            "id": "heroText_asonRecovery",
+            "component": "div",
+            "props": {
+                "className": "flex items-center flex-wrap text-md text-on-surface-variant"
+            },
+            "children": [
+                "heroText_asonRecovery_seg0",
+                "heroText_asonRecovery_seg1",
+                "heroText_asonRecovery_seg2",
+                "heroText_asonRecovery_seg3",
+                "heroText_asonRecovery_seg4"
+            ]
+        },
+        {
+            "id": "heroText_asonRecovery_seg0",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/heroStatsRows/1/segments/0/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_asonRecovery_seg1",
+            "component": "span",
+            "props": {
+                "className": "text-success font-bold text-lg mx-1",
+                "value": {
+                    "path": "/heroStatsRows/1/segments/1/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_asonRecovery_seg2",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/heroStatsRows/1/segments/2/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_asonRecovery_seg3",
+            "component": "span",
+            "props": {
+                "className": "text-success font-bold text-lg mx-1",
+                "value": {
+                    "path": "/heroStatsRows/1/segments/3/text"
+                }
+            }
+        },
+        {
+            "id": "heroText_asonRecovery_seg4",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/heroStatsRows/1/segments/4/text"
+                }
+            }
+        },
+        {
+            "id": "heroBannerRightSection",
+            "component": "div",
+            "props": {
+                "className": "w-96 h-36 shrink-0 flex items-center justify-center rounded-lg overflow-hidden"
+            },
+            "children": [
+                "heroIllustrationImage"
+            ]
+        },
+        {
+            "id": "heroIllustrationImage",
+            "component": "img",
+            "props": {
+                "className": "w-full h-full object-cover",
+                "src": {
+                    "path": "/heroIllustrationImage"
+                },
+                "alt": "Network Grid Illustration"
+            }
+        },
+        {
+            "id": "kpiMainContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row items-stretch bg-surface-container-highest rounded-xl shadow-sm p-6 w-full"
+            },
+            "children": [
+                "kpiColUnprotected",
+                "kpiDivider1",
+                "kpiColStatic",
+                "kpiDivider2",
+                "kpiColAson"
+            ]
+        },
+        {
+            "id": "kpiColUnprotected",
+            "component": "div",
+            "props": {
+                "key": {
+                    "path": "/kpiCards/0/cardId"
+                },
+                "className": "flex-1 flex flex-col justify-between"
+            },
+            "children": [
+                "kpiHeaderUnprotected",
+                "kpiValueContainerUnprotected",
+                "kpiDescUnprotected"
+            ]
+        },
+        {
+            "id": "kpiHeaderUnprotected",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row justify-between items-center w-full mb-4"
+            },
+            "children": [
+                "kpiTitleContainerUnprotected",
+                "kpiLabelUnprotected"
+            ]
+        },
+        {
+            "id": "kpiTitleContainerUnprotected",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row items-center gap-2"
+            },
+            "children": [
+                "kpiIconUnprotected",
+                "kpiTitleUnprotected"
+            ]
+        },
+        {
+            "id": "kpiIconUnprotected",
+            "component": "Icon",
+            "props": {
+                "name": "shield-off",
+                "color": "error",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "kpiTitleUnprotected",
+            "component": "span",
+            "props": {
+                "className": "text-md font-semibold text-on-surface",
+                "value": {
+                    "path": "/kpiCards/0/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "kpiLabelUnprotected",
+            "component": "span",
+            "props": {
+                "className": "bg-error-container text-on-error-container text-xs font-medium px-2.5 py-1 rounded-full",
+                "value": {
+                    "path": "/kpiCards/0/rightLabel"
+                }
+            }
+        },
+        {
+            "id": "kpiValueContainerUnprotected",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center justify-center my-4"
+            },
+            "children": [
+                "kpiValueUnprotected"
+            ]
+        },
+        {
+            "id": "kpiValueUnprotected",
+            "component": "span",
+            "props": {
+                "className": "text-5xl font-bold text-error tracking-tight",
+                "value": {
+                    "path": "/kpiCards/0/mainValue"
+                }
+            }
+        },
+        {
+            "id": "kpiDescUnprotected",
+            "component": "p",
+            "props": {
+                "className": "text-sm text-on-surface-variant text-center leading-relaxed px-4 mt-auto",
+                "value": {
+                    "path": "/kpiCards/0/subDescription"
+                }
+            }
+        },
+        {
+            "id": "kpiDivider1",
+            "component": "div",
+            "props": {
+                "className": "w-[1px] bg-divider self-stretch mx-6"
+            }
+        },
+        {
+            "id": "kpiColStatic",
+            "component": "div",
+            "props": {
+                "key": {
+                    "path": "/kpiCards/1/cardId"
+                },
+                "className": "flex-1 flex flex-col justify-between"
+            },
+            "children": [
+                "kpiHeaderStatic",
+                "kpiValueContainerStatic",
+                "kpiDescStatic"
+            ]
+        },
+        {
+            "id": "kpiHeaderStatic",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row justify-between items-center w-full mb-4"
+            },
+            "children": [
+                "kpiTitleContainerStatic",
+                "kpiLabelStatic"
+            ]
+        },
+        {
+            "id": "kpiTitleContainerStatic",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row items-center gap-2"
+            },
+            "children": [
+                "kpiIconStatic",
+                "kpiTitleStatic"
+            ]
+        },
+        {
+            "id": "kpiIconStatic",
+            "component": "Icon",
+            "props": {
+                "name": "shield",
+                "color": "primary",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "kpiTitleStatic",
+            "component": "span",
+            "props": {
+                "className": "text-md font-semibold text-on-surface",
+                "value": {
+                    "path": "/kpiCards/1/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "kpiLabelStatic",
+            "component": "span",
+            "props": {
+                "className": "bg-info-container text-on-info-container text-xs font-medium px-2.5 py-1 rounded-full",
+                "value": {
+                    "path": "/kpiCards/1/rightLabel"
+                }
+            }
+        },
+        {
+            "id": "kpiValueContainerStatic",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center justify-center my-4"
+            },
+            "children": [
+                "kpiValueStatic"
+            ]
+        },
+        {
+            "id": "kpiValueStatic",
+            "component": "span",
+            "props": {
+                "className": "text-5xl font-bold text-primary tracking-tight",
+                "value": {
+                    "path": "/kpiCards/1/mainValue"
+                }
+            }
+        },
+        {
+            "id": "kpiDescStatic",
+            "component": "p",
+            "props": {
+                "className": "text-sm text-on-surface-variant text-center leading-relaxed px-4 mt-auto",
+                "value": {
+                    "path": "/kpiCards/1/subDescription"
+                }
+            }
+        },
+        {
+            "id": "kpiDivider2",
+            "component": "div",
+            "props": {
+                "className": "w-[1px] bg-divider self-stretch mx-6"
+            }
+        },
+        {
+            "id": "kpiColAson",
+            "component": "div",
+            "props": {
+                "key": {
+                    "path": "/kpiCards/2/cardId"
+                },
+                "className": "flex-1 flex flex-col justify-between"
+            },
+            "children": [
+                "kpiHeaderAson",
+                "kpiValueContainerAson",
+                "kpiDescAson"
+            ]
+        },
+        {
+            "id": "kpiHeaderAson",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row justify-between items-center w-full mb-4"
+            },
+            "children": [
+                "kpiTitleContainerAson",
+                "kpiLabelAson"
+            ]
+        },
+        {
+            "id": "kpiTitleContainerAson",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row items-center gap-2"
+            },
+            "children": [
+                "kpiIconAson",
+                "kpiTitleAson"
+            ]
+        },
+        {
+            "id": "kpiIconAson",
+            "component": "Icon",
+            "props": {
+                "name": "zap",
+                "color": "success",
+                "shape": "outline",
+                "className": "w-5 h-5"
+            }
+        },
+        {
+            "id": "kpiTitleAson",
+            "component": "span",
+            "props": {
+                "className": "text-md font-semibold text-on-surface",
+                "value": {
+                    "path": "/kpiCards/2/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "kpiLabelAson",
+            "component": "span",
+            "props": {
+                "className": "bg-success-container text-on-success-container text-xs font-medium px-2.5 py-1 rounded-full",
+                "value": {
+                    "path": "/kpiCards/2/rightLabel"
+                }
+            }
+        },
+        {
+            "id": "kpiValueContainerAson",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center justify-center my-4"
+            },
+            "children": [
+                "kpiValueAson"
+            ]
+        },
+        {
+            "id": "kpiValueAson",
+            "component": "span",
+            "props": {
+                "className": "text-5xl font-bold text-success tracking-tight",
+                "value": {
+                    "path": "/kpiCards/2/mainValue"
+                }
+            }
+        },
+        {
+            "id": "kpiDescAson",
+            "component": "p",
+            "props": {
+                "className": "text-sm text-on-surface-variant text-center leading-relaxed px-4 mt-auto",
+                "value": {
+                    "path": "/kpiCards/2/subDescription"
+                }
+            }
+        },
+        {
+            "id": "revCardContainer",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-xl p-gutter shadow-sm flex flex-col gap-stack"
+            },
+            "children": [
+                "revCardHeader",
+                "revCardBody"
+            ]
+        },
+        {
+            "id": "revCardHeader",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "revHeaderLeft",
+                "revHeaderRight"
+            ]
+        },
+        {
+            "id": "revHeaderLeft",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "revCardTitle",
+                "revHelpIcon"
+            ]
+        },
+        {
+            "id": "revCardTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": {
+                    "path": "/revCardTitle"
+                }
+            }
+        },
+        {
+            "id": "revHelpIcon",
+            "component": "Icon",
+            "props": {
+                "name": "help-circle",
+                "shape": "outline",
+                "className": "w-4 h-4 text-on-surface-variant cursor-help",
+                "title": {
+                    "path": "/revHelpTooltip"
+                }
+            }
+        },
+        {
+            "id": "revHeaderRight",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": [
+                "revTimeTag"
+            ]
+        },
+        {
+            "id": "revTimeTag",
+            "component": "span",
+            "props": {
+                "className": "px-2 py-0.5 text-xs font-medium rounded bg-primary-container text-primary",
+                "value": "近10天趋势"
+            }
+        },
+        {
+            "id": "revCardBody",
+            "component": "div",
+            "props": {
+                "className": "w-full h-[320px]"
+            },
+            "children": [
+                "revRevenueChart"
+            ]
+        },
+        {
+            "id": "revRevenueChart",
+            "component": "BarChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/revRevenueChartData"
+                    },
+                    "xAxis": {
+                        "data": "时间周期"
+                    },
+                    "yAxisTitle": "收益指标"
+                },
+                "className": "w-full h-full"
+            }
+        },
+        {
+            "id": "srvSectionContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack w-full"
+            },
+            "children": [
+                "srvHeaderRow",
+                "srvCardsGrid"
+            ]
+        },
+        {
+            "id": "srvHeaderRow",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between mb-2"
+            },
+            "children": [
+                "srvGroupTitleText"
+            ]
+        },
+        {
+            "id": "srvGroupTitleText",
+            "component": "h2",
+            "props": {
+                "className": "text-xl font-bold text-on-surface",
+                "value": {
+                    "path": "/srvGroupTitle"
+                }
+            }
+        },
+        {
+            "id": "srvCardsGrid",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-3 gap-gutter w-full"
+            },
+            "children": [
+                "srvCardPie",
+                "srvCardBar",
+                "srvCardStackedBar"
+            ]
+        },
+        {
+            "id": "srvCardPie",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-sm rounded-xl p-inset flex flex-col gap-stack"
+            },
+            "children": [
+                "srvCardPieHeader",
+                "srvPieChart"
+            ]
+        },
+        {
+            "id": "srvCardPieHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "srvCardPieTitle"
+            ]
+        },
+        {
+            "id": "srvCardPieTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "业务类型分布"
+            }
+        },
+        {
+            "id": "srvPieChart",
+            "component": "PieChart",
+            "props": {
+                "option": {
+                    "type": "circle",
+                    "data": {
+                        "path": "/srvPieData"
+                    },
+                    "label": {
+                        "show": true
+                    }
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "srvCardBar",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-sm rounded-xl p-inset flex flex-col gap-stack"
+            },
+            "children": [
+                "srvCardBarHeader",
+                "srvBarChart"
+            ]
+        },
+        {
+            "id": "srvCardBarHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "srvCardBarTitle"
+            ]
+        },
+        {
+            "id": "srvCardBarTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "业务平均中断时长"
+            }
+        },
+        {
+            "id": "srvBarChart",
+            "component": "BarChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/srvBarData"
+                    },
+                    "xAxis": {
+                        "data": "月份"
+                    },
+                    "yAxisTitle": "时长 (小时)"
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "srvCardStackedBar",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-sm rounded-xl p-inset flex flex-col gap-stack"
+            },
+            "children": [
+                "srvCardStackedBarHeader",
+                "srvStackedBarChart"
+            ]
+        },
+        {
+            "id": "srvCardStackedBarHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "srvCardStackedBarTitle"
+            ]
+        },
+        {
+            "id": "srvCardStackedBarTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "业务可用率"
+            }
+        },
+        {
+            "id": "srvStackedBarChart",
+            "component": "BarChart",
+            "props": {
+                "option": {
+                    "type": "stack",
+                    "stack": {
+                        "可用率": [
+                            "无保护",
+                            "静态保护",
+                            "ASON保护"
+                        ]
+                    },
+                    "data": {
+                        "path": "/srvStackedBarData"
+                    },
+                    "xAxis": {
+                        "data": "季度"
+                    },
+                    "yAxisTitle": "可用率 (%)"
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "fibGroupContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-4 w-full"
+            },
+            "children": [
+                "fibGroupHeader",
+                "fibCardsGrid"
+            ]
+        },
+        {
+            "id": "fibGroupHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "fibGroupTitleText"
+            ]
+        },
+        {
+            "id": "fibGroupTitleText",
+            "component": "span",
+            "props": {
+                "className": "text-xl font-bold text-on-surface",
+                "value": {
+                    "path": "/fibGroupTitle"
+                }
+            }
+        },
+        {
+            "id": "fibCardsGrid",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-3 gap-4 w-full"
+            },
+            "children": [
+                "fibCardInterruption",
+                "fibCardConcurrent",
+                "fibCardAvailability"
+            ]
+        },
+        {
+            "id": "fibCardInterruption",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-sm rounded-xl p-4 flex flex-col h-[380px]"
+            },
+            "children": [
+                "fibCardInterruptionHeader",
+                "fibChartInterruption"
+            ]
+        },
+        {
+            "id": "fibCardInterruptionHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between mb-4"
+            },
+            "children": [
+                "fibCardInterruptionTitle",
+                "fibCardInterruptionIcon"
+            ]
+        },
+        {
+            "id": "fibCardInterruptionTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-semibold text-on-surface",
+                "value": "光纤中断 TOP10"
+            }
+        },
+        {
+            "id": "fibCardInterruptionIcon",
+            "component": "Icon",
+            "props": {
+                "name": "info",
+                "shape": "outline",
+                "color": "default"
+            }
+        },
+        {
+            "id": "fibChartInterruption",
+            "component": "HillChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/fibInterruptionData"
+                    }
+                },
+                "className": "flex-1 w-full"
+            }
+        },
+        {
+            "id": "fibCardConcurrent",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-sm rounded-xl p-4 flex flex-col h-[380px]"
+            },
+            "children": [
+                "fibCardConcurrentHeader",
+                "fibChartConcurrent"
+            ]
+        },
+        {
+            "id": "fibCardConcurrentHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between mb-4"
+            },
+            "children": [
+                "fibCardConcurrentTitle",
+                "fibCardConcurrentIcon"
+            ]
+        },
+        {
+            "id": "fibCardConcurrentTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-semibold text-on-surface",
+                "value": "光纤并发中断 TOP10"
+            }
+        },
+        {
+            "id": "fibCardConcurrentIcon",
+            "component": "Icon",
+            "props": {
+                "name": "info",
+                "shape": "outline",
+                "color": "default"
+            }
+        },
+        {
+            "id": "fibChartConcurrent",
+            "component": "HillChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/fibConcurrentData"
+                    }
+                },
+                "className": "flex-1 w-full"
+            }
+        },
+        {
+            "id": "fibCardAvailability",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest shadow-sm rounded-xl p-4 flex flex-col h-[380px]"
+            },
+            "children": [
+                "fibCardAvailabilityHeader",
+                "fibChartAvailability"
+            ]
+        },
+        {
+            "id": "fibCardAvailabilityHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between mb-4"
+            },
+            "children": [
+                "fibCardAvailabilityTitle",
+                "fibCardAvailabilityIcon"
+            ]
+        },
+        {
+            "id": "fibCardAvailabilityTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-semibold text-on-surface",
+                "value": "光纤可用率"
+            }
+        },
+        {
+            "id": "fibCardAvailabilityIcon",
+            "component": "Icon",
+            "props": {
+                "name": "info",
+                "shape": "outline",
+                "color": "default"
+            }
+        },
+        {
+            "id": "fibChartAvailability",
+            "component": "BarChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/fibAvailabilityData"
+                    },
+                    "xAxis": {
+                        "data": "label"
+                    },
+                    "yAxisTitle": "可用率 (%)"
+                },
+                "className": "flex-1 w-full"
+            }
+        }
+    ]
+}
