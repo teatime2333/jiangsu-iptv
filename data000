@@ -1,0 +1,124 @@
+json```json
+{
+  "state": {
+    "expandedRowKeys": ["01", "03"],
+    "tableList": [
+      {
+        "id": "01",
+        "name": "Node-Alpha",
+        "type": "Compute",
+        "statusIcon": "circle-check",
+        "subList": [
+          { "id": "01-1", "task": "数据处理", "progress": "80%", "statusIcon": "circle-check" },
+          { "id": "01-2", "task": "任务调度", "progress": "60%", "statusIcon": "circle-x" }
+        ]
+      },
+      {
+        "id": "02",
+        "name": "Node-Beta",
+        "type": "Storage",
+        "statusIcon": "circle-x"
+      },
+      {
+        "id": "03",
+        "name": "Node-Gamma",
+        "type": "Network",
+        "statusIcon": "circle-check",
+        "subList": [
+          { "id": "03-1", "task": "流量转发", "progress": "95%", "statusIcon": "circle-check" }
+        ]
+      }
+    ]
+  },
+  "rootId": "expandable_table",
+  "elements": [
+    {
+      "id": "expandable_table",
+      "component": "Table",
+      "props": {
+        "rowKey": "id",
+        "dataSource": { "path": "/tableList" },
+        "columns": [
+          { "title": "Name", "dataIndex": "name" },
+          { "title": "Type", "dataIndex": "type" },
+          { "title": "Status", "dataIndex": "status" }
+        ],
+        "expandable": {
+          "expandedRowKeys": { "path": "/expandedRowKeys" }
+        }
+      },
+      "children": {
+        "path": "/tableList",
+        "componentId": "table_row"
+      }
+    },
+    {
+      "id": "table_row",
+      "component": "TableRow",
+      "expandedRowRender": { "componentId": "expanded_sub_table" },
+      "children": [
+        "name_cell",
+        "type_cell",
+        "status_cell"
+      ]
+    },
+    {
+      "id": "name_cell",
+      "component": "span",
+      "props": { "value": { "path": "name" } }
+    },
+    {
+      "id": "type_cell",
+      "component": "Tag",
+      "props": { "value": { "path": "type" }, "variant": "outlined" }
+    },
+    {
+      "id": "status_cell",
+      "component": "Icon",
+      "props": { "name": { "path": "statusIcon" }, "shape": "circle" }
+    },
+    {
+      "id": "expanded_sub_table",
+      "component": "Table",
+      "props": {
+        "rowKey": "id",
+        "dataSource": { "path": "subList" },
+        "columns": [
+          { "title": "Task", "dataIndex": "task" },
+          { "title": "Progress", "dataIndex": "progress" },
+          { "title": "Status", "dataIndex": "status" }
+        ],
+        "pagination": false
+      },
+      "children": {
+        "path": "subList",
+        "componentId": "sub_table_row"
+      }
+    },
+    {
+      "id": "sub_table_row",
+      "component": "TableRow",
+      "children": [
+        "sub_task",
+        "sub_progress",
+        "sub_status"
+      ]
+    },
+    {
+      "id": "sub_task",
+      "component": "span",
+      "props": { "value": { "path": "task" } }
+    },
+    {
+      "id": "sub_progress",
+      "component": "span",
+      "props": { "value": { "path": "progress" } }
+    },
+    {
+      "id": "sub_status",
+      "component": "Icon",
+      "props": { "name": { "path": "statusIcon" }, "shape": "circle" }
+    }
+  ]
+}
+```
