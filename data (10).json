@@ -1,0 +1,2240 @@
+{
+    "state": {
+        "ghPlatformLogo": {
+            "logoIcon": "activity",
+            "platformName": "iMaster 智能监控平台"
+        },
+        "ghNavMenuItems": [
+            {
+                "title": "系统概览",
+                "key": "overview"
+            },
+            {
+                "title": "部门业务",
+                "key": "department"
+            },
+            {
+                "title": "作业状态",
+                "key": "status"
+            },
+            {
+                "title": "资源配置",
+                "key": "resource"
+            },
+            {
+                "title": "权限管理",
+                "key": "permission"
+            },
+            {
+                "title": "操作日志",
+                "key": "logs"
+            },
+            {
+                "title": "子系统设置",
+                "key": "settings"
+            }
+        ],
+        "ghSelectedNavKeys": [
+            "overview"
+        ],
+        "ghUserActions": {
+            "notificationIcon": "bell",
+            "helpIcon": "help-circle",
+            "userAvatarImage": "https://randomuser.me/api/portraits/men/32.jpg",
+            "userName": "Admin User"
+        },
+        "ghUserDropdownMenu": [
+            {
+                "label": "个人中心",
+                "key": "profile",
+                "icon": "user"
+            },
+            {
+                "label": "账号设置",
+                "key": "account",
+                "icon": "settings"
+            },
+            {
+                "label": "退出登录",
+                "key": "logout",
+                "icon": "log-out"
+            }
+        ],
+        "ptbPageTitle": "云服务资源监控大屏",
+        "ptbUpdateDesc": "最后更新时间: 2026-05-27 14:30:21",
+        "ptbSystemActionIcons": [
+            {
+                "icon": "settings",
+                "tooltip": "系统设置"
+            },
+            {
+                "icon": "share-2",
+                "tooltip": "分享大屏"
+            },
+            {
+                "icon": "maximize",
+                "tooltip": "全屏展示"
+            }
+        ],
+        "ptbActionButtons": [
+            {
+                "label": "手动刷新",
+                "icon": "refresh-cw",
+                "type": "default"
+            },
+            {
+                "label": "导出报告",
+                "icon": "download",
+                "type": "primary"
+            }
+        ],
+        "lmcActiveRegion": "core",
+        "lmcSubRegionTabs": [
+            {
+                "label": "核心业务区",
+                "key": "core"
+            },
+            {
+                "label": "边缘计算区",
+                "key": "edge"
+            },
+            {
+                "label": "容灾区",
+                "key": "dr"
+            }
+        ],
+        "lmcUtilization": {
+            "gauge": {
+                "title": {
+                    "text": "74.81%",
+                    "subtext": "平均利用率"
+                },
+                "data": [
+                    {
+                        "name": "已用",
+                        "value": 74.81
+                    },
+                    {
+                        "name": "剩余",
+                        "value": 25.19
+                    }
+                ]
+            },
+            "trend": [
+                {
+                    "timestamp": "05-21",
+                    "cpu": 65,
+                    "mem": 70
+                },
+                {
+                    "timestamp": "05-22",
+                    "cpu": 68,
+                    "mem": 72
+                },
+                {
+                    "timestamp": "05-23",
+                    "cpu": 85,
+                    "mem": 78
+                },
+                {
+                    "timestamp": "05-24",
+                    "cpu": 74,
+                    "mem": 75
+                },
+                {
+                    "timestamp": "05-25",
+                    "cpu": 70,
+                    "mem": 73
+                },
+                {
+                    "timestamp": "05-26",
+                    "cpu": 78,
+                    "mem": 80
+                },
+                {
+                    "timestamp": "05-27",
+                    "cpu": 74,
+                    "mem": 76
+                }
+            ]
+        },
+        "lmcAlarms": {
+            "health": {
+                "title": {
+                    "text": "52.65%",
+                    "subtext": "异常占比"
+                },
+                "data": [
+                    {
+                        "name": "异常",
+                        "value": 52.65
+                    },
+                    {
+                        "name": "正常",
+                        "value": 47.35
+                    }
+                ]
+            },
+            "list": [
+                {
+                    "label": "系统一般告警",
+                    "value": 8506,
+                    "status": "warning",
+                    "icon": "alert-circle"
+                },
+                {
+                    "label": "硬件严重故障",
+                    "value": 676,
+                    "status": "error",
+                    "icon": "zap"
+                },
+                {
+                    "label": "网络中断事件",
+                    "value": 242,
+                    "status": "critical",
+                    "icon": "wifi-off"
+                }
+            ]
+        },
+        "lmcHighLoadNodes": [
+            {
+                "id": "1",
+                "nodeName": "node-server-us-east-01",
+                "metricLabel": "并发数",
+                "metricValue": 67,
+                "usageLabel": "CPU占用",
+                "usageValue": "28.07%",
+                "status": "warning"
+            },
+            {
+                "id": "2",
+                "nodeName": "node-db-cluster-node2",
+                "metricLabel": "阻塞线程",
+                "metricValue": 28,
+                "usageLabel": "内存占用",
+                "usageValue": "96.19%",
+                "status": "error"
+            },
+            {
+                "id": "3",
+                "nodeName": "node-cache-redis-05",
+                "metricLabel": "排队任务",
+                "metricValue": 6,
+                "usageLabel": "网络带宽",
+                "usageValue": "60.95%",
+                "status": "normal"
+            }
+        ],
+        "lmcAccessTrend": [
+            {
+                "time": "00:00",
+                "requests": 1200
+            },
+            {
+                "time": "04:00",
+                "requests": 800
+            },
+            {
+                "time": "08:00",
+                "requests": 4500
+            },
+            {
+                "time": "12:00",
+                "requests": 7800
+            },
+            {
+                "time": "16:00",
+                "requests": 9200
+            },
+            {
+                "time": "20:00",
+                "requests": 6500
+            },
+            {
+                "time": "23:59",
+                "requests": 3200
+            },
+            {
+                "time": "02:00",
+                "requests": 1000
+            },
+            {
+                "time": "06:00",
+                "requests": 2200
+            },
+            {
+                "time": "10:00",
+                "requests": 6100
+            },
+            {
+                "time": "14:00",
+                "requests": 8500
+            },
+            {
+                "time": "18:00",
+                "requests": 7900
+            }
+        ],
+        "bmgComputePool": {
+            "cardTitle": "计算资源池监控",
+            "legend": [
+                {
+                    "name": "核心集群",
+                    "value": ">84%",
+                    "icon": "cpu"
+                },
+                {
+                    "name": "高频区",
+                    "value": "6%~09%",
+                    "icon": "zap"
+                },
+                {
+                    "name": "闲置区",
+                    "value": "低",
+                    "icon": "coffee"
+                }
+            ],
+            "computeChart": [
+                {
+                    "t": "10:00",
+                    "核心集群": 80,
+                    "高频区": 10,
+                    "闲置区": 10
+                },
+                {
+                    "t": "11:00",
+                    "核心集群": 84,
+                    "高频区": 9,
+                    "闲置区": 7
+                },
+                {
+                    "t": "12:00",
+                    "核心集群": 86,
+                    "高频区": 8,
+                    "闲置区": 6
+                },
+                {
+                    "t": "13:00",
+                    "核心集群": 82,
+                    "高频区": 11,
+                    "闲置区": 7
+                },
+                {
+                    "t": "14:00",
+                    "核心集群": 85,
+                    "高频区": 9,
+                    "闲置区": 6
+                }
+            ]
+        },
+        "bmgStoragePool": {
+            "cardTitle": "存储容量使用趋势",
+            "legend": [
+                {
+                    "name": "固态存储",
+                    "value": ">58%",
+                    "icon": "hard-drive"
+                },
+                {
+                    "name": "机械硬盘",
+                    "value": "2%~14%",
+                    "icon": "database"
+                },
+                {
+                    "name": "备份区",
+                    "value": "正常",
+                    "icon": "shield-check"
+                }
+            ],
+            "storageChart": [
+                {
+                    "t": "10:00",
+                    "固态存储": 50,
+                    "机械硬盘": 10,
+                    "备份区": 40
+                },
+                {
+                    "t": "11:00",
+                    "固态存储": 58,
+                    "机械硬盘": 14,
+                    "备份区": 28
+                },
+                {
+                    "t": "12:00",
+                    "固态存储": 62,
+                    "机械硬盘": 12,
+                    "备份区": 26
+                },
+                {
+                    "t": "13:00",
+                    "固态存储": 59,
+                    "机械硬盘": 13,
+                    "备份区": 28
+                },
+                {
+                    "t": "14:00",
+                    "固态存储": 60,
+                    "机械硬盘": 14,
+                    "备份区": 26
+                }
+            ]
+        },
+        "bmgNetworkIO": {
+            "cardTitle": "网络IO流量监控",
+            "legend": [
+                {
+                    "name": "下行流量",
+                    "value": ">63%",
+                    "icon": "arrow-down-circle"
+                },
+                {
+                    "name": "上行流量",
+                    "value": "5%~12%",
+                    "icon": "arrow-up-circle"
+                },
+                {
+                    "name": "广播包",
+                    "value": "正常",
+                    "icon": "radio"
+                }
+            ],
+            "networkChart": [
+                {
+                    "t": "10:00",
+                    "下行流量": 60,
+                    "上行流量": 10,
+                    "广播包": 30
+                },
+                {
+                    "t": "11:00",
+                    "下行流量": 63,
+                    "上行流量": 12,
+                    "广播包": 25
+                },
+                {
+                    "t": "12:00",
+                    "下行流量": 68,
+                    "上行流量": 11,
+                    "广播包": 21
+                },
+                {
+                    "t": "13:00",
+                    "下行流量": 65,
+                    "上行流量": 14,
+                    "广播包": 21
+                },
+                {
+                    "t": "14:00",
+                    "下行流量": 66,
+                    "上行流量": 12,
+                    "广播包": 22
+                }
+            ]
+        },
+        "bmgConnections": {
+            "cardTitle": "系统并发连接数",
+            "legend": [
+                {
+                    "name": "TCP连接",
+                    "value": "活跃",
+                    "icon": "link"
+                },
+                {
+                    "name": "UDP协议",
+                    "value": "稳定",
+                    "icon": "share-2"
+                },
+                {
+                    "name": "其他",
+                    "value": "低",
+                    "icon": "more-horizontal"
+                }
+            ],
+            "connChart": [
+                {
+                    "t": "10:00",
+                    "TCP连接": 4000,
+                    "UDP协议": 1000,
+                    "其他": 200
+                },
+                {
+                    "t": "11:00",
+                    "TCP连接": 4500,
+                    "UDP协议": 1200,
+                    "其他": 300
+                },
+                {
+                    "t": "12:00",
+                    "TCP连接": 4800,
+                    "UDP协议": 1100,
+                    "其他": 250
+                },
+                {
+                    "t": "13:00",
+                    "TCP连接": 4600,
+                    "UDP协议": 1300,
+                    "其他": 280
+                },
+                {
+                    "t": "14:00",
+                    "TCP连接": 4700,
+                    "UDP协议": 1250,
+                    "其他": 270
+                }
+            ]
+        },
+        "rsbSummary": {
+            "title": "今日总访问量(3708) ／ 平均响应延迟(751)",
+            "mainValue": "8285 万次/天",
+            "metrics": [
+                {
+                    "label": "正常处理",
+                    "value": 8627,
+                    "percent": 85,
+                    "color": "#09AA71"
+                },
+                {
+                    "label": "慢响应",
+                    "value": 968,
+                    "percent": 10,
+                    "color": "#FCC800"
+                },
+                {
+                    "label": "失败请求",
+                    "value": 90,
+                    "percent": 5,
+                    "color": "#E02128"
+                },
+                {
+                    "label": "峰值并发",
+                    "value": 2006,
+                    "percent": 75,
+                    "color": "#0067D1"
+                }
+            ]
+        },
+        "rsbNodeTracking": {
+            "title": "区域流量排行(TOP 27) ｜ 异常节点追踪(处理中28)",
+            "groups": [
+                {
+                    "groupName": "管理节点",
+                    "items": [
+                        {
+                            "name": "主控服务器",
+                            "metric1": "296 当前连接",
+                            "metric2": "9902 总吞吐量",
+                            "status": "online",
+                            "statusText": "运行中",
+                            "statusColor": "success"
+                        },
+                        {
+                            "name": "备用控制节点",
+                            "metric1": "68 活跃会话",
+                            "metric2": "7613 写入数据",
+                            "status": "online",
+                            "statusText": "运行中",
+                            "statusColor": "success"
+                        },
+                        {
+                            "name": "安全网关",
+                            "metric1": "88 拦截次数",
+                            "metric2": "3579 并发数",
+                            "status": "warning",
+                            "statusText": "告警",
+                            "statusColor": "warning"
+                        },
+                        {
+                            "name": "负载均衡器",
+                            "metric1": "8 异常转发",
+                            "metric2": "9498 总分配量",
+                            "status": "error",
+                            "statusText": "故障",
+                            "statusColor": "error"
+                        }
+                    ]
+                },
+                {
+                    "groupName": "转发节点",
+                    "items": [
+                        {
+                            "name": "专线接入集群",
+                            "metric1": "57 并发请求",
+                            "metric2": "2560 数据包量",
+                            "status": "online",
+                            "statusText": "运行中",
+                            "statusColor": "success"
+                        },
+                        {
+                            "name": "公网接入集群",
+                            "metric1": "99 当前带宽",
+                            "metric2": "0.34% 丢包率",
+                            "status": "online",
+                            "statusText": "运行中",
+                            "statusColor": "success"
+                        }
+                    ]
+                },
+                {
+                    "groupName": "数据节点",
+                    "items": [
+                        {
+                            "name": "主数据库",
+                            "metric1": "3ms 查询延迟",
+                            "metric2": "5877 IOPS",
+                            "status": "online",
+                            "statusText": "运行中",
+                            "statusColor": "success"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "rootId": "rootContainer",
+    "elements": [
+        {
+            "id": "rootContainer",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col min-h-screen bg-surface-container-lowest"
+            },
+            "children": [
+                "globalHeaderContainer",
+                "mainScrollArea"
+            ]
+        },
+        {
+            "id": "globalHeaderContainer",
+            "component": "header",
+            "props": {
+                "className": "h-12 w-full bg-surface-container-highest shadow-sm z-10 sticky top-0 flex items-center justify-between px-gutter"
+            },
+            "children": [
+                "ghLeftSection",
+                "ghMiddleSection",
+                "ghRightSection"
+            ]
+        },
+        {
+            "id": "mainScrollArea",
+            "component": "main",
+            "props": {
+                "className": "flex-1 overflow-y-auto p-page"
+            },
+            "children": [
+                "pageTitleBarContainer",
+                "contentLayoutGrid"
+            ]
+        },
+        {
+            "id": "pageTitleBarContainer",
+            "component": "div",
+            "props": {
+                "className": "mb-section flex items-center justify-between bg-transparent p-0"
+            },
+            "children": [
+                "ptbLeftSection",
+                "ptbRightSection"
+            ]
+        },
+        {
+            "id": "contentLayoutGrid",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row gap-gutter"
+            },
+            "children": [
+                "leftColumn",
+                "rightSidebarContainer"
+            ]
+        },
+        {
+            "id": "leftColumn",
+            "component": "div",
+            "props": {
+                "className": "flex-[3] flex flex-col min-w-0  bg-white shadow-card rounded-container"
+            },
+            "children": [
+                "leftMainContentContainer",
+                "bottomMetricGridContainer"
+            ]
+        },
+        {
+            "id": "leftMainContentContainer",
+            "component": "section",
+            "props": {
+                "className": "p-inset flex flex-col gap-section"
+            },
+            "children": [
+                "lmcRegionTabs",
+                "lmcTopRow",
+                "lmcDivider1",
+                "lmcBottomRow"
+            ]
+        },
+        {
+            "id": "bottomMetricGridContainer",
+            "component": "section",
+            "props": {
+                "className": "grid grid-cols-4 gap-gutter p-inset"
+            },
+            "children": [
+                "bmgComputeCard",
+                "bmgStorageCard",
+                "bmgNetworkCard",
+                "bmgConnCard"
+            ]
+        },
+        {
+            "id": "rightSidebarContainer",
+            "component": "aside",
+            "props": {
+                "className": "flex-1 flex flex-col gap-section min-w-[320px]"
+            },
+            "children": [
+                "rsbSummaryCard",
+                "rsbNodeTrackingCard"
+            ]
+        },
+        {
+            "id": "ghLeftSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline shrink-0"
+            },
+            "children": [
+                "ghLogoIcon",
+                "ghPlatformTitle"
+            ]
+        },
+        {
+            "id": "ghLogoIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "/ghPlatformLogo/logoIcon"
+                },
+                "color": "primary",
+                "shape": "square",
+                "className": "w-7 h-7"
+            }
+        },
+        {
+            "id": "ghPlatformTitle",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/ghPlatformLogo/platformName"
+                },
+                "className": "text-lg font-bold text-on-surface tracking-tight"
+            }
+        },
+        {
+            "id": "ghMiddleSection",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex justify-center px-page"
+            },
+            "children": [
+                "ghTopNavMenu"
+            ]
+        },
+        {
+            "id": "ghTopNavMenu",
+            "component": "Menu",
+            "props": {
+                "mode": "horizontal",
+                "selectedKeys": {
+                    "path": "/ghSelectedNavKeys"
+                },
+                "items": {
+                    "path": "/ghNavMenuItems"
+                },
+                "className": "border-none bg-transparent h-12 leading-[48px]"
+            }
+        },
+        {
+            "id": "ghRightSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-stack shrink-0"
+            },
+            "children": [
+                "ghHelpBtn",
+                "ghNotifyBtn",
+                "ghUserDropdown"
+            ]
+        },
+        {
+            "id": "ghHelpBtn",
+            "component": "Button",
+            "props": {
+                "icon": {
+                    "path": "/ghUserActions/helpIcon"
+                },
+                "types": "link",
+                "className": "text-on-surface-variant hover:text-primary"
+            }
+        },
+        {
+            "id": "ghNotifyBtn",
+            "component": "Button",
+            "props": {
+                "icon": {
+                    "path": "/ghUserActions/notificationIcon"
+                },
+                "types": "link",
+                "className": "text-on-surface-variant hover:text-primary"
+            }
+        },
+        {
+            "id": "ghUserDropdown",
+            "component": "Dropdown",
+            "props": {
+                "menu": {
+                    "path": "/ghUserDropdownMenu"
+                },
+                "placement": "bottomRight",
+                "trigger": [
+                    "hover"
+                ]
+            },
+            "children": [
+                "ghUserInfoWrapper"
+            ]
+        },
+        {
+            "id": "ghUserInfoWrapper",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline cursor-pointer hover:bg-surface-variant px-2 py-1 rounded-md transition-colors"
+            },
+            "children": [
+                "ghUserAvatar",
+                "ghUserNameText"
+            ]
+        },
+        {
+            "id": "ghUserAvatar",
+            "component": "img",
+            "props": {
+                "src": {
+                    "path": "/ghUserActions/userAvatarImage"
+                },
+                "className": "w-8 h-8 rounded-full border border-divider"
+            }
+        },
+        {
+            "id": "ghUserNameText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/ghUserActions/userName"
+                },
+                "className": "text-md font-medium text-on-surface"
+            }
+        },
+        {
+            "id": "ptbLeftSection",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-1"
+            },
+            "children": [
+                "ptbTitle"
+            ]
+        },
+        {
+            "id": "ptbTitle",
+            "component": "h1",
+            "props": {
+                "value": {
+                    "path": "/ptbPageTitle"
+                },
+                "className": "text-2xl font-bold text-on-surface"
+            }
+        },
+        {
+            "id": "ptbRightSection",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-gutter"
+            },
+            "children": [
+                "ptbUpdateText",
+                "ptbIconGroup",
+                "ptbDivider",
+                "ptbButtonGroup"
+            ]
+        },
+        {
+            "id": "ptbUpdateText",
+            "component": "span",
+            "props": {
+                "value": {
+                    "path": "/ptbUpdateDesc"
+                },
+                "className": "text-sm text-on-surface-variant"
+            }
+        },
+        {
+            "id": "ptbIconGroup",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": {
+                "path": "/ptbSystemActionIcons",
+                "componentId": "ptbActionIconItem"
+            }
+        },
+        {
+            "id": "ptbActionIconItem",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "icon"
+                },
+                "title": {
+                    "path": "tooltip"
+                },
+                "className": "w-5 h-5 cursor-pointer text-on-surface-variant hover:text-primary transition-colors",
+                "shape": "outline"
+            }
+        },
+        {
+            "id": "ptbDivider",
+            "component": "div",
+            "props": {
+                "className": "w-px h-6 bg-divider"
+            }
+        },
+        {
+            "id": "ptbButtonGroup",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-inline"
+            },
+            "children": {
+                "path": "/ptbActionButtons",
+                "componentId": "ptbActionButtonItem"
+            }
+        },
+        {
+            "id": "ptbActionButtonItem",
+            "component": "Button",
+            "props": {
+                "value": {
+                    "path": "label"
+                },
+                "icon": {
+                    "path": "icon"
+                },
+                "color": {
+                    "path": "type"
+                },
+                "iconPlacement": "start"
+            }
+        },
+        {
+            "id": "lmcRegionTabs",
+            "component": "Tabs",
+            "props": {
+                "activeKey": {
+                    "path": "/lmcActiveRegion"
+                },
+                "types": "line"
+            },
+            "children": {
+                "path": "/lmcSubRegionTabs",
+                "componentId": "lmcRegionTabItem"
+            }
+        },
+        {
+            "id": "lmcRegionTabItem",
+            "component": "TabItem",
+            "props": {
+                "key": {
+                    "path": "key"
+                },
+                "label": {
+                    "path": "label"
+                }
+            }
+        },
+        {
+            "id": "lmcTopRow",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row gap-gutter"
+            },
+            "children": [
+                "lmcUtilCard",
+                "lmcVerticalDivider11",
+                "lmcAlarmCard"
+            ]
+        },
+        {
+            "id": "lmcVerticalDivider11",
+            "component": "Divider",
+            "props": {
+                "orientation": "vertical",
+                "className": "h-auto -mb-8"
+            }
+        },
+        {
+            "id": "lmcUtilCard",
+            "component": "div",
+            "props": {
+                "className": "bg-transparent flex flex-col flex-1 gap-stack"
+            },
+            "children": [
+                "lmcUtilHeader",
+                "lmcUtilContent"
+            ]
+        },
+        {
+            "id": "lmcUtilHeader",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "lmcUtilTitle",
+                "lmcUtilTimeTag"
+            ]
+        },
+        {
+            "id": "lmcUtilTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "资源利用率分析"
+            }
+        },
+        {
+            "id": "lmcUtilTimeTag",
+            "component": "Tag",
+            "props": {
+                "value": "最近7天",
+                "color": "default"
+            }
+        },
+        {
+            "id": "lmcUtilContent",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-2 gap-gutter items-center"
+            },
+            "children": [
+                "lmcUtilGauge",
+                "lmcUtilTrend"
+            ]
+        },
+        {
+            "id": "lmcUtilGauge",
+            "component": "PieChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/lmcUtilization/gauge/data"
+                    },
+                    "title": {
+                        "path": "/lmcUtilization/gauge/title"
+                    },
+                    "color": [
+                        "#0067D1",
+                        "#DFDFDF"
+                    ]
+                },
+                "className": "h-48 w-full"
+            }
+        },
+        {
+            "id": "lmcUtilTrend",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/lmcUtilization/trend"
+                    },
+                    "xAxis": {
+                        "data": "timestamp"
+                    },
+                    "yAxisTitle": "利用率 (%)",
+                    "smooth": true
+                },
+                "className": "h-48 w-full"
+            }
+        },
+        {
+            "id": "lmcAlarmCard",
+            "component": "div",
+            "props": {
+                "className": "bg-transparent flex flex-col flex-1 gap-stack"
+            },
+            "children": [
+                "lmcAlarmTitle",
+                "lmcAlarmContent"
+            ]
+        },
+        {
+            "id": "lmcAlarmTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "异常告警实时统计"
+            }
+        },
+        {
+            "id": "lmcAlarmContent",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-2 gap-gutter items-center"
+            },
+            "children": [
+                "lmcAlarmGauge",
+                "lmcAlarmList"
+            ]
+        },
+        {
+            "id": "lmcAlarmGauge",
+            "component": "PieChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/lmcAlarms/health/data"
+                    },
+                    "title": {
+                        "path": "/lmcAlarms/health/title"
+                    },
+                    "color": [
+                        "#E02128",
+                        "#09AA71"
+                    ]
+                },
+                "className": "h-48 w-full"
+            }
+        },
+        {
+            "id": "lmcAlarmList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-inline"
+            },
+            "children": {
+                "path": "/lmcAlarms/list",
+                "componentId": "lmcAlarmItem"
+            }
+        },
+        {
+            "id": "lmcAlarmItem",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between p-inline bg-surface-variant rounded-md"
+            },
+            "children": [
+                "lmcAlarmItemLeft",
+                "lmcAlarmItemValue"
+            ]
+        },
+        {
+            "id": "lmcAlarmItemLeft",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2"
+            },
+            "children": [
+                "lmcAlarmItemIcon",
+                "lmcAlarmItemLabel"
+            ]
+        },
+        {
+            "id": "lmcAlarmItemIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "icon"
+                },
+                "color": {
+                    "path": "status"
+                },
+                "className": "w-4 h-4"
+            }
+        },
+        {
+            "id": "lmcAlarmItemLabel",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "label"
+                }
+            }
+        },
+        {
+            "id": "lmcAlarmItemValue",
+            "component": "span",
+            "props": {
+                "className": "text-md font-bold text-on-surface",
+                "value": {
+                    "path": "value"
+                }
+            }
+        },
+        {
+            "id": "lmcDivider1",
+            "component": "div",
+            "props": {
+                "className": "m-0 bg-white"
+            }
+        },
+        {
+            "id": "lmcBottomRow",
+            "component": "div",
+            "props": {
+                "className": "flex flex-row gap-gutter"
+            },
+            "children": [
+                "lmcHighLoadCard",
+                "lmcVerticalDivider",
+                "lmcTrendCard"
+            ]
+        },
+        {
+            "id": "lmcHighLoadCard",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col gap-stack min-w-0"
+            },
+            "children": [
+                "lmcHighLoadHeader",
+                "lmcHighLoadList"
+            ]
+        },
+        {
+            "id": "lmcHighLoadHeader",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "lmcHighLoadTitle",
+                "lmcHighLoadAction"
+            ]
+        },
+        {
+            "id": "lmcHighLoadTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "高负载服务器节点"
+            }
+        },
+        {
+            "id": "lmcHighLoadAction",
+            "component": "Button",
+            "props": {
+                "value": "导出报告",
+                "icon": "download"
+            }
+        },
+        {
+            "id": "lmcHighLoadList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-2"
+            },
+            "children": {
+                "path": "/lmcHighLoadNodes",
+                "componentId": "lmcHighLoadItem"
+            }
+        },
+        {
+            "id": "lmcHighLoadItem",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-4 p-3 bg-surface-variant rounded-lg"
+            },
+            "children": [
+                "lmcHighLoadItemIcon",
+                "lmcHighLoadItemContent",
+                "lmcHighLoadItemMetric"
+            ]
+        },
+        {
+            "id": "lmcHighLoadItemIcon",
+            "component": "Icon",
+            "props": {
+                "name": "server",
+                "shape": "square",
+                "color": {
+                    "path": "status"
+                },
+                "className": "w-10 h-10"
+            }
+        },
+        {
+            "id": "lmcHighLoadItemContent",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col"
+            },
+            "children": [
+                "lmcHighLoadItemName",
+                "lmcHighLoadItemUsage"
+            ]
+        },
+        {
+            "id": "lmcHighLoadItemName",
+            "component": "span",
+            "props": {
+                "className": "text-md font-bold text-on-surface",
+                "value": {
+                    "path": "nodeName"
+                }
+            }
+        },
+        {
+            "id": "lmcHighLoadItemUsage",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "usageValue"
+                }
+            }
+        },
+        {
+            "id": "lmcHighLoadItemMetric",
+            "component": "div",
+            "props": {
+                "className": "text-right flex flex-col"
+            },
+            "children": [
+                "lmcHighLoadItemMetricVal",
+                "lmcHighLoadItemMetricLab"
+            ]
+        },
+        {
+            "id": "lmcHighLoadItemMetricVal",
+            "component": "span",
+            "props": {
+                "className": "text-md font-bold text-primary",
+                "value": {
+                    "path": "metricValue"
+                }
+            }
+        },
+        {
+            "id": "lmcHighLoadItemMetricLab",
+            "component": "span",
+            "props": {
+                "className": "text-xs text-on-surface-variant",
+                "value": {
+                    "path": "metricLabel"
+                }
+            }
+        },
+        {
+            "id": "lmcVerticalDivider",
+            "component": "Divider",
+            "props": {
+                "orientation": "vertical",
+                "className": "h-auto"
+            }
+        },
+        {
+            "id": "lmcTrendCard",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col gap-stack min-w-0"
+            },
+            "children": [
+                "lmcTrendHeader",
+                "lmcTrendChart"
+            ]
+        },
+        {
+            "id": "lmcTrendHeader",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "lmcTrendTitle",
+                "lmcTrendActions"
+            ]
+        },
+        {
+            "id": "lmcTrendTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": "全天候业务访问趋势"
+            }
+        },
+        {
+            "id": "lmcTrendActions",
+            "component": "div",
+            "props": {
+                "className": "flex gap-2"
+            },
+            "children": [
+                "lmcTrendBtn1",
+                "lmcTrendBtn2",
+                "lmcTrendBtn3"
+            ]
+        },
+        {
+            "id": "lmcTrendBtn1",
+            "component": "Button",
+            "props": {
+                "value": "1小时",
+                "size": "small"
+            }
+        },
+        {
+            "id": "lmcTrendBtn2",
+            "component": "Button",
+            "props": {
+                "value": "4小时",
+                "size": "small"
+            }
+        },
+        {
+            "id": "lmcTrendBtn3",
+            "component": "Button",
+            "props": {
+                "value": "12小时",
+                "size": "small",
+                "color": "primary"
+            }
+        },
+        {
+            "id": "lmcTrendChart",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/lmcAccessTrend"
+                    },
+                    "xAxis": {
+                        "data": "time"
+                    },
+                    "yAxisTitle": "请求数 (Req/s)",
+                    "smooth": true,
+                    "color": [
+                        "#8B5CF6"
+                    ]
+                },
+                "className": "h-64 w-full"
+            }
+        },
+        {
+            "id": "bmgComputeCard",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack"
+            },
+            "children": [
+                "bmgComputeHeader",
+                "bmgComputeLegendList",
+                "bmgComputeChart"
+            ]
+        },
+        {
+            "id": "bmgComputeHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "bmgComputeTitle",
+                "bmgComputeMore"
+            ]
+        },
+        {
+            "id": "bmgComputeTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": {
+                    "path": "/bmgComputePool/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "bmgComputeMore",
+            "component": "Icon",
+            "props": {
+                "name": "more-horizontal",
+                "className": "w-5 h-5 text-on-surface-variant"
+            }
+        },
+        {
+            "id": "bmgComputeLegendList",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-3 gap-inline bg-surface-variant p-inline rounded-md"
+            },
+            "children": {
+                "path": "/bmgComputePool/legend",
+                "componentId": "bmgComputeLegendItem"
+            }
+        },
+        {
+            "id": "bmgComputeLegendItem",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center"
+            },
+            "children": [
+                "bmgComputeLegendIcon",
+                "bmgComputeLegendVal",
+                "bmgComputeLegendName"
+            ]
+        },
+        {
+            "id": "bmgComputeLegendIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "icon"
+                },
+                "className": "w-4 h-4 text-primary mb-1"
+            }
+        },
+        {
+            "id": "bmgComputeLegendVal",
+            "component": "span",
+            "props": {
+                "className": "text-md font-semibold text-on-surface",
+                "value": {
+                    "path": "value"
+                }
+            }
+        },
+        {
+            "id": "bmgComputeLegendName",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "name"
+                }
+            }
+        },
+        {
+            "id": "bmgComputeChart",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/bmgComputePool/computeChart"
+                    },
+                    "xAxis": {
+                        "data": "t"
+                    },
+                    "yAxisTitle": "利用率 (%)",
+                    "smooth": true
+                },
+                "className": "h-48 w-full"
+            }
+        },
+        {
+            "id": "bmgStorageCard",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack"
+            },
+            "children": [
+                "bmgStorageHeader",
+                "bmgStorageLegendList",
+                "bmgStorageChart"
+            ]
+        },
+        {
+            "id": "bmgStorageHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "bmgStorageTitle",
+                "bmgStorageMore"
+            ]
+        },
+        {
+            "id": "bmgStorageTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": {
+                    "path": "/bmgStoragePool/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "bmgStorageMore",
+            "component": "Icon",
+            "props": {
+                "name": "more-horizontal",
+                "className": "w-5 h-5 text-on-surface-variant"
+            }
+        },
+        {
+            "id": "bmgStorageLegendList",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-3 gap-inline bg-surface-variant p-inline rounded-md"
+            },
+            "children": {
+                "path": "/bmgStoragePool/legend",
+                "componentId": "bmgStorageLegendItem"
+            }
+        },
+        {
+            "id": "bmgStorageLegendItem",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center"
+            },
+            "children": [
+                "bmgStorageLegendIcon",
+                "bmgStorageLegendVal",
+                "bmgStorageLegendName"
+            ]
+        },
+        {
+            "id": "bmgStorageLegendIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "icon"
+                },
+                "className": "w-4 h-4 text-accent-1 mb-1"
+            }
+        },
+        {
+            "id": "bmgStorageLegendVal",
+            "component": "span",
+            "props": {
+                "className": "text-md font-semibold text-on-surface",
+                "value": {
+                    "path": "value"
+                }
+            }
+        },
+        {
+            "id": "bmgStorageLegendName",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "name"
+                }
+            }
+        },
+        {
+            "id": "bmgStorageChart",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/bmgStoragePool/storageChart"
+                    },
+                    "xAxis": {
+                        "data": "t"
+                    },
+                    "yAxisTitle": "容量 (TB)",
+                    "smooth": true
+                },
+                "className": "h-48 w-full"
+            }
+        },
+        {
+            "id": "bmgNetworkCard",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack"
+            },
+            "children": [
+                "bmgNetworkHeader",
+                "bmgNetworkLegendList",
+                "bmgNetworkChart"
+            ]
+        },
+        {
+            "id": "bmgNetworkHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "bmgNetworkTitle",
+                "bmgNetworkMore"
+            ]
+        },
+        {
+            "id": "bmgNetworkTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": {
+                    "path": "/bmgNetworkIO/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "bmgNetworkMore",
+            "component": "Icon",
+            "props": {
+                "name": "more-horizontal",
+                "className": "w-5 h-5 text-on-surface-variant"
+            }
+        },
+        {
+            "id": "bmgNetworkLegendList",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-3 gap-inline bg-surface-variant p-inline rounded-md"
+            },
+            "children": {
+                "path": "/bmgNetworkIO/legend",
+                "componentId": "bmgNetworkLegendItem"
+            }
+        },
+        {
+            "id": "bmgNetworkLegendItem",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center"
+            },
+            "children": [
+                "bmgNetworkLegendIcon",
+                "bmgNetworkLegendVal",
+                "bmgNetworkLegendName"
+            ]
+        },
+        {
+            "id": "bmgNetworkLegendIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "icon"
+                },
+                "className": "w-4 h-4 text-success mb-1"
+            }
+        },
+        {
+            "id": "bmgNetworkLegendVal",
+            "component": "span",
+            "props": {
+                "className": "text-md font-semibold text-on-surface",
+                "value": {
+                    "path": "value"
+                }
+            }
+        },
+        {
+            "id": "bmgNetworkLegendName",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "name"
+                }
+            }
+        },
+        {
+            "id": "bmgNetworkChart",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/bmgNetworkIO/networkChart"
+                    },
+                    "xAxis": {
+                        "data": "t"
+                    },
+                    "yAxisTitle": "流量 (Gbps)",
+                    "smooth": true
+                },
+                "className": "h-48 w-full"
+            }
+        },
+        {
+            "id": "bmgConnCard",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-stack"
+            },
+            "children": [
+                "bmgConnHeader",
+                "bmgConnLegendList",
+                "bmgConnChart"
+            ]
+        },
+        {
+            "id": "bmgConnHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "bmgConnTitle",
+                "bmgConnMore"
+            ]
+        },
+        {
+            "id": "bmgConnTitle",
+            "component": "span",
+            "props": {
+                "className": "text-lg font-bold text-on-surface",
+                "value": {
+                    "path": "/bmgConnections/cardTitle"
+                }
+            }
+        },
+        {
+            "id": "bmgConnMore",
+            "component": "Icon",
+            "props": {
+                "name": "more-horizontal",
+                "className": "w-5 h-5 text-on-surface-variant"
+            }
+        },
+        {
+            "id": "bmgConnLegendList",
+            "component": "div",
+            "props": {
+                "className": "grid grid-cols-3 gap-inline bg-surface-variant p-inline rounded-md"
+            },
+            "children": {
+                "path": "/bmgConnections/legend",
+                "componentId": "bmgConnLegendItem"
+            }
+        },
+        {
+            "id": "bmgConnLegendItem",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col items-center"
+            },
+            "children": [
+                "bmgConnLegendIcon",
+                "bmgConnLegendVal",
+                "bmgConnLegendName"
+            ]
+        },
+        {
+            "id": "bmgConnLegendIcon",
+            "component": "Icon",
+            "props": {
+                "name": {
+                    "path": "icon"
+                },
+                "className": "w-4 h-4 text-critical mb-1"
+            }
+        },
+        {
+            "id": "bmgConnLegendVal",
+            "component": "span",
+            "props": {
+                "className": "text-md font-semibold text-on-surface",
+                "value": {
+                    "path": "value"
+                }
+            }
+        },
+        {
+            "id": "bmgConnLegendName",
+            "component": "span",
+            "props": {
+                "className": "text-sm text-on-surface-variant",
+                "value": {
+                    "path": "name"
+                }
+            }
+        },
+        {
+            "id": "bmgConnChart",
+            "component": "LineChart",
+            "props": {
+                "option": {
+                    "data": {
+                        "path": "/bmgConnections/connChart"
+                    },
+                    "xAxis": {
+                        "data": "t"
+                    },
+                    "yAxisTitle": "连接数 (Count)",
+                    "smooth": true
+                },
+                "className": "h-48 w-full"
+            }
+        },
+        {
+            "id": "rsbSummaryCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container shadow-card p-inset flex flex-col gap-stack"
+            },
+            "children": [
+                "rsbSummaryHeader",
+                "rsbSummaryMain",
+                "rsbSummaryDivider",
+                "rsbSummaryMetricsList"
+            ]
+        },
+        {
+            "id": "rsbSummaryHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center justify-between"
+            },
+            "children": [
+                "rsbSummaryTitle",
+                "rsbSummaryMoreIcon"
+            ]
+        },
+        {
+            "id": "rsbSummaryTitle",
+            "component": "span",
+            "props": {
+                "className": "text-on-surface-variant text-sm font-medium",
+                "value": {
+                    "path": "/rsbSummary/title"
+                }
+            }
+        },
+        {
+            "id": "rsbSummaryMoreIcon",
+            "component": "Icon",
+            "props": {
+                "name": "more-horizontal",
+                "className": "w-4 h-4 text-on-surface-variant"
+            }
+        },
+        {
+            "id": "rsbSummaryMain",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col"
+            },
+            "children": [
+                "rsbSummaryValue",
+                "rsbSummarySubLabel"
+            ]
+        },
+        {
+            "id": "rsbSummaryValue",
+            "component": "span",
+            "props": {
+                "className": "text-3xl font-bold text-primary",
+                "value": {
+                    "path": "/rsbSummary/mainValue"
+                }
+            }
+        },
+        {
+            "id": "rsbSummarySubLabel",
+            "component": "span",
+            "props": {
+                "className": "text-xs text-on-surface-variant mt-1",
+                "value": "实时业务吞吐量统计"
+            }
+        },
+        {
+            "id": "rsbSummaryDivider",
+            "component": "Divider",
+            "props": {
+                "className": "my-1"
+            }
+        },
+        {
+            "id": "rsbSummaryMetricsList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-4"
+            },
+            "children": {
+                "path": "/rsbSummary/metrics",
+                "componentId": "rsbSummaryMetricItem"
+            }
+        },
+        {
+            "id": "rsbSummaryMetricItem",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-1"
+            },
+            "children": [
+                "rsbSummaryMetricInfo",
+                "rsbSummaryMetricProgress"
+            ]
+        },
+        {
+            "id": "rsbSummaryMetricInfo",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "rsbSummaryMetricLabel",
+                "rsbSummaryMetricValue"
+            ]
+        },
+        {
+            "id": "rsbSummaryMetricLabel",
+            "component": "span",
+            "props": {
+                "className": "text-xs text-on-surface",
+                "value": {
+                    "path": "label"
+                }
+            }
+        },
+        {
+            "id": "rsbSummaryMetricValue",
+            "component": "span",
+            "props": {
+                "className": "text-xs font-semibold",
+                "value": {
+                    "path": "value"
+                }
+            }
+        },
+        {
+            "id": "rsbSummaryMetricProgress",
+            "component": "Progress",
+            "props": {
+                "percent": {
+                    "path": "percent"
+                },
+                "strokeColor": {
+                    "path": "color"
+                },
+                "showInfo": false,
+                "size": "small"
+            }
+        },
+        {
+            "id": "rsbNodeTrackingCard",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-container-highest rounded-container shadow-card p-inset flex flex-col gap-stack flex-1"
+            },
+            "children": [
+                "rsbNodeTrackingHeader",
+                "rsbNodeTrackingGroups"
+            ]
+        },
+        {
+            "id": "rsbNodeTrackingHeader",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2 mb-2"
+            },
+            "children": [
+                "rsbNodeTrackingIcon",
+                "rsbNodeTrackingTitle"
+            ]
+        },
+        {
+            "id": "rsbNodeTrackingIcon",
+            "component": "Icon",
+            "props": {
+                "name": "activity",
+                "className": "w-5 h-5 text-primary"
+            }
+        },
+        {
+            "id": "rsbNodeTrackingTitle",
+            "component": "span",
+            "props": {
+                "className": "text-md font-bold text-on-surface",
+                "value": {
+                    "path": "/rsbNodeTracking/title"
+                }
+            }
+        },
+        {
+            "id": "rsbNodeTrackingGroups",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-6"
+            },
+            "children": {
+                "path": "/rsbNodeTracking/groups",
+                "componentId": "rsbNodeGroup"
+            }
+        },
+        {
+            "id": "rsbNodeGroup",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-3"
+            },
+            "children": [
+                "rsbNodeGroupTitle",
+                "rsbNodeGroupList"
+            ]
+        },
+        {
+            "id": "rsbNodeGroupTitle",
+            "component": "div",
+            "props": {
+                "className": "flex items-center gap-2"
+            },
+            "children": [
+                "rsbNodeGroupLine",
+                "rsbNodeGroupLabel"
+            ]
+        },
+        {
+            "id": "rsbNodeGroupLine",
+            "component": "div",
+            "props": {
+                "className": "w-1 h-3 bg-primary rounded-full"
+            }
+        },
+        {
+            "id": "rsbNodeGroupLabel",
+            "component": "span",
+            "props": {
+                "className": "text-xs font-bold text-on-surface-variant uppercase tracking-wider",
+                "value": {
+                    "path": "groupName"
+                }
+            }
+        },
+        {
+            "id": "rsbNodeGroupList",
+            "component": "div",
+            "props": {
+                "className": "flex flex-col gap-2"
+            },
+            "children": {
+                "path": "items",
+                "componentId": "rsbNodeItem"
+            }
+        },
+        {
+            "id": "rsbNodeItem",
+            "component": "div",
+            "props": {
+                "className": "bg-surface-variant rounded-md p-3 flex flex-row gap-3 border border-transparent hover:border-primary transition-colors"
+            },
+            "children": [
+                "rsbNodeItemLeftIcon",
+                "rsbNodeItemMainContent"
+            ]
+        },
+        {
+            "id": "rsbNodeItemLeftIcon",
+            "component": "Icon",
+            "props": {
+                "name": "server",
+                "color": "primary",
+                "className": "w-5 h-5 mt-0.5"
+            }
+        },
+        {
+            "id": "rsbNodeItemMainContent",
+            "component": "div",
+            "props": {
+                "className": "flex-1 flex flex-col gap-2"
+            },
+            "children": [
+                "rsbNodeItemTop",
+                "rsbNodeItemBottom"
+            ]
+        },
+        {
+            "id": "rsbNodeItemTop",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-start"
+            },
+            "children": [
+                "rsbNodeItemName",
+                "rsbNodeItemStatus"
+            ]
+        },
+        {
+            "id": "rsbNodeItemName",
+            "component": "span",
+            "props": {
+                "className": "text-sm font-semibold text-on-surface",
+                "value": {
+                    "path": "name"
+                }
+            }
+        },
+        {
+            "id": "rsbNodeItemStatus",
+            "component": "Tag",
+            "props": {
+                "color": {
+                    "path": "statusColor"
+                },
+                "value": {
+                    "path": "statusText"
+                },
+                "size": "small"
+            }
+        },
+        {
+            "id": "rsbNodeItemBottom",
+            "component": "div",
+            "props": {
+                "className": "flex justify-between items-center"
+            },
+            "children": [
+                "rsbNodeItemMetrics",
+                "rsbNodeItemAction"
+            ]
+        },
+        {
+            "id": "rsbNodeItemMetrics",
+            "component": "div",
+            "props": {
+                "className": "flex gap-3"
+            },
+            "children": [
+                "rsbNodeItemMetric1",
+                "rsbNodeItemMetric2"
+            ]
+        },
+        {
+            "id": "rsbNodeItemMetric1",
+            "component": "span",
+            "props": {
+                "className": "text-xs text-on-surface-variant",
+                "value": {
+                    "path": "metric1"
+                }
+            }
+        },
+        {
+            "id": "rsbNodeItemMetric2",
+            "component": "span",
+            "props": {
+                "className": "text-xs text-on-surface-variant",
+                "value": {
+                    "path": "metric2"
+                }
+            }
+        },
+        {
+            "id": "rsbNodeItemAction",
+            "component": "Icon",
+            "props": {
+                "name": "chevron-right",
+                "className": "w-3 h-3 text-on-surface-variant"
+            }
+        }
+    ]
+}
