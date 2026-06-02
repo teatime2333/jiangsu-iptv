@@ -1,0 +1,646 @@
+{
+  "state": {
+    "snhBrandLogo": "layers",
+    "snhBrandName": "CloudMatrix Pro",
+    "snhVersion": "v2.4.0",
+    "snmSelectedKeys": [
+      "m1"
+    ],
+    "snmOpenKeys": [
+      "m2"
+    ],
+    "snmMenuItems": [
+      {
+        "title": "控制台概览",
+        "key": "m1",
+        "icon": "layout-dashboard"
+      },
+      {
+        "title": "资源管理",
+        "key": "m2",
+        "icon": "server",
+        "children": [
+          {
+            "title": "云服务器 ECS",
+            "key": "m2-1"
+          },
+          {
+            "title": "容器服务 ACK",
+            "key": "m2-2"
+          }
+        ]
+      },
+      {
+        "title": "安全合规",
+        "key": "m3",
+        "icon": "shield-check"
+      },
+      {
+        "title": "成本分析",
+        "key": "m4",
+        "icon": "bar-chart-3"
+      },
+      {
+        "title": "自动化运维",
+        "key": "m5",
+        "icon": "settings-2"
+      }
+    ],
+    "sndmCardTitle": "资源配额监控",
+    "sndmCurrentView": "全局",
+    "sndmViewOptions": [
+      {
+        "label": "全局",
+        "value": "全局"
+      },
+      {
+        "label": "项目",
+        "value": "项目"
+      }
+    ],
+    "sndmResourceData": [
+      {
+        "category": "存储 A",
+        "normal": 45,
+        "warning": 20,
+        "danger": 0,
+        "error": 35
+      },
+      {
+        "category": "存储 B",
+        "normal": 52,
+        "warning": 15,
+        "danger": 0,
+        "error": 33
+      },
+      {
+        "category": "存储 C",
+        "normal": 38,
+        "warning": 25,
+        "danger": 0,
+        "error": 37
+      },
+      {
+        "category": "备份区",
+        "normal": 24,
+        "warning": 10,
+        "danger": 0,
+        "error": 66
+      }
+    ],
+    "sndmTotalCapacity": "1024 GB",
+    "sndmLastUpdate": "10秒前",
+    "snfUserInfo": {
+      "avatarImage": "https://randomuser.me/api/portraits/men/32.jpg",
+      "userName": "Admin.Zhang",
+      "userRole": "超级管理员",
+      "status": "online"
+    },
+    "snfActionIcons": [
+      {
+        "id": "settings",
+        "icon": "settings",
+        "tooltip": "系统设置"
+      },
+      {
+        "id": "logout",
+        "icon": "log-out",
+        "tooltip": "退出登录"
+      }
+    ],
+    "snfNotificationCount": 12,
+    "snfUserMenu": [
+      {
+        "label": "个人中心",
+        "key": "profile",
+        "icon": "user"
+      },
+      {
+        "label": "账号设置",
+        "key": "account",
+        "icon": "shield-check"
+      },
+      {
+        "label": "切换账号",
+        "key": "switch",
+        "icon": "refresh-cw"
+      }
+    ]
+  },
+  "rootId": "shellRoot",
+  "elements": [
+    {
+      "id": "shellRoot",
+      "component": "div",
+      "props": {
+        "className": "flex h-screen w-full bg-surface-container-lowest overflow-hidden"
+      },
+      "children": [
+        "shellSidebar",
+        "shellMain"
+      ]
+    },
+    {
+      "id": "shellSidebar",
+      "component": "aside",
+      "props": {
+        "className": "w-[15.5rem] h-full flex flex-col bg-surface-container-highest shadow-sm z-10"
+      },
+      "children": [
+        "shellSidebarHeader",
+        "shellSidebarMenu",
+        "shellSidebarMonitor",
+        "shellSidebarFooter"
+      ]
+    },
+    {
+      "id": "shellSidebarHeader",
+      "component": "header",
+      "props": {
+        "className": "h-16 flex items-center px-inset border-b border-divider shrink-0"
+      },
+      "children": [
+        "snhBrandContainer"
+      ]
+    },
+    {
+      "id": "shellSidebarMenu",
+      "component": "nav",
+      "props": {
+        "className": "flex-1 overflow-y-auto py-stack"
+      },
+      "children": [
+        "snmMenuContainer"
+      ]
+    },
+    {
+      "id": "shellSidebarMonitor",
+      "component": "section",
+      "props": {
+        "className": "p-inset border-t border-divider bg-surface-variant/30"
+      },
+      "children": [
+        "sndmHeaderContainer",
+        "sndmChartListContainer",
+        "sndmFooterInfo"
+      ]
+    },
+    {
+      "id": "shellSidebarFooter",
+      "component": "footer",
+      "props": {
+        "className": "h-20 flex items-center px-inset border-t border-divider shrink-0"
+      },
+      "children": [
+        "snfUserSection",
+        "snfActionSection"
+      ]
+    },
+    {
+      "id": "shellMain",
+      "component": "main",
+      "props": {
+        "className": "flex-1 h-full bg-surface-container-lowest relative overflow-auto"
+      },
+      "children": [
+        "shellMainPlaceholder"
+      ]
+    },
+    {
+      "id": "shellMainPlaceholder",
+      "component": "div",
+      "props": {
+        "className": "flex items-center justify-center h-full text-on-surface-variant opacity-20",
+        "value": "Content Area"
+      },
+      "children": null
+    },
+    {
+      "id": "snhBrandContainer",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-inline w-full"
+      },
+      "children": [
+        "snhLogoIcon",
+        "snhTextWrapper"
+      ]
+    },
+    {
+      "id": "snhLogoIcon",
+      "component": "Icon",
+      "props": {
+        "name": {
+          "path": "/snhBrandLogo"
+        },
+        "color": "primary",
+        "shape": "square",
+        "className": "w-8 h-8"
+      }
+    },
+    {
+      "id": "snhTextWrapper",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col min-w-0 ml-2"
+      },
+      "children": [
+        "snhTitleRow"
+      ]
+    },
+    {
+      "id": "snhTitleRow",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-2"
+      },
+      "children": [
+        "snhBrandTitle",
+        "snhVersionTag"
+      ]
+    },
+    {
+      "id": "snhBrandTitle",
+      "component": "span",
+      "props": {
+        "value": {
+          "path": "/snhBrandName"
+        },
+        "className": "text-lg font-bold text-on-surface truncate"
+      }
+    },
+    {
+      "id": "snhVersionTag",
+      "component": "Tag",
+      "props": {
+        "value": {
+          "path": "/snhVersion"
+        },
+        "size": "small",
+        "color": "default",
+        "className": "text-[10px] px-1 h-4 leading-3"
+      }
+    },
+    {
+      "id": "snmMenuContainer",
+      "component": "div",
+      "props": {
+        "className": "px-inline"
+      },
+      "children": [
+        "snmMainNavigation"
+      ]
+    },
+    {
+      "id": "snmMainNavigation",
+      "component": "Menu",
+      "props": {
+        "mode": "vertical",
+        "selectedKeys": {
+          "path": "/snmSelectedKeys"
+        },
+        "openKeys": {
+          "path": "/snmOpenKeys"
+        },
+        "items": {
+          "path": "/snmMenuItems"
+        },
+        "className": "border-none bg-transparent"
+      }
+    },
+    {
+      "id": "sndmHeaderContainer",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col gap-stack mb-gutter"
+      },
+      "children": [
+        "sndmTitleRow",
+        "sndmViewSwitcher"
+      ]
+    },
+    {
+      "id": "sndmTitleRow",
+      "component": "div",
+      "props": {
+        "className": "flex items-center justify-between"
+      },
+      "children": [
+        "sndmTitleText",
+        "sndmRefreshIcon"
+      ]
+    },
+    {
+      "id": "sndmTitleText",
+      "component": "span",
+      "props": {
+        "value": {
+          "path": "/sndmCardTitle"
+        },
+        "className": "text-md font-semibold text-on-surface"
+      }
+    },
+    {
+      "id": "sndmRefreshIcon",
+      "component": "Icon",
+      "props": {
+        "name": "refresh-cw",
+        "className": "w-4 h-4 text-on-surface-variant cursor-pointer hover:text-primary transition-colors"
+      }
+    },
+    {
+      "id": "sndmViewSwitcher",
+      "component": "Segmented",
+      "props": {
+        "value": {
+          "path": "/sndmCurrentView"
+        },
+        "options": {
+          "path": "/sndmViewOptions"
+        },
+        "block": true,
+        "size": "small",
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "sndmChartListContainer",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col gap-4"
+      },
+      "children": {
+        "path": "/sndmResourceData",
+        "componentId": "sndmChartItem"
+      }
+    },
+    {
+      "id": "sndmChartItem",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col gap-1"
+      },
+      "children": [
+        "sndmChartLabelRow",
+        "sndmStackedBar"
+      ]
+    },
+    {
+      "id": "sndmChartLabelRow",
+      "component": "div",
+      "props": {
+        "className": "flex justify-between items-center"
+      },
+      "children": [
+        "sndmCategoryName",
+        "sndmUsagePercent"
+      ]
+    },
+    {
+      "id": "sndmCategoryName",
+      "component": "span",
+      "props": {
+        "value": {
+          "path": "category"
+        },
+        "className": "text-sm text-on-surface-variant"
+      }
+    },
+    {
+      "id": "sndmUsagePercent",
+      "component": "span",
+      "props": {
+        "value": "使用中",
+        "className": "text-xs text-on-surface-variant opacity-70"
+      }
+    },
+    {
+      "id": "sndmStackedBar",
+      "component": "PatStackedBar",
+      "props": {
+        "normal": {
+          "path": "normal"
+        },
+        "warning": {
+          "path": "warning"
+        },
+        "danger": {
+          "path": "danger"
+        },
+        "error": {
+          "path": "error"
+        },
+        "className": "h-2"
+      }
+    },
+    {
+      "id": "sndmFooterInfo",
+      "component": "div",
+      "props": {
+        "className": "mt-gutter pt-stack border-t border-divider flex flex-col gap-1"
+      },
+      "children": [
+        "sndmCapacityRow",
+        "sndmUpdateTimeRow"
+      ]
+    },
+    {
+      "id": "sndmCapacityRow",
+      "component": "div",
+      "props": {
+        "className": "flex justify-between text-xs"
+      },
+      "children": [
+        "sndmCapacityLabel",
+        "sndmCapacityValue"
+      ]
+    },
+    {
+      "id": "sndmCapacityLabel",
+      "component": "span",
+      "props": {
+        "value": "总配额",
+        "className": "text-on-surface-variant"
+      }
+    },
+    {
+      "id": "sndmCapacityValue",
+      "component": "span",
+      "props": {
+        "value": {
+          "path": "/sndmTotalCapacity"
+        },
+        "className": "font-medium text-on-surface"
+      }
+    },
+    {
+      "id": "sndmUpdateTimeRow",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-1 text-xs text-on-surface-variant opacity-60"
+      },
+      "children": [
+        "sndmClockIcon",
+        "sndmUpdateText"
+      ]
+    },
+    {
+      "id": "sndmClockIcon",
+      "component": "Icon",
+      "props": {
+        "name": "clock",
+        "className": "w-3 h-3"
+      }
+    },
+    {
+      "id": "sndmUpdateText",
+      "component": "span",
+      "props": {
+        "value": {
+          "path": "/sndmLastUpdate"
+        }
+      }
+    },
+    {
+      "id": "snfUserSection",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-3 flex-1 min-w-0"
+      },
+      "children": [
+        "snfAvatarBadge",
+        "snfUserInfoWrapper"
+      ]
+    },
+    {
+      "id": "snfAvatarBadge",
+      "component": "Badge",
+      "props": {
+        "dot": true,
+        "status": "success",
+        "offset": [
+          -4,
+          28
+        ]
+      },
+      "children": [
+        "snfUserDropdown"
+      ]
+    },
+    {
+      "id": "snfUserDropdown",
+      "component": "Dropdown",
+      "props": {
+        "menu": {
+          "path": "/snfUserMenu"
+        },
+        "placement": "topRight",
+        "trigger": [
+          "click"
+        ]
+      },
+      "children": [
+        "snfAvatarImg"
+      ]
+    },
+    {
+      "id": "snfAvatarImg",
+      "component": "img",
+      "props": {
+        "src": {
+          "path": "/snfUserInfo/avatarImage"
+        },
+        "className": "w-10 h-10 rounded-full cursor-pointer border border-divider object-cover"
+      }
+    },
+    {
+      "id": "snfUserInfoWrapper",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col min-w-0"
+      },
+      "children": [
+        "snfUserName",
+        "snfUserRole"
+      ]
+    },
+    {
+      "id": "snfUserName",
+      "component": "span",
+      "props": {
+        "value": {
+          "path": "/snfUserInfo/userName"
+        },
+        "className": "text-md font-semibold text-on-surface truncate"
+      }
+    },
+    {
+      "id": "snfUserRole",
+      "component": "span",
+      "props": {
+        "value": {
+          "path": "/snfUserInfo/userRole"
+        },
+        "className": "text-sm text-on-surface-variant truncate"
+      }
+    },
+    {
+      "id": "snfActionSection",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-1"
+      },
+      "children": [
+        "snfNotificationBadge",
+        "snfActionLoop"
+      ]
+    },
+    {
+      "id": "snfNotificationBadge",
+      "component": "Badge",
+      "props": {
+        "count": {
+          "path": "/snfNotificationCount"
+        },
+        "overflowCount": 9,
+        "className": "mr-2"
+      },
+      "children": [
+        "snfBellIcon"
+      ]
+    },
+    {
+      "id": "snfBellIcon",
+      "component": "Icon",
+      "props": {
+        "name": "bell",
+        "className": "w-5 h-5 text-on-surface-variant cursor-pointer hover:text-primary transition-colors"
+      }
+    },
+    {
+      "id": "snfActionLoop",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-1"
+      },
+      "children": {
+        "path": "/snfActionIcons",
+        "componentId": "snfActionButton"
+      }
+    },
+    {
+      "id": "snfActionButton",
+      "component": "Button",
+      "props": {
+        "icon": {
+          "path": "icon"
+        },
+        "types": "link",
+        "className": "text-on-surface-variant hover:text-primary p-1",
+        "title": {
+          "path": "tooltip"
+        }
+      }
+    }
+  ]
+}
