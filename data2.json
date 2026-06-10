@@ -1,0 +1,1659 @@
+{
+  "rootId": "pageRoot",
+  "elements": [
+    {
+      "id": "pageRoot",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col min-h-screen bg-surface"
+      },
+      "children": [
+        "headerTopNav",
+        "mainContentArea"
+      ]
+    },
+    {
+      "id": "headerTopNav",
+      "component": "header",
+      "props": {
+        "className": "h-12 flex items-center justify-between px-page bg-surface-container-highest shadow-sm"
+      },
+      "children": [
+        "topNavContainer"
+      ]
+    },
+    {
+      "id": "mainContentArea",
+      "component": "div",
+      "props": {
+        "className": "flex flex-1 overflow-hidden"
+      },
+      "children": [
+        "asideLeftSidebar",
+        "sectionRightContent"
+      ]
+    },
+    {
+      "id": "asideLeftSidebar",
+      "component": "aside",
+      "props": {
+        "className": "w-12 bg-surface-container-highest shadow-sm flex flex-col items-center py-stack"
+      },
+      "children": [
+        "leftSidBrandSection",
+        "leftSidDividerHeader",
+        "leftSidNavMain",
+        "leftSidSpacer",
+        "leftSidDividerBottom",
+        "leftSidUserSection"
+      ]
+    },
+    {
+      "id": "sectionRightContent",
+      "component": "main",
+      "props": {
+        "className": "flex-1 flex flex-col gap-section p-page overflow-auto"
+      },
+      "children": [
+        "sectionDataOverview",
+        "sectionTerminalUserManagement"
+      ]
+    },
+    {
+      "id": "sectionDataOverview",
+      "component": "section",
+      "props": {
+        "className": "grid grid-cols-5 gap-gutter"
+      },
+      "children": [
+        "dataOverHeader",
+        "dataOverKpiRow",
+        "dataOverChartCard",
+        "dataOverTableCard"
+      ]
+    },
+    {
+      "id": "sectionTerminalUserManagement",
+      "component": "section",
+      "props": {
+        "className": "flex flex-col gap-stack bg-surface-container-highest rounded-xl p-inset shadow-sm"
+      },
+      "children": [
+        "termUserHeader",
+        "termUserFilterBar",
+        "termUserStatsRow",
+        "termUserTableSection"
+      ]
+    },
+    {
+      "id": "topNavContainer",
+      "component": "div",
+      "props": {
+        "className": "flex items-center justify-between h-12 bg-surface-container-highest px-page shadow-sm"
+      },
+      "children": [
+        "topNavLeft",
+        "topNavSearchWrap",
+        "topNavRight"
+      ]
+    },
+    {
+      "id": "topNavLeft",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-6"
+      },
+      "children": [
+        "topNavLogo",
+        "topNavNavList"
+      ]
+    },
+    {
+      "id": "topNavLogo",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-2 cursor-pointer"
+      },
+      "children": [
+        "topNavLogoIcon",
+        "topNavLogoText"
+      ]
+    },
+    {
+      "id": "topNavLogoIcon",
+      "component": "Icon",
+      "props": {
+        "name": "Hexagon",
+        "shape": "fill",
+        "color": "primary",
+        "className": "w-6 h-6"
+      }
+    },
+    {
+      "id": "topNavLogoText",
+      "component": "span",
+      "props": {
+        "className": "text-lg font-bold text-on-surface",
+        "value": {
+          "path": "/brandName"
+        }
+      }
+    },
+    {
+      "id": "topNavNavList",
+      "component": "nav",
+      "props": {
+        "className": "flex items-center gap-1"
+      },
+      "children": {
+        "path": "/navItems",
+        "componentId": "topNavNavItem"
+      }
+    },
+    {
+      "id": "topNavNavItem",
+      "component": "button",
+      "props": {
+        "className": "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-md text-on-surface-variant hover:text-primary hover:bg-primary-container transition-colors"
+      },
+      "children": [
+        "topNavNavItemIcon",
+        "topNavNavItemLabel"
+      ]
+    },
+    {
+      "id": "topNavNavItemIcon",
+      "component": "Icon",
+      "props": {
+        "name": {
+          "path": "icon"
+        },
+        "shape": "outline",
+        "className": "w-4 h-4"
+      }
+    },
+    {
+      "id": "topNavNavItemLabel",
+      "component": "span",
+      "props": {
+        "className": "text-md",
+        "value": {
+          "path": "label"
+        }
+      }
+    },
+    {
+      "id": "topNavSearchWrap",
+      "component": "div",
+      "props": {
+        "className": "flex-1 max-w-md mx-6"
+      },
+      "children": [
+        "topNavSearchInput"
+      ]
+    },
+    {
+      "id": "topNavSearchInput",
+      "component": "Input",
+      "props": {
+        "value": {
+          "path": "/searchText"
+        },
+        "placeholder": "搜索菜单、功能...",
+        "prefix": "Search",
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "topNavRight",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-4"
+      },
+      "children": [
+        "topNavNotifyBadge",
+        "topNavDivider",
+        "topNavUserArea"
+      ]
+    },
+    {
+      "id": "topNavNotifyBadge",
+      "component": "Badge",
+      "props": {
+        "count": {
+          "path": "/notifyCount"
+        },
+        "className": "cursor-pointer"
+      },
+      "children": [
+        "topNavNotifyIcon"
+      ]
+    },
+    {
+      "id": "topNavNotifyIcon",
+      "component": "Icon",
+      "props": {
+        "name": "Bell",
+        "shape": "outline",
+        "className": "w-5 h-5 text-on-surface-variant hover:text-primary transition-colors"
+      }
+    },
+    {
+      "id": "topNavDivider",
+      "component": "div",
+      "props": {
+        "className": "w-px h-6 bg-divider"
+      }
+    },
+    {
+      "id": "topNavUserArea",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-2 cursor-pointer hover:bg-surface-variant rounded-lg px-2 py-1 transition-colors"
+      },
+      "children": [
+        "topNavUserAvatar",
+        "topNavUserInfo",
+        "topNavUserChevron"
+      ]
+    },
+    {
+      "id": "topNavUserAvatar",
+      "component": "div",
+      "props": {
+        "className": "w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary text-sm font-bold"
+      },
+      "children": [
+        "topNavUserAvatarText"
+      ]
+    },
+    {
+      "id": "topNavUserAvatarText",
+      "component": "span",
+      "props": {
+        "className": "text-sm font-bold text-on-primary",
+        "value": "张"
+      }
+    },
+    {
+      "id": "topNavUserInfo",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col leading-tight"
+      },
+      "children": [
+        "topNavUserName",
+        "topNavUserRole"
+      ]
+    },
+    {
+      "id": "topNavUserName",
+      "component": "span",
+      "props": {
+        "className": "text-sm font-medium text-on-surface",
+        "value": {
+          "path": "/userName"
+        }
+      }
+    },
+    {
+      "id": "topNavUserRole",
+      "component": "span",
+      "props": {
+        "className": "text-xs text-on-surface-variant",
+        "value": {
+          "path": "/userRole"
+        }
+      }
+    },
+    {
+      "id": "topNavUserChevron",
+      "component": "Icon",
+      "props": {
+        "name": "ChevronDown",
+        "shape": "outline",
+        "className": "w-4 h-4 text-on-surface-variant"
+      }
+    },
+    {
+      "id": "leftSidBrandSection",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-3 px-5 py-5"
+      },
+      "children": [
+        "leftSidBrandIcon",
+        "leftSidBrandName"
+      ]
+    },
+    {
+      "id": "leftSidBrandIcon",
+      "component": "div",
+      "props": {
+        "className": "w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"
+      },
+      "children": [
+        "leftSidBrandIconInner"
+      ]
+    },
+    {
+      "id": "leftSidBrandIconInner",
+      "component": "Icon",
+      "props": {
+        "name": "hexagon",
+        "shape": "square",
+        "color": "inverse",
+        "className": "w-5 h-5"
+      }
+    },
+    {
+      "id": "leftSidBrandName",
+      "component": "span",
+      "props": {
+        "className": "text-xl font-bold text-on-surface tracking-tight",
+        "value": {
+          "path": "/applicationName"
+        }
+      }
+    },
+    {
+      "id": "leftSidDividerHeader",
+      "component": "div",
+      "props": {
+        "className": "mx-5 border-t border-divider"
+      }
+    },
+    {
+      "id": "leftSidNavMain",
+      "component": "div",
+      "props": {
+        "className": "flex-1 flex flex-col gap-6 overflow-y-auto px-3 py-4"
+      },
+      "children": [
+        "leftSidNavSection1",
+        "leftSidNavSection2"
+      ]
+    },
+    {
+      "id": "leftSidNavSection1",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col gap-1"
+      },
+      "children": [
+        "leftSidSection1Title",
+        "leftSidNavList1"
+      ]
+    },
+    {
+      "id": "leftSidSection1Title",
+      "component": "span",
+      "props": {
+        "className": "text-xs font-medium text-on-surface-variant uppercase tracking-widest px-2 py-1",
+        "value": {
+          "path": "/navSections/0/title"
+        }
+      }
+    },
+    {
+      "id": "leftSidNavList1",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col gap-0.5"
+      },
+      "children": {
+        "path": "/navSections/0/items",
+        "componentId": "leftSidNavItem"
+      }
+    },
+    {
+      "id": "leftSidNavItem",
+      "component": "a",
+      "props": {
+        "className": "flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors duration-150 cursor-pointer group",
+        "href": "#"
+      },
+      "children": [
+        "leftSidNavItemIcon",
+        "leftSidNavItemLabel",
+        "leftSidNavItemBadge"
+      ]
+    },
+    {
+      "id": "leftSidNavItemIcon",
+      "component": "Icon",
+      "props": {
+        "name": {
+          "path": "icon"
+        },
+        "shape": "outline",
+        "color": "default",
+        "className": "w-5 h-5 shrink-0"
+      }
+    },
+    {
+      "id": "leftSidNavItemLabel",
+      "component": "span",
+      "props": {
+        "className": "text-sm font-medium flex-1 truncate",
+        "value": {
+          "path": "label"
+        }
+      }
+    },
+    {
+      "id": "leftSidNavItemBadge",
+      "component": "span",
+      "props": {
+        "className": "text-xs font-semibold px-1.5 py-0.5 rounded-md bg-critical-container text-on-critical-container min-w-[1.25rem] text-center leading-tight",
+        "value": {
+          "path": "badge"
+        }
+      }
+    },
+    {
+      "id": "leftSidNavSection2",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col gap-1"
+      },
+      "children": [
+        "leftSidSection2Title",
+        "leftSidNavList2"
+      ]
+    },
+    {
+      "id": "leftSidSection2Title",
+      "component": "span",
+      "props": {
+        "className": "text-xs font-medium text-on-surface-variant uppercase tracking-widest px-2 py-1",
+        "value": {
+          "path": "/navSections/1/title"
+        }
+      }
+    },
+    {
+      "id": "leftSidNavList2",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col gap-0.5"
+      },
+      "children": {
+        "path": "/navSections/1/items",
+        "componentId": "leftSidNavItem"
+      }
+    },
+    {
+      "id": "leftSidSpacer",
+      "component": "div",
+      "props": {
+        "className": "flex-1"
+      }
+    },
+    {
+      "id": "leftSidDividerBottom",
+      "component": "div",
+      "props": {
+        "className": "mx-5 border-t border-divider"
+      }
+    },
+    {
+      "id": "leftSidUserSection",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-3 px-4 py-4"
+      },
+      "children": [
+        "leftSidUserAvatar",
+        "leftSidUserInfo",
+        "leftSidUserMenuBtn"
+      ]
+    },
+    {
+      "id": "leftSidUserAvatar",
+      "component": "div",
+      "props": {
+        "className": "w-9 h-9 rounded-full bg-primary flex items-center justify-center shrink-0"
+      },
+      "children": [
+        "leftSidUserAvatarText"
+      ]
+    },
+    {
+      "id": "leftSidUserAvatarText",
+      "component": "span",
+      "props": {
+        "className": "text-sm font-bold text-on-primary",
+        "value": {
+          "path": "/userProfile/avatarLabel"
+        }
+      }
+    },
+    {
+      "id": "leftSidUserInfo",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col min-w-0 flex-1"
+      },
+      "children": [
+        "leftSidUserName",
+        "leftSidUserRole"
+      ]
+    },
+    {
+      "id": "leftSidUserName",
+      "component": "span",
+      "props": {
+        "className": "text-sm font-semibold text-on-surface truncate",
+        "value": {
+          "path": "/userProfile/name"
+        }
+      }
+    },
+    {
+      "id": "leftSidUserRole",
+      "component": "span",
+      "props": {
+        "className": "text-xs text-on-surface-variant truncate",
+        "value": {
+          "path": "/userProfile/role"
+        }
+      }
+    },
+    {
+      "id": "leftSidUserMenuBtn",
+      "component": "Button",
+      "props": {
+        "type": "default",
+        "className": "!p-1.5 !border-0 !shadow-none !bg-transparent hover:!bg-surface-variant !rounded-lg shrink-0",
+        "icon": "log-out"
+      }
+    },
+    {
+      "id": "dataOverHeader",
+      "component": "div",
+      "props": {
+        "className": "flex items-center justify-between"
+      },
+      "children": [
+        "dataOverHeaderTitle",
+        "dataOverHeaderActions"
+      ]
+    },
+    {
+      "id": "dataOverHeaderTitle",
+      "component": "h2",
+      "props": {
+        "className": "text-2xl font-bold text-on-surface",
+        "value": {
+          "path": "/sectionTitle"
+        }
+      }
+    },
+    {
+      "id": "dataOverHeaderActions",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-inline"
+      },
+      "children": [
+        "dataOverHeaderDateText",
+        "dataOverHeaderExportBtn"
+      ]
+    },
+    {
+      "id": "dataOverHeaderDateText",
+      "component": "span",
+      "props": {
+        "className": "text-md text-on-surface-variant",
+        "value": {
+          "path": "/dateRange"
+        }
+      }
+    },
+    {
+      "id": "dataOverHeaderExportBtn",
+      "component": "Button",
+      "props": {
+        "type": "primary",
+        "value": "导出报告",
+        "icon": "Download",
+        "className": "ml-auto"
+      }
+    },
+    {
+      "id": "dataOverKpiRow",
+      "component": "div",
+      "props": {
+        "className": "grid grid-cols-4 gap-gutter"
+      },
+      "children": {
+        "path": "/kpiData",
+        "componentId": "dataOverKpiCard"
+      }
+    },
+    {
+      "id": "dataOverKpiCard",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col p-inset bg-surface-container-highest rounded-xl shadow-card gap-stack"
+      },
+      "children": [
+        "dataOverKpiCardHead",
+        "dataOverKpiCardValue",
+        "dataOverKpiCardFooter"
+      ]
+    },
+    {
+      "id": "dataOverKpiCardHead",
+      "component": "div",
+      "props": {
+        "className": "flex items-center justify-between"
+      },
+      "children": [
+        "dataOverKpiCardLabel",
+        "dataOverKpiCardIcon"
+      ]
+    },
+    {
+      "id": "dataOverKpiCardLabel",
+      "component": "span",
+      "props": {
+        "className": "text-md text-on-surface-variant font-medium",
+        "value": {
+          "path": "label"
+        }
+      }
+    },
+    {
+      "id": "dataOverKpiCardIcon",
+      "component": "Icon",
+      "props": {
+        "name": {
+          "path": "icon"
+        },
+        "className": "w-5 h-5",
+        "color": "primary",
+        "shape": "outline"
+      }
+    },
+    {
+      "id": "dataOverKpiCardValue",
+      "component": "span",
+      "props": {
+        "className": "text-3xl font-bold text-on-surface",
+        "value": {
+          "path": "value"
+        }
+      }
+    },
+    {
+      "id": "dataOverKpiCardFooter",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-1 text-sm"
+      },
+      "children": [
+        "dataOverKpiCardTrendIcon",
+        "dataOverKpiCardTrendVal",
+        "dataOverKpiCardUnit"
+      ]
+    },
+    {
+      "id": "dataOverKpiCardTrendIcon",
+      "component": "Icon",
+      "props": {
+        "name": {
+          "path": "trend",
+          "transform": "v => v >= 0 ? 'ArrowUp' : 'ArrowDown'"
+        },
+        "className": "w-4 h-4",
+        "color": "default",
+        "shape": "outline"
+      }
+    },
+    {
+      "id": "dataOverKpiCardTrendVal",
+      "component": "span",
+      "props": {
+        "className": "font-semibold text-on-surface-variant",
+        "value": {
+          "path": "trend",
+          "transform": "v => (v >= 0 ? '+' : '') + v + '%'"
+        }
+      }
+    },
+    {
+      "id": "dataOverKpiCardUnit",
+      "component": "span",
+      "props": {
+        "className": "text-on-surface-variant",
+        "value": {
+          "path": "unit"
+        }
+      }
+    },
+    {
+      "id": "dataOverChartCard",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col p-inset bg-surface-container-highest rounded-xl shadow-card gap-stack"
+      },
+      "children": [
+        "dataOverChartTitle",
+        "dataOverChartContent"
+      ]
+    },
+    {
+      "id": "dataOverChartTitle",
+      "component": "h3",
+      "props": {
+        "className": "text-lg font-semibold text-on-surface",
+        "value": "营收与用户趋势"
+      }
+    },
+    {
+      "id": "dataOverChartContent",
+      "component": "div",
+      "props": {
+        "className": "w-full h-80"
+      },
+      "children": [
+        "dataOverLineChart"
+      ]
+    },
+    {
+      "id": "dataOverLineChart",
+      "component": "LineChart",
+      "props": {
+        "data": {
+          "path": "/chartTrendData"
+        },
+        "xField": "month",
+        "yField": [
+          "营收",
+          "用户"
+        ],
+        "smooth": true,
+        "className": "w-full h-full"
+      }
+    },
+    {
+      "id": "dataOverTableCard",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col p-inset bg-surface-container-highest rounded-xl shadow-card gap-stack"
+      },
+      "children": [
+        "dataOverTableTitle",
+        "dataOverTable"
+      ]
+    },
+    {
+      "id": "dataOverTableTitle",
+      "component": "h3",
+      "props": {
+        "className": "text-lg font-semibold text-on-surface",
+        "value": "热销产品排行"
+      }
+    },
+    {
+      "id": "dataOverTable",
+      "component": "Table",
+      "props": {
+        "columns": [
+          {
+            "title": "排名",
+            "dataIndex": "rank",
+            "key": "rank",
+            "width": 60,
+            "align": "center"
+          },
+          {
+            "title": "产品名称",
+            "dataIndex": "product",
+            "key": "product",
+            "minWidth": 180
+          },
+          {
+            "title": "品类",
+            "dataIndex": "category",
+            "key": "category"
+          },
+          {
+            "title": "销量",
+            "dataIndex": "sales",
+            "key": "sales",
+            "align": "right"
+          },
+          {
+            "title": "营收",
+            "dataIndex": "revenue",
+            "key": "revenue",
+            "align": "right"
+          },
+          {
+            "title": "增长率",
+            "dataIndex": "growth",
+            "key": "growth",
+            "align": "right"
+          },
+          {
+            "title": "状态",
+            "dataIndex": "status",
+            "key": "status",
+            "align": "center"
+          }
+        ],
+        "dataSource": {
+          "path": "/tableData"
+        },
+        "pagination": {
+          "pageSize": 5,
+          "showSizeChanger": false
+        },
+        "rowKey": "rank",
+        "className": "w-full mb-4",
+        "size": "middle"
+      }
+    },
+    {
+      "id": "termUserHeader",
+      "component": "div",
+      "props": {
+        "className": "flex items-center justify-between"
+      },
+      "children": [
+        "termUserHeaderTitle",
+        "termUserHeaderAddBtn"
+      ]
+    },
+    {
+      "id": "termUserHeaderTitle",
+      "component": "span",
+      "props": {
+        "value": "终端用户管理",
+        "className": "text-3xl font-bold text-on-surface"
+      }
+    },
+    {
+      "id": "termUserHeaderAddBtn",
+      "component": "Button",
+      "props": {
+        "type": "primary",
+        "value": "添加用户",
+        "className": "flex items-center gap-2"
+      }
+    },
+    {
+      "id": "termUserFilterBar",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-3"
+      },
+      "children": [
+        "termUserSearchInput",
+        "termUserRoleSelect",
+        "termUserStatusSelect",
+        "termUserSearchBtn",
+        "termUserResetBtn"
+      ]
+    },
+    {
+      "id": "termUserSearchInput",
+      "component": "Input",
+      "props": {
+        "value": {
+          "path": "/termUserSearchKeyword"
+        },
+        "placeholder": "搜索用户名 / 终端编号",
+        "prefix": "search",
+        "className": "w-64"
+      }
+    },
+    {
+      "id": "termUserRoleSelect",
+      "component": "Select",
+      "props": {
+        "value": {
+          "path": "/termUserSelectedRole"
+        },
+        "placeholder": "选择角色",
+        "options": [
+          {
+            "label": "全部角色",
+            "value": ""
+          },
+          {
+            "label": "管理员",
+            "value": "admin"
+          },
+          {
+            "label": "操作员",
+            "value": "operator"
+          },
+          {
+            "label": "审计员",
+            "value": "auditor"
+          }
+        ],
+        "className": "w-32"
+      }
+    },
+    {
+      "id": "termUserStatusSelect",
+      "component": "Select",
+      "props": {
+        "value": {
+          "path": "/termUserSelectedStatus"
+        },
+        "placeholder": "选择状态",
+        "options": [
+          {
+            "label": "全部状态",
+            "value": ""
+          },
+          {
+            "label": "正常",
+            "value": "active"
+          },
+          {
+            "label": "停用",
+            "value": "inactive"
+          },
+          {
+            "label": "锁定",
+            "value": "locked"
+          }
+        ],
+        "className": "w-32"
+      }
+    },
+    {
+      "id": "termUserSearchBtn",
+      "component": "Button",
+      "props": {
+        "type": "primary",
+        "value": "搜索"
+      }
+    },
+    {
+      "id": "termUserResetBtn",
+      "component": "Button",
+      "props": {
+        "value": "重置"
+      }
+    },
+    {
+      "id": "termUserStatsRow",
+      "component": "div",
+      "props": {
+        "className": "grid grid-cols-4 gap-4"
+      },
+      "children": {
+        "path": "/termUserStats",
+        "componentId": "termUserStatsCard"
+      }
+    },
+    {
+      "id": "termUserStatsCard",
+      "component": "div",
+      "props": {
+        "className": "bg-surface-container-highest rounded-xl p-4 flex items-center gap-4 shadow-sm"
+      },
+      "children": [
+        "termUserStatsCardIcon",
+        "termUserStatsCardInfo"
+      ]
+    },
+    {
+      "id": "termUserStatsCardIcon",
+      "component": "Icon",
+      "props": {
+        "name": {
+          "path": "icon"
+        },
+        "size": 32,
+        "shape": "square",
+        "color": {
+          "path": "color"
+        }
+      }
+    },
+    {
+      "id": "termUserStatsCardInfo",
+      "component": "div",
+      "props": {
+        "className": "flex flex-col"
+      },
+      "children": [
+        "termUserStatsCardValue",
+        "termUserStatsCardLabel"
+      ]
+    },
+    {
+      "id": "termUserStatsCardValue",
+      "component": "span",
+      "props": {
+        "className": "text-2xl font-bold text-on-surface",
+        "value": {
+          "path": "value"
+        }
+      }
+    },
+    {
+      "id": "termUserStatsCardLabel",
+      "component": "span",
+      "props": {
+        "className": "text-sm text-on-surface-variant",
+        "value": {
+          "path": "label"
+        }
+      }
+    },
+    {
+      "id": "termUserTableSection",
+      "component": "div",
+      "props": {
+        "className": "bg-surface-container-highest rounded-xl shadow-sm overflow-hidden"
+      },
+      "children": [
+        "termUserTableSectionHeader",
+        "termUserTable"
+      ]
+    },
+    {
+      "id": "termUserTableSectionHeader",
+      "component": "div",
+      "props": {
+        "className": "flex items-center justify-between px-6 pt-4 pb-3"
+      },
+      "children": [
+        "termUserTableSectionTitle",
+        "termUserTableSectionExtra"
+      ]
+    },
+    {
+      "id": "termUserTableSectionTitle",
+      "component": "span",
+      "props": {
+        "className": "text-lg font-semibold text-on-surface",
+        "value": "用户列表"
+      }
+    },
+    {
+      "id": "termUserTableSectionExtra",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-2"
+      },
+      "children": [
+        "termUserTableExportBtn",
+        "termUserTableRefreshBtn"
+      ]
+    },
+    {
+      "id": "termUserTableExportBtn",
+      "component": "Button",
+      "props": {
+        "value": "导出",
+        "className": "flex items-center gap-1"
+      }
+    },
+    {
+      "id": "termUserTableRefreshBtn",
+      "component": "Button",
+      "props": {
+        "value": "刷新",
+        "className": "flex items-center gap-1"
+      }
+    },
+    {
+      "id": "termUserTable",
+      "component": "Table",
+      "props": {
+        "columns": [
+          {
+            "title": "用户编号",
+            "key": "id"
+          },
+          {
+            "title": "用户名",
+            "key": "username",
+            "minWidth": 100
+          },
+          {
+            "title": "终端编号",
+            "key": "terminalId"
+          },
+          {
+            "title": "部门",
+            "key": "department",
+            "minWidth": 100
+          },
+          {
+            "title": "角色",
+            "key": "role"
+          },
+          {
+            "title": "状态",
+            "key": "status"
+          },
+          {
+            "title": "最后登录",
+            "key": "lastLogin",
+            "minWidth": 150
+          },
+          {
+            "title": "操作",
+            "key": "actions"
+          }
+        ],
+        "pagination": {
+          "current": {
+            "path": "/termUserPagination/current"
+          },
+          "pageSize": {
+            "path": "/termUserPagination/pageSize"
+          },
+          "total": {
+            "path": "/termUserPagination/total"
+          }
+        },
+        "rowKey": "id",
+        "className": "w-full"
+      },
+      "children": {
+        "path": "/termUserList",
+        "componentId": "termUserTableRow"
+      }
+    },
+    {
+      "id": "termUserTableRow",
+      "component": "TableRow",
+      "props": {},
+      "children": [
+        "termUserTableCellId",
+        "termUserTableCellUsername",
+        "termUserTableCellTerminal",
+        "termUserTableCellDepartment",
+        "termUserTableCellRole",
+        "termUserTableCellStatus",
+        "termUserTableCellLastLogin",
+        "termUserTableCellActions"
+      ]
+    },
+    {
+      "id": "termUserTableCellId",
+      "component": "span",
+      "props": {
+        "className": "text-md text-on-surface",
+        "value": {
+          "path": "id"
+        }
+      }
+    },
+    {
+      "id": "termUserTableCellUsername",
+      "component": "span",
+      "props": {
+        "className": "text-md font-medium text-on-surface",
+        "value": {
+          "path": "username"
+        }
+      }
+    },
+    {
+      "id": "termUserTableCellTerminal",
+      "component": "span",
+      "props": {
+        "className": "text-md text-on-surface",
+        "value": {
+          "path": "terminalId"
+        }
+      }
+    },
+    {
+      "id": "termUserTableCellDepartment",
+      "component": "span",
+      "props": {
+        "className": "text-md text-on-surface",
+        "value": {
+          "path": "department"
+        }
+      }
+    },
+    {
+      "id": "termUserTableCellRole",
+      "component": "span",
+      "props": {
+        "className": "text-md text-on-surface",
+        "value": {
+          "path": "role"
+        }
+      }
+    },
+    {
+      "id": "termUserTableCellStatus",
+      "component": "Tag",
+      "props": {
+        "color": {
+          "path": "statusColor"
+        },
+        "value": {
+          "path": "statusLabel"
+        }
+      }
+    },
+    {
+      "id": "termUserTableCellLastLogin",
+      "component": "span",
+      "props": {
+        "className": "text-md text-on-surface-variant",
+        "value": {
+          "path": "lastLogin"
+        }
+      }
+    },
+    {
+      "id": "termUserTableCellActions",
+      "component": "div",
+      "props": {
+        "className": "flex items-center gap-1"
+      },
+      "children": [
+        "termUserTableActionEdit",
+        "termUserTableActionReset",
+        "termUserTableActionMore"
+      ]
+    },
+    {
+      "id": "termUserTableActionEdit",
+      "component": "Button",
+      "props": {
+        "type": "link",
+        "size": "small",
+        "value": "编辑"
+      }
+    },
+    {
+      "id": "termUserTableActionReset",
+      "component": "Button",
+      "props": {
+        "type": "link",
+        "size": "small",
+        "value": "重置密码"
+      }
+    },
+    {
+      "id": "termUserTableActionMore",
+      "component": "Dropdown",
+      "props": {
+        "menu": {
+          "items": [
+            {
+              "key": "enable",
+              "label": "启用用户"
+            },
+            {
+              "key": "disable",
+              "label": "停用用户"
+            },
+            {
+              "key": "lock",
+              "label": "锁定用户"
+            },
+            {
+              "key": "delete",
+              "label": "删除用户",
+              "danger": true
+            }
+          ]
+        }
+      },
+      "children": [
+        "termUserTableActionMoreBtn"
+      ]
+    },
+    {
+      "id": "termUserTableActionMoreBtn",
+      "component": "Button",
+      "props": {
+        "type": "link",
+        "size": "small",
+        "value": "更多"
+      }
+    }
+  ],
+  "state": {
+    "brandName": "Admin Pro",
+    "navItems": [
+      {
+        "key": "dashboard",
+        "label": "首页",
+        "icon": "LayoutDashboard"
+      },
+      {
+        "key": "analytics",
+        "label": "分析",
+        "icon": "BarChart3"
+      },
+      {
+        "key": "projects",
+        "label": "项目",
+        "icon": "FolderKanban"
+      },
+      {
+        "key": "settings",
+        "label": "设置",
+        "icon": "Settings"
+      }
+    ],
+    "activeKey": "dashboard",
+    "searchText": "",
+    "userName": "张晓明",
+    "userRole": "超级管理员",
+    "notifyCount": 5,
+    "applicationName": "数智平台",
+    "navSections": [
+      {
+        "title": "主导航",
+        "items": [
+          {
+            "icon": "layout-dashboard",
+            "label": "工作台",
+            "badge": null
+          },
+          {
+            "icon": "bar-chart-3",
+            "label": "数据分析",
+            "badge": null
+          },
+          {
+            "icon": "file-text",
+            "label": "报告中心",
+            "badge": "12"
+          },
+          {
+            "icon": "inbox",
+            "label": "消息中心",
+            "badge": "5"
+          }
+        ]
+      },
+      {
+        "title": "系统管理",
+        "items": [
+          {
+            "icon": "users",
+            "label": "用户管理",
+            "badge": null
+          },
+          {
+            "icon": "shield",
+            "label": "角色权限",
+            "badge": null
+          },
+          {
+            "icon": "settings",
+            "label": "系统设置",
+            "badge": null
+          }
+        ]
+      }
+    ],
+    "userProfile": {
+      "name": "张明远",
+      "role": "管理员",
+      "avatarLabel": "张"
+    },
+    "sectionTitle": "数据总览",
+    "kpiData": [
+      {
+        "label": "总营收",
+        "value": "¥12,846,500",
+        "trend": 12.5,
+        "icon": "TrendingUp",
+        "unit": "同比"
+      },
+      {
+        "label": "活跃用户",
+        "value": "48,296",
+        "trend": 8.3,
+        "icon": "Users",
+        "unit": "环比"
+      },
+      {
+        "label": "转化率",
+        "value": "3.24%",
+        "trend": -0.8,
+        "icon": "Target",
+        "unit": "同比"
+      },
+      {
+        "label": "平均客单价",
+        "value": "¥869",
+        "trend": 5.6,
+        "icon": "Wallet",
+        "unit": "环比"
+      }
+    ],
+    "chartTrendData": [
+      {
+        "month": "1月",
+        "营收": 820,
+        "用户": 32
+      },
+      {
+        "month": "2月",
+        "营收": 960,
+        "用户": 38
+      },
+      {
+        "month": "3月",
+        "营收": 1100,
+        "用户": 42
+      },
+      {
+        "month": "4月",
+        "营收": 1050,
+        "用户": 40
+      },
+      {
+        "month": "5月",
+        "营收": 1280,
+        "用户": 46
+      },
+      {
+        "month": "6月",
+        "营收": 1420,
+        "用户": 48
+      },
+      {
+        "month": "7月",
+        "营收": 1380,
+        "用户": 45
+      },
+      {
+        "month": "8月",
+        "营收": 1560,
+        "用户": 52
+      }
+    ],
+    "tableData": [
+      {
+        "rank": 1,
+        "product": "智能手表 Pro Max",
+        "category": "电子产品",
+        "sales": 12840,
+        "revenue": "¥15,876,000",
+        "growth": 18.5,
+        "status": "高增长"
+      },
+      {
+        "rank": 2,
+        "product": "无绳吸尘器 V12",
+        "category": "家居电器",
+        "sales": 9820,
+        "revenue": "¥9,722,000",
+        "growth": 12.3,
+        "status": "高增长"
+      },
+      {
+        "rank": 3,
+        "product": "有机绿茶礼盒装",
+        "category": "食品饮料",
+        "sales": 21450,
+        "revenue": "¥4,290,000",
+        "growth": 8.7,
+        "status": "稳定"
+      },
+      {
+        "rank": 4,
+        "product": "瑜伽健身垫加厚",
+        "category": "运动户外",
+        "sales": 16320,
+        "revenue": "¥2,448,000",
+        "growth": -2.1,
+        "status": "下滑"
+      },
+      {
+        "rank": 5,
+        "product": "蓝牙降噪耳机",
+        "category": "电子产品",
+        "sales": 7850,
+        "revenue": "¥6,280,000",
+        "growth": 25.6,
+        "status": "高增长"
+      }
+    ],
+    "dateRange": "2026年1月 - 2026年8月",
+    "termUserSearchKeyword": "",
+    "termUserSelectedRole": null,
+    "termUserSelectedStatus": null,
+    "termUserStats": [
+      {
+        "label": "总用户数",
+        "value": 156,
+        "icon": "users",
+        "color": "primary"
+      },
+      {
+        "label": "活跃用户",
+        "value": 128,
+        "icon": "check-circle",
+        "color": "success"
+      },
+      {
+        "label": "非活跃用户",
+        "value": 20,
+        "icon": "pause-circle",
+        "color": "warning"
+      },
+      {
+        "label": "锁定用户",
+        "value": 8,
+        "icon": "lock",
+        "color": "error"
+      }
+    ],
+    "termUserStatusOpts": [
+      {
+        "label": "全部状态",
+        "value": ""
+      },
+      {
+        "label": "正常",
+        "value": "active"
+      },
+      {
+        "label": "停用",
+        "value": "inactive"
+      },
+      {
+        "label": "锁定",
+        "value": "locked"
+      }
+    ],
+    "termUserRoleOpts": [
+      {
+        "label": "全部角色",
+        "value": ""
+      },
+      {
+        "label": "管理员",
+        "value": "admin"
+      },
+      {
+        "label": "操作员",
+        "value": "operator"
+      },
+      {
+        "label": "审计员",
+        "value": "auditor"
+      }
+    ],
+    "termUserList": [
+      {
+        "id": "U001",
+        "username": "张三",
+        "terminalId": "T-1001",
+        "department": "市场部",
+        "role": "操作员",
+        "status": "active",
+        "statusLabel": "正常",
+        "statusColor": "success",
+        "lastLogin": "2026-06-09 14:30"
+      },
+      {
+        "id": "U002",
+        "username": "李四",
+        "terminalId": "T-1002",
+        "department": "技术部",
+        "role": "管理员",
+        "status": "active",
+        "statusLabel": "正常",
+        "statusColor": "success",
+        "lastLogin": "2026-06-10 09:15"
+      },
+      {
+        "id": "U003",
+        "username": "王五",
+        "terminalId": "T-1003",
+        "department": "运营部",
+        "role": "操作员",
+        "status": "inactive",
+        "statusLabel": "停用",
+        "statusColor": "warning",
+        "lastLogin": "2026-06-08 16:45"
+      },
+      {
+        "id": "U004",
+        "username": "赵六",
+        "terminalId": "T-1004",
+        "department": "财务部",
+        "role": "审计员",
+        "status": "locked",
+        "statusLabel": "锁定",
+        "statusColor": "error",
+        "lastLogin": "2026-06-07 10:00"
+      },
+      {
+        "id": "U005",
+        "username": "孙七",
+        "terminalId": "T-1005",
+        "department": "人事部",
+        "role": "操作员",
+        "status": "active",
+        "statusLabel": "正常",
+        "statusColor": "success",
+        "lastLogin": "2026-06-10 08:30"
+      }
+    ],
+    "termUserPagination": {
+      "current": 1,
+      "pageSize": 10,
+      "total": 5
+    }
+  }
+}
